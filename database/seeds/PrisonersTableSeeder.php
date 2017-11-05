@@ -11,11 +11,11 @@ class PrisonersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('lecturers')->insert([
+        DB::table('prisoners')->insert([
             'id_prison' => 'P0001'
             'fname' => 'Yuthapong'
             'lname' => 'Somchit'
-            'address' => 'Somchit'
+            'address' => 'asd'
             'dob' => '1997-08-25'
             'gender' => 'M'
             'id_officer' => 'O0001'
@@ -23,15 +23,15 @@ class PrisonersTableSeeder extends Seeder
 
         ]);
 
-        DB::table('lecturers')->insert([
-            'id_prison' => 'P0001'
-            'fname' => 'Yuthapong'
-            'lname' => 'Somchit'
-            'address' => 'Somchit'
+        DB::table('prisoners')->insert([
+            'id_prison' => 'P0002'
+            'fname' => 'aaa'
+            'lname' => 'bbb'
+            'address' => 'asddd'
             'dob' => '1997-08-25'
             'gender' => 'M'
-            'id_officer' => 'O0001'
-            'id_level' => 'L0001'
+            'id_officer' => 'O0002'
+            'id_level' => 'L0002'
 
         ]);
     }

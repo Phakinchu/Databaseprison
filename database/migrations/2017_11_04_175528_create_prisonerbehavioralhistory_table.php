@@ -16,7 +16,7 @@ class CreatePrisonerbehavioralhistoryTable extends Migration
         Schema::create('prisonerbehavioralhistory', function (Blueprint $table) {
             $table->string('id_behav',5);
             $table->string('crime', 15);
-            $table->string('gulit', 15);
+            $table->string('guilt', 15);
             $table->date('start_date');
             $table->date('end_date');
             $table->integer('id_prisoner');

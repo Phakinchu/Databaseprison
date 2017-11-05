@@ -11,6 +11,14 @@ class JailsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('jails')->insert([
+            'id_jail' => 'J0001'
+          
+        ]);
+
+        DB::table('jails')->insert([
+            'id_jail' => 'J0002'
+          
+        ]);
     }
 }
