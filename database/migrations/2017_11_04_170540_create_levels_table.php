@@ -18,7 +18,7 @@ class CreateLevelsTable extends Migration
             $table->integer('score');
             $table->integer('lv');
             $table->primary('id_level') ;
-            $table->timestamps();
+            
         });
     }
 

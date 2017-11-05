@@ -24,7 +24,7 @@ class CreateVisithistoryTable extends Migration
             $table->primary('id_visit') ;
         //    $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
         //    $table->foreign('id_officer')->references('id_officer')->on('officers');
-            $table->timestamps();
+            
         });
     }
 

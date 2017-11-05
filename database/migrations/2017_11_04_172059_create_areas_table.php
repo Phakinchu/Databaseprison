@@ -21,7 +21,7 @@ class CreateAreasTable extends Migration
             $table->string('id_jail',5);
             $table->primary('id_area') ;
         //    $table->foreign('id_jail')->references('id_jail')->on('jails');
-            $table->timestamps();
+            
         });
     }
 

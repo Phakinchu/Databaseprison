@@ -19,7 +19,7 @@ class CreateHaverelativeTable extends Migration
             $table->primary(['id_relative','id_prisoner']) ;
         //    $table->foreign('id_relative')->references('id_relative')->on('relatives');
      //       $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
-            $table->timestamps();
+            
         });
     }
 

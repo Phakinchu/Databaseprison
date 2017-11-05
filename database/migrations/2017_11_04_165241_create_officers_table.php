@@ -22,7 +22,7 @@ class CreateOfficersTable extends Migration
             $table->string('id_jail',5);
             $table->primary('id_officer',5) ;
        //     $table->foreign('id_jail')->references('id_jail')->on('jails');
-            $table->timestamps();
+            
         });
     }
 

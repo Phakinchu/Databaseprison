@@ -1,8 +1,23 @@
 <?php
 
+use App\Models\Activity;
+use App\Models\Area;
+use App\Models\Casedetail;
+use App\Models\Cell;
+use App\Models\Freeprisonhistory;
+use App\Models\Jail;
+use App\Models\Level;
+use App\Models\Officer;
+use App\Models\Prisoner;
+use App\Models\Prisonerbehavioralhistory;
+use App\Models\Prisonereducepunishmenthistory;
+use App\Models\Relative;
+use App\Models\Visithistory;
+
 use App\Student;
 use App\Project;
 use App\Lecturer;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,10 +34,9 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/students', function () {
-    $students = Student::all();
-
-    return $students;
+$router->get('/prisoners', function () {
+    $prisoners = Activity::all();
+    return $prisoners;
 });
 
 $router->get('/students/{studentId}', function ($studentId) {

@@ -17,7 +17,7 @@ class FreeprisonhistoryTableSeeder extends Seeder
             'fname' => 'aaaasss' ,
             'lname' => 'sssss' ,
             'type_of_freedom' => 'die' ,
-            'id_prisoner' => 'P0010'
+            'id_prisoner' => 'P0001'
         ]); 
 
         DB::table('freeprisonhistory')->insert([
@@ -26,7 +26,7 @@ class FreeprisonhistoryTableSeeder extends Seeder
             'fname' => 'adsssss' ,
             'lname' => 'ssssaas' ,
             'type_of_freedom' => 'eiei' ,
-            'id_prisoner' => 'P0011'
+            'id_prisoner' => 'P0002'
         ]);
     }
 }

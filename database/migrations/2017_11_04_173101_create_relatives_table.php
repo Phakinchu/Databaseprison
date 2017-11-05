@@ -20,7 +20,7 @@ class CreateRelativesTable extends Migration
             $table->string('id_prisoner',5);
             $table->primary('id_relative') ;
         //    $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
-            $table->timestamps();
+            
         });
     }
 

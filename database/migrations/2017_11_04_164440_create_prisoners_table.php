@@ -25,7 +25,7 @@ class CreatePrisonersTable extends Migration
             $table->primary('id_prisoner') ;
          //   $table->foreign('id_officer')->references('id_officer')->on('officers');
          //   $table->foreign('id_level')->references('id_level')->on('officers');
-            $table->timestamps();
+            
         });
     }
 
