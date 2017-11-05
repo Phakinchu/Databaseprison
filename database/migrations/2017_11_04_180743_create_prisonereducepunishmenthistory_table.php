@@ -14,11 +14,12 @@ class CreatePrisonereducepunishmenthistoryTable extends Migration
     public function up()
     {
         Schema::create('prisonereducepunishmenthistory', function (Blueprint $table) {
-            $table->increments('id_reducehis');
+            $table->string('id_reducehis',5);
             $table->string('cause_reduce', 20);
             $table->integer('time_reducted');
             $table->date('start_datereduce');
             $table->integer('id_prisoner');
+            $table->primary('id_reducehis') ;
             $table->timestamps();
         });
     }

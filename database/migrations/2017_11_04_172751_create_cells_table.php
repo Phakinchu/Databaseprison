@@ -14,8 +14,9 @@ class CreateCellsTable extends Migration
     public function up()
     {
         Schema::create('cells', function (Blueprint $table) {
-            $table->increments('id_cell');
+            $table->string('id_cell',5);
             $table->integer('id_area');
+            $table->primary('id_cell') ;
             $table->timestamps();
         });
     }

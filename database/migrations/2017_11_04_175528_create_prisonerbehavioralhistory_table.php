@@ -14,12 +14,13 @@ class CreatePrisonerbehavioralhistoryTable extends Migration
     public function up()
     {
         Schema::create('prisonerbehavioralhistory', function (Blueprint $table) {
-            $table->increments('id_behav');
+            $table->string('id_behav',5);
             $table->string('crime', 15);
             $table->string('gulit', 15);
             $table->date('start_date');
             $table->date('end_date');
             $table->integer('id_prisoner');
+            $table->primary('id_behav') ;
             $table->timestamps();
         });
     }

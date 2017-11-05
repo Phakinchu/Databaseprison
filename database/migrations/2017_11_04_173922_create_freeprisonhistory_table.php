@@ -14,12 +14,13 @@ class CreateFreeprisonhistoryTable extends Migration
     public function up()
     {
         Schema::create('freeprisonhistory', function (Blueprint $table) {
-            $table->increments('id_freeprison');
+            $table->string('id_freeprison',5);
             $table->date('freedate');
             $table->string('fname', 15);
             $table->string('lname', 15);
             $table->string('type_of_freedom', 20);
             $table->integer('id_prisoner');
+            $table->primary('id_freeprison') ;
             $table->timestamps();
         });
     }

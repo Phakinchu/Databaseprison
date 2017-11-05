@@ -14,11 +14,12 @@ class CreateAreasTable extends Migration
     public function up()
     {
         Schema::create('areas', function (Blueprint $table) {
-            $table->increments('id_area');
+            $table->string('id_area',5);
             $table->integer('level_area');
             $table->integer('numbers_of_prisoner');
             $table->integer('numbers_of_officer');
             $table->integer('id_jail');
+            $table->primary('id_area') ;
             $table->timestamps();
         });
     }

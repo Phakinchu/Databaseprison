@@ -14,7 +14,7 @@ class CreatePrisonersTable extends Migration
     public function up()
     {
         Schema::create('prisoners', function (Blueprint $table) {
-            $table->increments('id_prisoner');
+            $table->string('id_prisoner',5);
             $table->string('fname', 15);
             $table->string('lname', 15);
             $table->string('address', 25);
@@ -22,6 +22,7 @@ class CreatePrisonersTable extends Migration
             $table->char('gender', 1);
             $table->integer('id_officer');
             $table->integer('id_level');
+            $table->primary('id_prisoner') ;
             $table->timestamps();
         });
     }

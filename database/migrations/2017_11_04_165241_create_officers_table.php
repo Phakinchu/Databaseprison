@@ -14,12 +14,13 @@ class CreateOfficersTable extends Migration
     public function up()
     {
         Schema::create('officers', function (Blueprint $table) {
-            $table->increments('id_officer');
+            $table->string('id_officer',6);
             $table->string('name', 15);
             $table->date('dob');
             $table->string('position', 15);
             $table->char('gender', 1);
             $table->integer('id_jail');
+            $table->primary('id_officer') ;
             $table->timestamps();
         });
     }

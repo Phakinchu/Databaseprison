@@ -14,10 +14,11 @@ class CreateRelativesTable extends Migration
     public function up()
     {
         Schema::create('relatives', function (Blueprint $table) {
-            $table->increments('id_relative');
+            $table->string('id_relative',5);
             $table->string('name', 15);
             $table->string('contractdetail', 35);
             $table->integer('id_prisoner');
+            $table->primary('id_relative') ;
             $table->timestamps();
         });
     }

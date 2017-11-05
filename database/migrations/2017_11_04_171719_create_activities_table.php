@@ -14,9 +14,10 @@ class CreateActivitiesTable extends Migration
     public function up()
     {
         Schema::create('activities', function (Blueprint $table) {
-            $table->increments('id_activity');
+            $table->string('id_activity',5);
             $table->string('activity', 25);
             $table->integer('act_duration');
+            $table->primary('id_activity') ;
             $table->timestamps();
         });
     }
