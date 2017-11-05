@@ -17,7 +17,7 @@ class CreateCellsTable extends Migration
             $table->string('id_cell',5);
             $table->integer('id_area');
             $table->primary('id_cell') ;
-            $table->foreign('id_area')->references('id_area')->on('areas');
+          //  $table->foreign('id_area')->references('id_area')->on('areas');
             $table->timestamps();
         });
     }

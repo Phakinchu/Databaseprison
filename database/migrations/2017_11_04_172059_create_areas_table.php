@@ -20,7 +20,7 @@ class CreateAreasTable extends Migration
             $table->integer('numbers_of_officer');
             $table->integer('id_jail');
             $table->primary('id_area') ;
-            $table->foreign('id_jail')->references('id_jail')->on('jails');
+        //    $table->foreign('id_jail')->references('id_jail')->on('jails');
             $table->timestamps();
         });
     }

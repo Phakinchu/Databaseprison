@@ -17,8 +17,8 @@ class CreatePlusscoreTable extends Migration
             $table->integer('id_activity');
             $table->integer('id_prisoner');
             $table->primary(['id_activity','id_prisoner']) ;
-            $table->foreign('id_activity')->references('id_activity')->on('activities');
-            $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
+        //    $table->foreign('id_activity')->references('id_activity')->on('activities');
+        //    $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
             $table->timestamps();
         });
     }

@@ -21,7 +21,7 @@ class CreateFreeprisonhistoryTable extends Migration
             $table->string('type_of_freedom', 20);
             $table->integer('id_prisoner');
             $table->primary('id_freeprison') ;
-            $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
+         //   $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
             $table->timestamps();
         });
     }
