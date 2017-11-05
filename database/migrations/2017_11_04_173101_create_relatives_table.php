@@ -19,6 +19,7 @@ class CreateRelativesTable extends Migration
             $table->string('contractdetail', 35);
             $table->integer('id_prisoner');
             $table->primary('id_relative') ;
+            $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
             $table->timestamps();
         });
     }
