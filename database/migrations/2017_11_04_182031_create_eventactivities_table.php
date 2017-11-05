@@ -14,8 +14,8 @@ class CreateEventactivitiesTable extends Migration
     public function up()
     {
         Schema::create('eventactivities', function (Blueprint $table) {
-            $table->integer('id_activity');
-            $table->integer('id_area');
+            $table->string('id_activity',5);
+            $table->string('id_area',5);
             $table->primary(['id_activity','id_area']) ;
        //     $table->foreign('id_activity')->references('id_activity')->on('activities');
          //   $table->foreign('id_area')->references('id_area')->on('areas');

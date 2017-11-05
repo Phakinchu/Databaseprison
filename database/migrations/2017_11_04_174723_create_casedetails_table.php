@@ -18,7 +18,7 @@ class CreateCasedetailsTable extends Migration
             $table->string('case_section', 15);
             $table->string('punishment', 15);
             $table->integer('case_duration');
-            $table->integer('id_officer');
+            $table->string('id_officer',5);
             $table->primary('id_case') ;
          //   $table->foreign('id_officer')->references('id_officer')->on('officers');
             $table->timestamps();

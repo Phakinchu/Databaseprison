@@ -12,12 +12,12 @@ class HaverelativeTableSeeder extends Seeder
     public function run()
     {
         DB::table('haverelative')->insert([
-            'id_relative' => 'R0001'
+            'id_relative' => 'R0001' ,
             'id_prisoner' => 'P0001'
         ]);
 
         DB::table('haverelative')->insert([
-            'id_relative' => 'R0002'
+            'id_relative' => 'R0002' ,
             'id_prisoner' => 'P0002'
         ]);
     }

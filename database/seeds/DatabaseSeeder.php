@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        schema::disableForeignKeyConstraints();
         $this->call('PrisonersTableSeeder');
         $this->call('OfficersTableSeeder');
         $this->call('LevelsTableSeeder');
@@ -29,5 +30,6 @@ class DatabaseSeeder extends Seeder
         $this->call('CrimeTableSeeder');
         $this->call('ManagecaseTableSeeder');
         $this->call('PlusscoreTableSeeder');
+        schema::enableForeignKeyConstraints();
     }   
 }

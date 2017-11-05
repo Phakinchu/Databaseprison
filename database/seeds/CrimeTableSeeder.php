@@ -12,12 +12,12 @@ class CrimeTableSeeder extends Seeder
     public function run()
     {
         DB::table('crime')->insert([
-            'id_prisoner' => 'P0001'
+            'id_prisoner' => 'P0001' ,
             'id_case' => 'C0001'
         ]);
 
         DB::table('crime')->insert([
-            'id_prisoner' => 'P0002'
+            'id_prisoner' => 'P0002' ,
             'id_case' => 'C0002'
         ]);
     }

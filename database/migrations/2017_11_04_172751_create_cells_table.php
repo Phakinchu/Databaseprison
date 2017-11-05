@@ -15,7 +15,7 @@ class CreateCellsTable extends Migration
     {
         Schema::create('cells', function (Blueprint $table) {
             $table->string('id_cell',5);
-            $table->integer('id_area');
+            $table->string('id_area',5);
             $table->primary('id_cell') ;
           //  $table->foreign('id_area')->references('id_area')->on('areas');
             $table->timestamps();

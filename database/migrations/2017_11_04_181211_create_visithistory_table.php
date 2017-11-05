@@ -19,8 +19,8 @@ class CreateVisithistoryTable extends Migration
             $table->string('item', 20);
             $table->string('contract_detail', 25);
             $table->dateTime('Datetime');
-            $table->integer('id_prisoner');
-            $table->integer('id_officer');
+            $table->string('id_prisoner',5);
+            $table->string('id_officer',5);
             $table->primary('id_visit') ;
         //    $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
         //    $table->foreign('id_officer')->references('id_officer')->on('officers');

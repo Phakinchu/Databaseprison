@@ -20,10 +20,10 @@ class CreatePrisonersTable extends Migration
             $table->string('address', 25);
             $table->date('dob');
             $table->char('gender', 1);
-            $table->integer('id_officer');
-            $table->integer('id_level');
+            $table->string('id_officer',5);
+            $table->string('id_level',5);
             $table->primary('id_prisoner') ;
-          //  $table->foreign('id_officer')->references('id_officer')->on('officers');
+         //   $table->foreign('id_officer')->references('id_officer')->on('officers');
          //   $table->foreign('id_level')->references('id_level')->on('officers');
             $table->timestamps();
         });

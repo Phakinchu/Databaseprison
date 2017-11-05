@@ -14,8 +14,8 @@ class CreatePlusscoreTable extends Migration
     public function up()
     {
         Schema::create('plusscore', function (Blueprint $table) {
-            $table->integer('id_activity');
-            $table->integer('id_prisoner');
+            $table->string('id_activity',5);
+            $table->string('id_prisoner',5);
             $table->primary(['id_activity','id_prisoner']) ;
         //    $table->foreign('id_activity')->references('id_activity')->on('activities');
         //    $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
