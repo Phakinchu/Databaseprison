@@ -14,9 +14,9 @@ use App\Models\Prisonereducepunishmenthistory;
 use App\Models\Relative;
 use App\Models\Visithistory;
 
-use App\Student;
+/*use App\Student;
 use App\Project;
-use App\Lecturer;
+use App\Lecturer;*/
 
 
 /*
@@ -35,11 +35,11 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/prisoners', function () {
-    $prisoners = Activity::all();
+    $prisoners = Prisoner::all();
     return $prisoners;
 });
 
-$router->get('/students/{studentId}', function ($studentId) {
+/*$router->get('/students/{studentId}', function ($studentId) {
     $student = Student::findOrFail($studentId);
 
     return $student;
@@ -75,4 +75,4 @@ $router->get('/lecturers/{lecturerId}/advised-projects', function ($lecturerId) 
 $router->get('/lecturers/{lecturerId}/committed-projects', function ($lecturerId) {
     $lecturer = Lecturer::findOrFail($lecturerId);
     return $lecturer->committedProjects;
-});
+});*/
