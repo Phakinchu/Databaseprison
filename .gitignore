@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+vendor/
+=======
+/vendor
+/.idea
+Homestead.json
+Homestead.yaml
+>>>>>>> c4c3c7c58d240c004efa36e79375916c9f859ed0
+.env
