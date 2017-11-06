@@ -13,7 +13,7 @@ class PrisonersTableSeeder extends Seeder
     {
         DB::table('prisoners')->insert([
             'id_prisoner' => 'P0001' ,
-            'fname' => 'Yuthapong',
+            'fname' => 'Yuthaponr',
             'lname' => 'Somchit' ,
             'address' => 'asd' ,
             'dob' => '1997-08-25' ,

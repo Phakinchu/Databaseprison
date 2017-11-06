@@ -17,9 +17,9 @@ class CreateManagecaseTable extends Migration
             $table->string('id_officer',5);
             $table->string('id_case',5);
             $table->primary(['id_officer','id_case']) ;
+            $table->timestamps();
          //   $table->foreign('id_case')->references('id_case')->on('casedetails');
         //    $table->foreign('id_officer')->references('id_officer')->on('officers');
-            //$table->timestamps();
         });
     }
 

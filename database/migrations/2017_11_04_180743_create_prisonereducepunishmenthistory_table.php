@@ -20,6 +20,7 @@ class CreatePrisonereducepunishmenthistoryTable extends Migration
             $table->date('start_datereduce');
             $table->string('id_prisoner',5);
             $table->primary('id_reducehis') ;
+            $table->timestamps();
     //        $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
             
         });

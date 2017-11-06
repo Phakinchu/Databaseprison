@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Officer extends Model
 {
+    protected $primaryKey = 'id_officer';
+    public $incrementing = false;
+
     public function prisoners()
     {
         return $this->hasMany('App\Models\Prisoner');

@@ -17,6 +17,7 @@ class CreateCrimeTable extends Migration
             $table->string('id_prisoner',5);
             $table->string('id_case',5);
             $table->primary(['id_prisoner','id_case']) ;
+            $table->timestamps();
         //    $table->foreign('id_case')->references('id_case')->on('casedetails');
        //     $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
             

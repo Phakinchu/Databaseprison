@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Casedetail extends Model
 {
+    protected $primaryKey = 'id_case';
+    public $incrementing = false;
     public function prisoners()
     {
         return $this->belongsToMany('App\Models\Prisoner','crime');

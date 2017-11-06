@@ -21,6 +21,7 @@ class CreateOfficersTable extends Migration
             $table->char('gender', 1);
             $table->string('id_jail',5);
             $table->primary('id_officer',5) ;
+            $table->timestamps();
        //     $table->foreign('id_jail')->references('id_jail')->on('jails');
             
         });

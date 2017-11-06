@@ -16,7 +16,7 @@ class CreateJailsTable extends Migration
         Schema::create('jails', function (Blueprint $table) {
             $table->string('id_jail',5);
             $table->primary('id_jail') ;
-            
+            $table->timestamps();
         });
     }
 

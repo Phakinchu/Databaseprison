@@ -20,6 +20,7 @@ class CreateCasedetailsTable extends Migration
             $table->integer('case_duration');
             $table->string('id_officer',5);
             $table->primary('id_case') ;
+            $table->timestamps();
          //   $table->foreign('id_officer')->references('id_officer')->on('officers');
             
         });

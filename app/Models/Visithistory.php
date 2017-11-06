@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Visithistory extends Model
 {
+    protected $primaryKey = 'id_visit';
     public $table = "visithistory";
+    public $incrementing = false;
     public function prisoners()
     {
         return $this->belongsTo('App\Models\Prisoner');

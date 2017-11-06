@@ -21,6 +21,7 @@ class CreatePrisonerbehavioralhistoryTable extends Migration
             $table->date('end_date');
             $table->string('id_prisoner',5);
             $table->primary('id_behav') ;
+            $table->timestamps();
         //    $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
             
         });

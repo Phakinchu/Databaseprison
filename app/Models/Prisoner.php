@@ -5,7 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Prisoner extends Model
-{
+{   
+    
+    public $incrementing = false;
+    protected $primaryKey = 'id_prisoner';
+    
     public function officers()
     {
         return $this->belongsTo('App\Models\Officer');

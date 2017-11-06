@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Area extends Model
 {
+    protected $primaryKey = 'id_area';
+    public $incrementing = false;
     public function activities()
     {
         return $this->belongsToMany('App\Models\Activity','eventactivities');

@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cell extends Model
 {
+    protected $primaryKey = 'id_cell';
+    public $incrementing = false;
     public function areas()
     {
         return $this->belongsTo('App\Models\Area');
