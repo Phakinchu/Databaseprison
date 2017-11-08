@@ -34,10 +34,7 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/prisonersss', function () {
-    $prisoners = Officer::all();
-    return $prisoners;
-});
+    ///// Prisoner Page
 
 $router->get('/prisoners', function() {
     $prisoners = Prisoner::all();
@@ -102,59 +99,50 @@ $router->get('/prisoners', function() {
     
     $router->post('/prisoner/{id}/editsave','PrisonerController@editsave');
 
-    /////
-    $router->get('/officers', 'OfficerController@officerindex');
+    ///// Officer Page
+
+    $router->get('/officers', function() {
+        $officers = Officer::all();
+        
+        echo "<h1>All Officers</h1>";
+        echo "<table border=2><tr>
+        <td><center>officer_id</center></td>
+        <td><center>officer_name</center></td>
+        <td><center>dob</center></td>
+        <td><center>position</center></td>
+        <td><center>gender</center></td>
+        <td><center>jail</center></td>
+        <td><center>Edit</center></td>
+        <td><center>Delete</center></td>";
+        
+            foreach ($officers as $officer) {
+                echo "
+                <tr>
+                <td><center>$officer->id_officer</center></td>
+                <td><center>$officer->name</center></td>
+                <td><center>$officer->dob</center></td>
+                <td><center>$officer->position</center></td>
+                <td><center>$officer->gender</center></td>
+                <td><center>$officer->id_jail</center></td>
+                <td><center><a href=\"/officer/$officer->id_officer/editpage\">Click</a></center></td>
+                <td><center><a href=\"/officer/$officer->id_officer/delete\">Click</a></center></td>
+                </tr>";
+            }
+        echo "</table><br>";
+        
+        echo"<form action=\"/officers/insertpage\"><input type=\"submit\" value=\"Add Officer\"></form>";
+        });
     
-    // $router->get('/officers/{id}', 'OfficerController@officerview');
+        $router->get('/officer', 'OfficerController@index');
+        
+        $router->get('/officer/{id}', 'OfficerController@view');
     
-    // $router->get('/officers/{position}', 'OfficerController@view_by_position');
-    
-    // $router->get('/officers/{gender}', 'OfficerController@view_by_gender');
-    
-    // $router->get('/officers/insertPage', 'OfficerController@insert_page');
-    
-    // $router->get('/officers/save', 'OfficerController@save');
-    
-    // $router->get('/officers/{id}/delete','OfficerController@delete');
-    
-    // $router->get('/officers/{id}/editPage','OfficerController@edit_page');
-    
-    // $router->post('/officers/{id}/editSave','OfficerController@edit_save');
-
-/*$router->get('/students/{studentId}', function ($studentId) {
-    $student = Student::findOrFail($studentId);
-
-    return $student;
-});
-
-$router->get('/students/{studentId}/project', function ($studentId) {
-    $student = Student::findOrFail($studentId);
-
-    return $student->project;
-});
-
-$router->get('/projects', function () {
-    return Project::all();
-});
-
-$router->get('/projects/{projectId}', function ($projectId) {
-    return Project::findOrFail($projectId);
-});
-
-$router->get('/projects/{projectId}/adviser', function ($projectId) {
-    return Project::findOrFail($projectId)->adviser;
-});
-
-$router->get('/lecturers/{lecturerId}', function ($lecturerId) {
-    return Lecturer::findOrFail($lecturerId);
-});
-
-$router->get('/lecturers/{lecturerId}/advised-projects', function ($lecturerId) {
-    $lecturer = Lecturer::findOrFail($lecturerId);
-    return $lecturer->advisedProjects;
-});
-
-$router->get('/lecturers/{lecturerId}/committed-projects', function ($lecturerId) {
-    $lecturer = Lecturer::findOrFail($lecturerId);
-    return $lecturer->committedProjects;
-});*/
+        $router->get('/officers/insertpage','OfficerController@insertpage');
+        
+        $router->post('/officers/save','OfficerController@save');
+        
+        $router->get('/officer/{id}/delete','OfficerController@delete');
+        
+        $router->get('/officer/{id}/editpage','OfficerController@editpage');
+        
+        $router->post('/officer/{id}/editsave','OfficerController@editsave');
