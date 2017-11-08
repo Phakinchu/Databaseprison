@@ -12,5 +12,6 @@
   <h2>"gender    :  " {{$gender}}</h2>
   <h2>"Level     :  " {{$id_level}}</h2>
   <h2>"Officer   :  " {{$id_officer}}</h2>
+
 </div>
 @endsection

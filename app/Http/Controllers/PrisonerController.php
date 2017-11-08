@@ -37,6 +37,7 @@ class PrisonerController extends Controller
         $prisoner->address=$request->input('address');
         $prisoner->id_officer=$request->input('officer');
         $prisoner->id_level=$request->input('level');
+        $prisoner->scorepri=$request->input('score');
         $prisoner->save();
         
         echo "Add Success!!";
@@ -66,6 +67,7 @@ class PrisonerController extends Controller
         $prisoner->address=$request->input('address');
         $prisoner->id_officer=$request->input('officer');
         $prisoner->id_level=$request->input('level');
+        $prisoner->scorepri=$request->input('score');
         $prisoner->save();
         echo "Edit Success!!";
         echo"<form action=\"/prisoners\">
@@ -87,6 +89,7 @@ class PrisonerController extends Controller
             'gender' => $post->gender,
             'officer' => $post->id_officer,
             'level' => $post->id_level,
+            'score' => $post->scorepri,
         ]);
     }
 

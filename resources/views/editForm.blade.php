@@ -13,7 +13,7 @@
 		</tr> -->
 		<tr>
 			<td>Fname : </td>
-			<td><input type="text" name="fname"></td>
+			<td><input type="text" name="fname" ></td>
 		</tr>
 		<tr>
 			<td>LName : </td>
@@ -38,6 +38,10 @@
 		<tr>
 			<td>level : </td>
 			<td><input type="text" name="level"></td>
+		</tr>
+		<tr>
+			<td>score : </td>
+			<td><input type="text" name="score"></td>
 		</tr>
 		<tr>
 			<td><input type="submit" name="submit" value="Edit"></td>

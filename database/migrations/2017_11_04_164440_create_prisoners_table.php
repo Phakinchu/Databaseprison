@@ -22,6 +22,7 @@ class CreatePrisonersTable extends Migration
             $table->char('gender', 1);
             $table->string('id_officer',5);
             $table->string('id_level',5);
+            $table->integer('scorepri');
             $table->primary('id_prisoner') ;
             $table->timestamps();
          //   $table->foreign('id_officer')->references('id_officer')->on('officers');

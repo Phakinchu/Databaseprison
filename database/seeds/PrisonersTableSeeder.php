@@ -19,7 +19,8 @@ class PrisonersTableSeeder extends Seeder
             'dob' => '1997-08-25' ,
             'gender' => 'M' ,
             'id_officer' => 'O0001' ,
-            'id_level' => 'L0001' 
+            'id_level' => 'L0001'  ,
+            'scorepri' => 20 
 
         ]);
 
@@ -31,7 +32,8 @@ class PrisonersTableSeeder extends Seeder
             'dob' => '1997-08-25' ,
             'gender' => 'M' ,
             'id_officer' => 'O0002' ,
-            'id_level' => 'L0002' 
+            'id_level' => 'L0002'  ,
+            'scorepri' => 25 
 
         ]);
     }

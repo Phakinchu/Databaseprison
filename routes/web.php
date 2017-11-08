@@ -51,7 +51,8 @@ $router->get('/prisoners', function() {
 	<td><center>dob</center></td>
 	<td><center>address</center></td>
 	<td><center>officer</center></td>
-	<td><center>level</center></td>
+    <td><center>level</center></td>
+    <td><center>score</center></td>
 	<td><center>Edit</center></td>
 	<td><center>Delete</center></td>";
     
@@ -65,7 +66,8 @@ $router->get('/prisoners', function() {
 			<td><center>$prisoner->dob</center></td>
 			<td>$prisoner->address</td>
 			<td><center>$prisoner->id_officer</center></td>
-			<td><center>$prisoner->id_level</center></td>
+            <td><center>$prisoner->id_level</center></td>
+            <td><center>$prisoner->scorepri</center></td>
 			<td><center><a href=\"/prisoner/$prisoner->id_prisoner/editpage\">Click</a></center></td>
 			<td><center><a href=\"/prisoner/$prisoner->id_prisoner/delete\">Click</a></center></td>
 			</tr>";
@@ -99,6 +101,25 @@ $router->get('/prisoners', function() {
     $router->get('/prisoner/{id}/editpage','PrisonerController@editpage');
     
     $router->post('/prisoner/{id}/editsave','PrisonerController@editsave');
+
+    /////
+    $router->get('/officers', 'OfficerController@officerindex');
+    
+    // $router->get('/officers/{id}', 'OfficerController@officerview');
+    
+    // $router->get('/officers/{position}', 'OfficerController@view_by_position');
+    
+    // $router->get('/officers/{gender}', 'OfficerController@view_by_gender');
+    
+    // $router->get('/officers/insertPage', 'OfficerController@insert_page');
+    
+    // $router->get('/officers/save', 'OfficerController@save');
+    
+    // $router->get('/officers/{id}/delete','OfficerController@delete');
+    
+    // $router->get('/officers/{id}/editPage','OfficerController@edit_page');
+    
+    // $router->post('/officers/{id}/editSave','OfficerController@edit_save');
 
 /*$router->get('/students/{studentId}', function ($studentId) {
     $student = Student::findOrFail($studentId);

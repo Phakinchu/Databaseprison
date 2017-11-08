@@ -40,6 +40,11 @@
 			<td><input type="text" name="level"></td>
 		</tr>
 		<tr>
+			<td>score : </td>
+			<td><input type="text" name="score"></td>
+		</tr>
+		
+		<tr>
 			<td><input type="submit" name="submit" value="Add"></td>
 		</tr>
 	</table>
