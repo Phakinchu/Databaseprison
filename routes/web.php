@@ -72,6 +72,7 @@ $router->get('/prisoners', function() {
 			<td><center><a href=\"/prisoner/$prisoner->id_prisoner/delete\">Click</a></center></td>
 			</tr>";
         }
+
 	echo "</table><br>";
 	
     echo"<form action=\"/prisoners/insertpage\"><input type=\"submit\" value=\"Add Prisoner\"></form>";
@@ -103,23 +104,23 @@ $router->get('/prisoners', function() {
     $router->post('/prisoner/{id}/editsave','PrisonerController@editsave');
 
     /////
-    $router->get('/officers', 'OfficerController@officerindex');
+    $router->get('/officers', 'OfficerController@index');
     
     // $router->get('/officers/{id}', 'OfficerController@officerview');
     
     // $router->get('/officers/{position}', 'OfficerController@view_by_position');
     
-    // $router->get('/officers/{gender}', 'OfficerController@view_by_gender');
+     $router->get('/officers/{gender}/gender', 'OfficerController@view_by_gender');
     
-    // $router->get('/officers/insertPage', 'OfficerController@insert_page');
+     $router->get('/officers/insertpage', 'OfficerController@insertpage');
     
-    // $router->get('/officers/save', 'OfficerController@save');
+     $router->post('/officers/save', 'OfficerController@save');
     
-    // $router->get('/officers/{id}/delete','OfficerController@delete');
+     $router->get('/officers/{id}/delete','OfficerController@delete');
     
-    // $router->get('/officers/{id}/editPage','OfficerController@edit_page');
+     $router->get('/officers/{id}/editpage','OfficerController@editpage');
     
-    // $router->post('/officers/{id}/editSave','OfficerController@edit_save');
+     $router->post('/officers/{id}/editsave','OfficerController@editsave');
 
 /*$router->get('/students/{studentId}', function ($studentId) {
     $student = Student::findOrFail($studentId);

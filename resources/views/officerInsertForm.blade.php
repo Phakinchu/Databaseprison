@@ -10,7 +10,7 @@
 		<tr>
 			<td>Oficcer ID : </td>
 			<td><input type="text" name="id"></td>
-		</tr>
+		</tr>	
 		<tr>
 			<td>Name : </td>
 			<td><input type="text" name="name"></td>
@@ -36,7 +36,7 @@
 		</tr>
 	</table>
 	</form>
-	<form action="/prisoners">
+	<form action="/officers">
     <input type="submit" value="Back">
 	</form>
 
