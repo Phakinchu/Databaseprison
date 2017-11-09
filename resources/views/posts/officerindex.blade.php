@@ -33,6 +33,5 @@
 
 	<form action="/officers/insertpage"><input type="submit" value="Add Officer"></form>
 
-
 </div>
 @endsection
