@@ -14,6 +14,7 @@ class PrisonerController extends Controller
         return view('posts.prisonerindex', [
           'title' => 'Prisoner',
           'posts' => $posts
+    
         ]);
     }
 

@@ -135,6 +135,7 @@ $router->get('/prisoners', function() {
     
         $router->get('/officer', 'OfficerController@index');
         
+        
         $router->get('/officer/{id}', 'OfficerController@view');
     
         $router->get('/officers/insertpage','OfficerController@insertpage');
@@ -146,3 +147,54 @@ $router->get('/prisoners', function() {
         $router->get('/officer/{id}/editpage','OfficerController@editpage');
         
         $router->post('/officer/{id}/editsave','OfficerController@editsave');
+
+        //activities
+  
+
+        $router->get('/activities', function() {
+            $activities = Activity::all();
+            echo "<h1>Activities</h1>";
+            echo "<table border=2><tr>
+            <td><center>activity_id</center></td>
+            <td><center>activity</center></td>
+            <td><center>duration(day)</center></td> 
+            <td><center>prisoner</center></td> 
+             " ;
+                                             
+            
+                foreach ($activities as $activity) {
+                    echo "
+                    <tr>
+                    <td><center>$activity->id_activity</center></td>
+                    <td><center>$activity->activity</center></td>
+                    <td><center>$activity->act_duration</center></td> 
+                    <td><center>$activity->id_prisoner</center></td> 
+                   "                          
+                  ;
+                }
+            echo "</table><br>";
+            }) ;
+
+
+        //cells
+
+            
+        $router->get('/cells', function() {
+            $cells = Cell::all();
+            echo "<h1>Cells</h1>";
+            echo "<table border=2><tr>
+            <td><center>id_cell</center></td>
+            <td><center>id_area</center></td>
+             " ;
+                                             
+            
+                foreach ($cells as $cell) {
+                    echo "
+                    <tr>
+                    <td><center>$cell->id_cell</center></td>
+                    <td><center>$cell->id_area</center></td>
+                   "                          
+                  ;
+                }
+            echo "</table><br>";
+            }) ;
