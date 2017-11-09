@@ -120,3 +120,18 @@ $router->get('/', function () use ($router) {
     $router->get('/prisonerbehavioralhistory/{id}/editpage','PrisonerbehavioralhistoryController@editpage');
         
     $router->post('/prisonerbehavioralhistory/{id}/editsave','PrisonerbehavioralhistoryController@editsave');
+
+    //Casedetail Page
+    $router->get('/casedetails', 'CasedetailController@index');
+    
+    $router->get('/casedetail/{id}', 'CasedetailController@view');
+    
+    $router->get('/casedetails/insertpage','CasedetailController@insertpage');
+        
+    $router->post('/casedetails/save','CasedetailController@save');
+        
+    $router->get('/casedetail/{id}/delete','CasedetailController@delete');
+        
+    $router->get('/casedetail/{id}/editpage','CasedetailController@editpage');
+        
+    $router->post('/casedetail/{id}/editsave','CasedetailController@editsave');
