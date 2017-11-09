@@ -12,7 +12,7 @@
   	<td><center>officer_name</center></td>
   	<td><center>gender</center></td>
   	<td><center>dob</center></td>
-    <td><center>id_position</center></td>
+    <td><center>position</center></td>
   	<td><center>id_jail</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>

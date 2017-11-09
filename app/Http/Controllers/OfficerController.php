@@ -56,7 +56,6 @@ class OfficerController extends Controller
     public function editsave(Request $request, $id)
     {
         $officer = Officer::findOrFail($id);
-        // $prisoner->id_prisoner=$request->input('id');
         $officer->name=$request->input('name');
         $officer->dob=$request->input('dob');
         $officer->position=$request->input('position');
@@ -75,7 +74,7 @@ class OfficerController extends Controller
         $post = Officer::findOrFail($id);
 
         return view('posts.officerview', [
-            'title' => 'Gender',
+         
             'name' => $post->name,
             'dob' => $post->dob,
             'position' => $post->position,

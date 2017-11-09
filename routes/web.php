@@ -1,5 +1,4 @@
 <?php
-
 use App\Models\Activity;
 use App\Models\Area;
 use App\Models\Casedetail;
@@ -13,12 +12,9 @@ use App\Models\Prisonerbehavioralhistory;
 use App\Models\Prisonereducepunishmenthistory;
 use App\Models\Relative;
 use App\Models\Visithistory;
-
 /*use App\Student;
 use App\Project;
 use App\Lecturer;*/
-
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -29,30 +25,17 @@ use App\Lecturer;*/
 | and give it the Closure to call when that URI is requested.
 |
 */
-
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-
-    ///// Prisoner Page
-
-
-
+    
     $router->get('/', 'IndexController@index');
     
-    $router->get('/posts', 'PostController@index');
-    
-    $router->get('/posts/{id}', 'PostController@view');
-    
+    ///// Prisoner Page
     $router->get('/prisoners', 'PrisonerController@index');
-    
-    $router->get('/prisoner/{id}', 'PrisonerController@view');
 
-    $router->get('/prisonerss/{id}', function ($id) {
-        $student = Prisoner::findOrFail($id);
-        return $student->id_prisoner;
-    });
-    
+    $router->get('/prisone/{id}', 'PrisonerController@view');
+
     $router->get('/prisoners/insertpage','PrisonerController@insertpage');
     
     $router->post('/prisoners/save','PrisonerController@save');
@@ -64,24 +47,76 @@ $router->get('/', function () use ($router) {
     $router->post('/prisoner/{id}/editsave','PrisonerController@editsave');
 
     ///// Officer Page
-
-
-        $router->get('/officers', 'OfficerController@index');
-        
-        $router->get('/officer/{id}', 'OfficerController@view');
+    $router->get('/officers', 'OfficerController@index');
     
-        $router->get('/officers/insertpage','OfficerController@insertpage');
+    $router->get('/officer/{id}', 'OfficerController@view');
+    
+    $router->get('/officers/insertpage','OfficerController@insertpage');
         
-        $router->post('/officers/save','OfficerController@save');
+    $router->post('/officers/save','OfficerController@save');
         
-        $router->get('/officer/{id}/delete','OfficerController@delete');
+    $router->get('/officer/{id}/delete','OfficerController@delete');
         
-        $router->get('/officer/{id}/editpage','OfficerController@editpage');
+    $router->get('/officer/{id}/editpage','OfficerController@editpage');
         
-        $router->post('/officer/{id}/editsave','OfficerController@editsave');
+    $router->post('/officer/{id}/editsave','OfficerController@editsave');
 
-        //activities
-
-        //cells
-
+    //Visithistory Page
+    $router->get('/visithistories', 'VisithistoryController@index');
+    
+    $router->get('/visithistory/{id}', 'VisithistoryController@view');
+    
+    $router->get('/visithistories/insertpage','VisithistoryController@insertpage');
+        
+    $router->post('/visithistories/save','VisithistoryController@save');
+        
+    $router->get('/visithistory/{id}/delete','VisithistoryController@delete');
+        
+    $router->get('/visithistory/{id}/editpage','VisithistoryController@editpage');
+        
+    $router->post('/visithistory/{id}/editsave','VisithistoryController@editsave');
             
+    //Freeprisonhistory Page
+    $router->get('/freeprisonhistories', 'FreeprisonhistoryController@index');
+    
+    $router->get('/freeprisonhistory/{id}', 'FreeprisonhistoryController@view');
+    
+    $router->get('/freeprisonhistories/insertpage','FreeprisonhistoryController@insertpage');
+        
+    $router->post('/freeprisonhistories/save','FreeprisonhistoryController@save');
+        
+    $router->get('/freeprisonhistory/{id}/delete','FreeprisonhistoryController@delete');
+        
+    $router->get('/freeprisonhistory/{id}/editpage','FreeprisonhistoryController@editpage');
+        
+    $router->post('/freeprisonhistory/{id}/editsave','FreeprisonhistoryController@editsave');
+
+    //Activity Page
+    $router->get('/activities', 'ActivityController@index');
+    
+    $router->get('/activity/{id}', 'ActivityController@view');
+    
+    $router->get('/activities/insertpage','ActivityController@insertpage');
+        
+    $router->post('/activities/save','ActivityController@save');
+        
+    $router->get('/activity/{id}/delete','ActivityController@delete');
+        
+    $router->get('/activity/{id}/editpage','ActivityController@editpage');
+        
+    $router->post('/activity/{id}/editsave','ActivityController@editsave');
+    
+    //Prisonerbehavioralhistory Page
+    $router->get('/prisonerbehavioralhistories', 'PrisonerbehavioralhistoryController@index');
+    
+    $router->get('/prisonerbehavioralhistory/{id}', 'PrisonerbehavioralhistoryController@view');
+    
+    $router->get('/prisonerbehavioralhistories/insertpage','PrisonerbehavioralhistoryController@insertpage');
+        
+    $router->post('/prisonerbehavioralhistories/save','PrisonerbehavioralhistoryController@save');
+        
+    $router->get('/prisonerbehavioralhistory/{id}/delete','PrisonerbehavioralhistoryController@delete');
+        
+    $router->get('/prisonerbehavioralhistory/{id}/editpage','PrisonerbehavioralhistoryController@editpage');
+        
+    $router->post('/prisonerbehavioralhistory/{id}/editsave','PrisonerbehavioralhistoryController@editsave');

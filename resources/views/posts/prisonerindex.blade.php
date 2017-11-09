@@ -3,7 +3,7 @@
 @section('content')
 <div class="blog-header">
   <h1 class="blog-title">Prisoner List</h1>
-  <p class="lead blog-description">ALl Prisoner</p>
+  <p class="lead blog-description">All Prisoner</p>
   @foreach ($posts as $post)
   <table border=2><tr> 
   	<td><center>prisoner</center></td>
@@ -12,7 +12,7 @@
   	<td><center>gender</center></td>
     <td><center>dob</center></td>
   	<td><center>add</center></td>
-    <td><center>id_official</center></td>
+    <td><center>id_officer</center></td>
     <td><center>id_level</center></td>
     <td><center>score</center></td>
   	<td><center>Edit</center></td>
@@ -25,7 +25,7 @@
 			<td><center>{{$post->gender}}</center></td>
       <td><center>{{$post->dob}}</center></td>
 			<td><center>{{$post->address}}</center></td>
-      <td><center>{{$post->id_official}}</center></td>
+      <td><center>{{$post->id_officer}}</center></td>
       <td><center>{{$post->id_level}}</center></td>
       <td><center>{{$post->scorepri}}</center></td>
 			<td><center><a href="/prisoner/{{$post->id_prisoner}}/editpage">Click</a></center></td>
