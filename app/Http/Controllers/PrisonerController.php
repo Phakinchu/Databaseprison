@@ -82,7 +82,6 @@ class PrisonerController extends Controller
         $post = Prisoner::findOrFail($id);
 
         return view('posts.prisonerview', [
-            'title' => 'Gender',
             'fname' => $post->fname,
             'lname' => $post->lname,
             'address' => $post->address,
@@ -90,7 +89,7 @@ class PrisonerController extends Controller
             'gender' => $post->gender,
             'officer' => $post->id_officer,
             'level' => $post->id_level,
-            'score' => $post->scorepri,
+            'score' => $post->scorepri
         ]);
     }
 

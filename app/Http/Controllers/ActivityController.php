@@ -71,7 +71,7 @@ class ActivityController extends Controller
         return view('posts.activityview', [
 
             'activity' => $post->id_activity,
-            'duration' => $post->act_duration,
+            'duration' => $post->act_duration
         ]);
     }
 

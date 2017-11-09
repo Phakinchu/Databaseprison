@@ -83,7 +83,7 @@ class VisithistoryController extends Controller
             'contract' => $post->contract_detail,
             'datetime' => $post->Datetime,
             'prisoner' => $post->id_prisoner,
-            'officer' => $post->id_officer,
+            'officer' => $post->id_officer
         ]);
     }
 

@@ -135,3 +135,18 @@ $router->get('/', function () use ($router) {
     $router->get('/casedetail/{id}/editpage','CasedetailController@editpage');
         
     $router->post('/casedetail/{id}/editsave','CasedetailController@editsave');
+
+    //Prisonereducepunishmenthistory Page
+    $router->get('/prisonereducepunishmenthistories', 'PrisonereducepunishmenthistoryController@index');
+    
+    $router->get('/prisonereducepunishmenthistory/{id}', 'PrisonereducepunishmenthistoryController@view');
+    
+    $router->get('/prisonereducepunishmenthistories/insertpage','PrisonereducepunishmenthistoryController@insertpage');
+        
+    $router->post('/prisonereducepunishmenthistories/save','PrisonereducepunishmenthistoryController@save');
+        
+    $router->get('/prisonereducepunishmenthistory/{id}/delete','PrisonereducepunishmenthistoryController@delete');
+        
+    $router->get('/prisonereducepunishmenthistory/{id}/editpage','PrisonereducepunishmenthistoryController@editpage');
+        
+    $router->post('/prisonereducepunishmenthistory/{id}/editsave','PrisonereducepunishmenthistoryController@editsave');

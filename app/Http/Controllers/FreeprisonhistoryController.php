@@ -80,7 +80,7 @@ class FreeprisonhistoryController extends Controller
             'fname' => $post->fname,
             'lname' => $post->lname,
             'typefreedom' => $post->type_of_freedom,
-            'prisoner' => $post->id_prisoner,
+            'prisoner' => $post->id_prisoner
         ]);
     }
 

@@ -79,7 +79,7 @@ class OfficerController extends Controller
             'dob' => $post->dob,
             'position' => $post->position,
             'gender' => $post->gender,
-            'jail' => $post->id_jail,
+            'jail' => $post->id_jail
         ]);
     }
 

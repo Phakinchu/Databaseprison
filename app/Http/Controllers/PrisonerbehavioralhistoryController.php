@@ -79,7 +79,7 @@ class PrisonerbehavioralhistoryController extends Controller
             'guilt' => $post->guilt,
             'start_date' => $post->start_date,
             'end_date' => $post->end_date,
-            'prisoner' => $post->id_prisoner,
+            'prisoner' => $post->id_prisoner
 
         ]);
     }

@@ -77,7 +77,7 @@ class CasedetailController extends Controller
             'section' => $post->case_section,
             'punishment' => $post->punishment,
             'duration' => $post->case_duration,
-            'officer' => $post->id_officer,
+            'officer' => $post->id_officer
         ]);
     }
 
