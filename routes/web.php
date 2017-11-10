@@ -150,3 +150,18 @@ $router->get('/', function () use ($router) {
     $router->get('/prisonereducepunishmenthistory/{id}/editpage','PrisonereducepunishmenthistoryController@editpage');
         
     $router->post('/prisonereducepunishmenthistory/{id}/editsave','PrisonereducepunishmenthistoryController@editsave');
+
+    //Level Page level
+    $router->get('/levels', 'LevelController@index');
+    
+    $router->get('/level/{id}', 'LevelController@view');
+    
+    $router->get('/levels/insertpage','LevelController@insertpage');
+        
+    $router->post('/levels/save','LevelController@save');
+        
+    $router->get('/level/{id}/delete','LevelController@delete');
+        
+    $router->get('/level/{id}/editpage','LevelController@editpage');
+        
+    $router->post('/level/{id}/editsave','LevelController@editsave');

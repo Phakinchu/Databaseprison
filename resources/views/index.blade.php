@@ -5,6 +5,7 @@
   <h1 class="blog-title"><center>Database Prisoner</center></h1>
   <h3></h3>
   <h3><a href="/prisoners">Prisoners</a></h3>
+  <h3><a href="/levels">Levels</a></h3>
   <h3><a href="/officers">Officers</a></h3>
   <h3><a href="/visithistories">Visithistories</a></h3>
   <h3><a href="/activities">Activities</a></h3>
