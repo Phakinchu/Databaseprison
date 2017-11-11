@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Prisoner;
 use Illuminate\http\Request;
+
 class PrisonerController extends Controller
 {
     public function index()
@@ -81,7 +82,8 @@ class PrisonerController extends Controller
     {
         $post = Prisoner::findOrFail($id);
 
-        return view('posts.prisonerview', [
+        return view('posts.prisonerprofile', [
+            'title' => "Prisoner",
             'fname' => $post->fname,
             'lname' => $post->lname,
             'address' => $post->address,

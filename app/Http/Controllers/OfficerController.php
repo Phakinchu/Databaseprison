@@ -73,8 +73,8 @@ class OfficerController extends Controller
     {
         $post = Officer::findOrFail($id);
 
-        return view('posts.officerview', [
-         
+        return view('posts.officerprofile', [
+            'title' => "Officer",
             'name' => $post->name,
             'dob' => $post->dob,
             'position' => $post->position,

@@ -34,7 +34,7 @@ $router->get('/', function () use ($router) {
     ///// Prisoner Page
     $router->get('/prisoners', 'PrisonerController@index');
 
-    $router->get('/prisone/{id}', 'PrisonerController@view');
+    $router->get('/prisoner/{id}', 'PrisonerController@view');
 
     $router->get('/prisoners/insertpage','PrisonerController@insertpage');
     
