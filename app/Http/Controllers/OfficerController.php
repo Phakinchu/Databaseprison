@@ -82,5 +82,19 @@ class OfficerController extends Controller
             'jail' => $post->id_jail
         ]);
     }
+    
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        $off = officer::findOrFail($id);
+        return view('posts.officerview',[
+            'title' => 'Officer',
+            'name' => $off->name,
+            'dob' => $off->dob,
+            'position' => $off->position,
+            'gender' => $off->gender,
+            'jail' => $off->id_jail
+        ]);
+    }
 
 }

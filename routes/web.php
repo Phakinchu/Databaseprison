@@ -61,6 +61,8 @@ $router->get('/', function () use ($router) {
         
     $router->post('/officer/{id}/editsave','OfficerController@editsave');
 
+    $router->post('/officer/search','OfficerController@search');
+
     //Visithistory Page
     $router->get('/visithistories', 'VisithistoryController@index');
     
