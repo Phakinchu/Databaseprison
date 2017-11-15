@@ -12,21 +12,21 @@ class FreeprisonhistoryTableSeeder extends Seeder
     public function run()
     {
         DB::table('freeprisonhistory')->insert([
-            'id_freeprison' => 'F0010' ,
+            'id_freeprison' => '00010' ,
             'freedate' => '1997-08-25' ,
             'fname' => 'aaaasss' ,
             'lname' => 'sssss' ,
             'type_of_freedom' => 'die' ,
-            'id_prisoner' => 'P0001'
+            'id_prisoner' => '00001'
         ]); 
 
         DB::table('freeprisonhistory')->insert([
-            'id_freeprison' => 'F0011' ,
+            'id_freeprison' => '00011' ,
             'freedate' => '1997-08-15' ,
             'fname' => 'adsssss' ,
             'lname' => 'ssssaas' ,
             'type_of_freedom' => 'eiei' ,
-            'id_prisoner' => 'P0002'
+            'id_prisoner' => '00002'
         ]);
     }
 }

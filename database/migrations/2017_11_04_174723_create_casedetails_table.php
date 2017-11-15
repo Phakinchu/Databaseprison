@@ -14,15 +14,17 @@ class CreateCasedetailsTable extends Migration
     public function up()
     {
         Schema::create('casedetails', function (Blueprint $table) {
-            $table->string('id_case',5);
+            $table->engine = 'InnoDB';
+            $table->integer('id_case')->unsigned();
             $table->string('case_section', 15);
             $table->string('punishment', 15);
             $table->integer('case_duration');
-            $table->string('id_officer',5);
+            $table->integer('id_officer')->unsigned();
             $table->primary('id_case') ;
             $table->timestamps();
-         //   $table->foreign('id_officer')->references('id_officer')->on('officers');
-            
+          
+
+
         });
     }
 

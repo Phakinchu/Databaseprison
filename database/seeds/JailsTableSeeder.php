@@ -12,12 +12,12 @@ class JailsTableSeeder extends Seeder
     public function run()
     {
         DB::table('jails')->insert([
-            'id_jail' => 'J0001'
+            'id_jail' => '00001'
           
         ]);
 
         DB::table('jails')->insert([
-            'id_jail' => 'J0002'
+            'id_jail' => '00002'
           
         ]);
     }

@@ -14,12 +14,12 @@ class CreateCellsTable extends Migration
     public function up()
     {
         Schema::create('cells', function (Blueprint $table) {
-            $table->string('id_cell',5);
-            $table->string('id_area',5);
+            $table->engine = 'InnoDB';
+            $table->integer('id_cell')->unsigned();
+            $table->integer('id_area')->unsigned();
             $table->primary('id_cell') ;
             $table->timestamps();
-          //  $table->foreign('id_area')->references('id_area')->on('areas');
-            
+           
         });
     }
 

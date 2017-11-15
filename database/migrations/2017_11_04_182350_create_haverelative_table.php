@@ -14,13 +14,12 @@ class CreateHaverelativeTable extends Migration
     public function up()
     {
         Schema::create('haverelative', function (Blueprint $table) {
-            $table->string('id_relative',5);
-            $table->string('id_prisoner',5);
-            $table->primary(['id_relative','id_prisoner']) ;
+            $table->engine = 'InnoDB';
+            //$table->engine = 'InnoDB';
+            $table->integer('id_relative')->unsigned();
+            $table->integer('id_prisoner')->unsigned();
+          //  $table->primary(['id_relative','id_prisoner']) ;
             $table->timestamps();
-        //    $table->foreign('id_relative')->references('id_relative')->on('relatives');
-     //       $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
-            
         });
     }
 

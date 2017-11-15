@@ -13,22 +13,23 @@ class CreatePrisonersTable extends Migration
      */
     public function up()
     {
+
         Schema::create('prisoners', function (Blueprint $table) {
-            $table->string('id_prisoner',5);
+            $table->engine = 'InnoDB';
+            $table->integer('id_prisoner')->unsigned();
             $table->string('fname', 15);
             $table->string('lname', 15);
             $table->string('address', 25);
             $table->date('dob');
             $table->char('gender', 1);
-            $table->string('id_officer',5);
-            $table->string('id_level',5);
             $table->integer('scorepri');
+            $table->integer('id_officer')->unsigned();
+            $table->integer('id_level')->unsigned();
             $table->primary('id_prisoner') ;
             $table->timestamps();
-         //   $table->foreign('id_officer')->references('id_officer')->on('officers');
-         //   $table->foreign('id_level')->references('id_level')->on('officers');
-            
+          
         });
+        
     }
 
     /**

@@ -12,13 +12,13 @@ class ManagecaseTableSeeder extends Seeder
     public function run()
     {
         DB::table('managecase')->insert([
-            'id_officer' => 'O0005' ,
-            'id_case' => 'C0001'
+            'id_officer' => '00005' ,
+            'id_case' => '00001'
         ]);
 
         DB::table('managecase')->insert([
-            'id_officer' => 'O0006' ,
-            'id_case' => 'C0002'
+            'id_officer' => '00006' ,
+            'id_case' => '00002'
         ]);
 
     }

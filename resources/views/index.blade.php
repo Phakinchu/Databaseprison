@@ -13,4 +13,5 @@
   <h3><a href="/prisonerbehavioralhistories">Prisonerbehavioralhistories</a></h3>
   <h3><a href="/prisonereducepunishmenthistories">Prisonereducepunishmenthistories</a></h3>
   <h3><a href="/casedetails">Casedetails</a></h3>
+  <h3><a href="/areas">Areas</a></h3>
 @endsection

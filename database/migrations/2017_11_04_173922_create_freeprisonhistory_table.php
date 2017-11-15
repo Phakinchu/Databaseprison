@@ -14,16 +14,17 @@ class CreateFreeprisonhistoryTable extends Migration
     public function up()
     {
         Schema::create('freeprisonhistory', function (Blueprint $table) {
-            $table->string('id_freeprison',5);
+            $table->engine = 'InnoDB';
+            $table->integer('id_freeprison')->unsigned();
             $table->date('freedate');
             $table->string('fname', 15);
             $table->string('lname', 15);
             $table->string('type_of_freedom', 20);
-            $table->string('id_prisoner',5);
+            $table->integer('id_prisoner')->unsigned();
             $table->primary('id_freeprison') ;
             $table->timestamps();
-         //   $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
-            
+         
+    
         });
     }
 

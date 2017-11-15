@@ -14,17 +14,18 @@ class CreatePrisonereducepunishmenthistoryTable extends Migration
     public function up()
     {
         Schema::create('prisonereducepunishmenthistory', function (Blueprint $table) {
-            $table->string('id_reducehis',5);
+            $table->engine = 'InnoDB';
+            $table->integer('id_reducehis')->unsigned();
             $table->string('cause_reduce', 20);
             $table->integer('time_reducted');
             $table->date('start_datereduce');
-            $table->string('id_prisoner',5);
+            $table->integer('id_prisoner')->unsigned();
             $table->primary('id_reducehis') ;
             $table->timestamps();
-    //        $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
             
+  
         });
-    }
+    }   
 
     /**
      * Reverse the migrations.

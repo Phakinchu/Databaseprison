@@ -14,8 +14,9 @@ class CreateJailsTable extends Migration
     public function up()
     {
         Schema::create('jails', function (Blueprint $table) {
-            $table->string('id_jail',5);
-            $table->primary('id_jail') ;
+            $table->engine = 'InnoDB';
+            $table->integer('id_jail')->unsigned();
+            $table->primary('id_jail');
             $table->timestamps();
         });
     }

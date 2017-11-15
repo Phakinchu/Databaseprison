@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="blog-header">
-  <h1 class="blog-title"> "Search By CODE"</h1>
-  <p class="lead blog-description"> "Find Officer From CODE" </p>
+  <h1 class="blog-title"> "Search By {{$id}}"</h1>
+  <p class="lead blog-description"> "Find Officer From ID" </p>
 
   
       <table border=2><tr> 

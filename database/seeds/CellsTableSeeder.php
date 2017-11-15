@@ -12,13 +12,13 @@ class CellsTableSeeder extends Seeder
     public function run()
     {
         DB::table('cells')->insert([
-            'id_cell' => 'C0001' ,
-            'id_area' => 'A0001'
+            'id_cell' => '00001' ,
+            'id_area' => '00001'
         ]);
 
         DB::table('cells')->insert([
-            'id_cell' => 'C0002' ,
-            'id_area' => 'A0002'
+            'id_cell' => '00002' ,
+            'id_area' => '00002'
         ]);
     }
 }

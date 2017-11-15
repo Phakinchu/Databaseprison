@@ -12,57 +12,57 @@ class OfficersTableSeeder extends Seeder
     public function run()
     {
         DB::table('officers')->insert([
-            'id_officer' => 'O0001'  ,
+            'id_officer' => '00001'  ,
             'name' => 'Yuth' ,
             'dob' => '1997-08-05' ,
             'position' => 'pro' ,
             'gender' => 'M' ,
-            'id_jail' => 'J0001'
+            'id_jail' => '00001'
         ]);
 
         DB::table('officers')->insert([
-            'id_officer' => 'O0002' ,
+            'id_officer' => '00002' ,
             'name' => 'Yuth2' ,
             'dob' => '1997-08-04' ,
             'position' => 'pro2' ,
             'gender' => 'M' ,
-            'id_jail' => 'J0001'
+            'id_jail' => '00001'
         ]); 
 
         DB::table('officers')->insert([
-            'id_officer' => 'O0003' ,
+            'id_officer' => '00003' ,
             'name' => 'g' ,
             'dob' => '1997-08-04' ,
             'position' => 'pro2' ,
             'gender' => 'M' ,
-            'id_jail' => 'J0001'
+            'id_jail' => '00001'
         ]); 
 
         DB::table('officers')->insert([
-            'id_officer' => 'O0004' ,
+            'id_officer' => '00004' ,
             'name' => 'g' ,
             'dob' => '1997-08-04' ,
             'position' => 'pro2' ,
             'gender' => 'M' ,
-            'id_jail' => 'J0001'
+            'id_jail' => '00001'
         ]); 
 
         DB::table('officers')->insert([
-            'id_officer' => 'O0005' ,
+            'id_officer' => '00005' ,
             'name' => 'gaa' ,
             'dob' => '1997-08-04' ,
             'position' => 'prjj' ,
             'gender' => 'M' ,
-            'id_jail' => 'J0002'
+            'id_jail' => '00002'
         ]); 
 
         DB::table('officers')->insert([
-            'id_officer' => 'O0006' ,
+            'id_officer' => '00006' ,
             'name' => 'aag' ,
             'dob' => '1997-08-04' ,
             'position' => 'prjj' ,
             'gender' => 'M' ,
-            'id_jail' => 'J0002' 
+            'id_jail' => '00002' 
         ]); 
     }
 }

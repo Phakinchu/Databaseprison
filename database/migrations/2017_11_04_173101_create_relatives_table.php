@@ -14,14 +14,15 @@ class CreateRelativesTable extends Migration
     public function up()
     {
         Schema::create('relatives', function (Blueprint $table) {
-            $table->string('id_relative',5);
+            $table->engine = 'InnoDB';
+            $table->integer('id_relative')->unsigned();
             $table->string('name', 15);
             $table->string('contractdetail', 35);
-            $table->string('id_prisoner',5);
+            $table->integer('id_prisoner')->unsigned();
             $table->primary('id_relative') ;
             $table->timestamps();
-        //    $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
             
+
         });
     }
 

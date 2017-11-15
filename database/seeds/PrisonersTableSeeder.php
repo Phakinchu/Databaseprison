@@ -12,27 +12,27 @@ class PrisonersTableSeeder extends Seeder
     public function run()
     {
         DB::table('prisoners')->insert([
-            'id_prisoner' => 'P0001' ,
+            'id_prisoner' => '00001' ,
             'fname' => 'Yuthaponr',
             'lname' => 'Somchit' ,
             'address' => 'asd' ,
             'dob' => '1997-08-25' ,
             'gender' => 'M' ,
-            'id_officer' => 'O0001' ,
-            'id_level' => 'L0001'  ,
+            'id_officer' => '00001' ,
+            'id_level' => '00001'  ,
             'scorepri' => 20 
 
         ]);
 
         DB::table('prisoners')->insert([
-            'id_prisoner' => 'P0002' ,
+            'id_prisoner' => '00002' ,
             'fname' => 'aaa' ,
             'lname' => 'bbb' ,
             'address' => 'asddd' ,
             'dob' => '1997-08-25' ,
             'gender' => 'M' ,
-            'id_officer' => 'O0002' ,
-            'id_level' => 'L0002'  ,
+            'id_officer' => '00002' ,
+            'id_level' => '00002'  ,
             'scorepri' => 25 
 
         ]);

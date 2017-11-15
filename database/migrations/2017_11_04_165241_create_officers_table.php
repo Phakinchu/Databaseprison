@@ -14,16 +14,16 @@ class CreateOfficersTable extends Migration
     public function up()
     {
         Schema::create('officers', function (Blueprint $table) {
-            $table->string('id_officer',5);
+            $table->engine = 'InnoDB';
+            $table->integer('id_officer')->unsigned();
             $table->string('name', 15);
             $table->date('dob');
             $table->string('position', 15);
             $table->char('gender', 1);
-            $table->string('id_jail',5);
-            $table->primary('id_officer',5) ;
-            $table->timestamps();
-       //     $table->foreign('id_jail')->references('id_jail')->on('jails');
-            
+            $table->integer('id_jail')->unsigned();
+            $table->primary('id_officer') ;
+            $table->timestamps();    
+          
         });
     }
 

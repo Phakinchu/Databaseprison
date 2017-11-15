@@ -14,13 +14,12 @@ class CreateEventactivitiesTable extends Migration
     public function up()
     {
         Schema::create('eventactivities', function (Blueprint $table) {
-            $table->string('id_activity',5);
-            $table->string('id_area',5);
-            $table->primary(['id_activity','id_area']) ;
+            $table->engine = 'InnoDB';
+           // $table->engine = 'InnoDB';
+            $table->integer('id_activity')->unsigned();
+            $table->integer('id_area');
+           // $table->primary(['id_activity','id_area']) ;
             $table->timestamps();
-       //     $table->foreign('id_activity')->references('id_activity')->on('activities');
-         //   $table->foreign('id_area')->references('id_area')->on('areas');
-            
         });
     }
 

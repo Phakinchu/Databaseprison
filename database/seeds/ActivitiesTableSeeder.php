@@ -12,13 +12,13 @@ class ActivitiesTableSeeder extends Seeder
     public function run()
     {
         DB::table('activities')->insert([
-            'id_activity' => 'A0001' ,
+            'id_activity' => '0001' ,
             'activity' => 'clean' ,
             'act_duration' => 1
         ]);
 
         DB::table('activities')->insert([
-            'id_activity' => 'A0002' ,
+            'id_activity' => '0002' ,
             'activity' => 'clean' ,
             'act_duration' => 2
         ]);

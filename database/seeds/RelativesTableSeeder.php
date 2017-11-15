@@ -12,17 +12,17 @@ class RelativesTableSeeder extends Seeder
     public function run()
     {
         DB::table('relatives')->insert([
-            'id_relative' => 'R0001' ,
+            'id_relative' => '00001' ,
             'name' => 'inwark' ,
             'contractdetail' => 'greafafv' ,
-            'id_prisoner' => 'P0001'
+            'id_prisoner' => '00001'
         ]);
 
         DB::table('relatives')->insert([
-            'id_relative' => 'R0002' ,
+            'id_relative' => '00002' ,
             'name' => 'inwrk' ,
             'contractdetail' => 'greafafav' ,
-            'id_prisoner' => 'P0002'
+            'id_prisoner' => '00002'
         ]); 
     }
 }

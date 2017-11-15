@@ -10,7 +10,7 @@ class OfficerController extends Controller
     public function index()
     {
         $posts = Officer::all();
-
+        
         return view('posts.officerindex', [
           'title' => 'Officer',
           'posts' => $posts
@@ -89,6 +89,7 @@ class OfficerController extends Controller
         $off = officer::findOrFail($id);
         return view('posts.officerview',[
             'title' => 'Officer',
+            'id' => $off->id_officer,
             'name' => $off->name,
             'dob' => $off->dob,
             'position' => $off->position,
