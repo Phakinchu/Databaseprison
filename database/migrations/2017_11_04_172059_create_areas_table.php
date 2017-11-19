@@ -16,8 +16,6 @@ class CreateAreasTable extends Migration
         Schema::create('areas', function (Blueprint $table) {
             $table->integer('id_area')->unsigned();
             $table->integer('level_area');
-            $table->integer('numbers_of_prisoner');
-            $table->integer('numbers_of_officer');
             $table->integer('id_jail')->unsigned();
             $table->primary('id_area')->unsigned();
             $table->timestamps();

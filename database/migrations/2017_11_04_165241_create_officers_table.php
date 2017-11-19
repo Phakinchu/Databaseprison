@@ -20,7 +20,7 @@ class CreateOfficersTable extends Migration
             $table->date('dob');
             $table->string('position', 15);
             $table->char('gender', 1);
-            $table->integer('id_jail')->unsigned();
+            $table->integer('id_area')->unsigned();
             $table->primary('id_officer') ;
             $table->timestamps();    
           

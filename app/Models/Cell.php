@@ -8,16 +8,20 @@ class Cell extends Model
 {
     protected $primaryKey = 'id_cell';
     public $incrementing = false;
+    public $table = "cells";
     public function areas()
     {
-        return $this->belongsTo('App\Models\Area');
+        return $this->belongsTo('App\Models\Area','id_area');
     }
 
     public function prisoners()
     {
-        return $this->belongsTo('App\Models\Prisoner');
+        return $this->belongsTo('App\Models\Prisoner','id_prisoner');
     }
 
-
-
+    public function countprisoner()
+    {
+        return $this->prisoners->count() ;
+    }
+    
 }

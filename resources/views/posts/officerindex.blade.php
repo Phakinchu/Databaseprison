@@ -13,7 +13,7 @@
   	<td><center>gender</center></td>
   	<td><center>dob</center></td>
     <td><center>position</center></td>
-  	<td><center>id_jail</center></td>
+  	<td><center>id_area</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>
@@ -23,7 +23,7 @@
 			<td><center>{{$post->gender}}</center></td>
 			<td><center>{{$post->dob}}</center></td>
       <td><center>{{$post->position}}</center></td>
-			<td><center>{{$post->id_jail}}</center></td>
+			<td><center>{{$post->id_area}}</center></td>
 			<td><center><a href="/officer/{{$post->id_officer}}/editpage">Click</a></center></td>
 			<td><center><a href="/officer/{{$post->id_officer}}/delete">Click</a></center></td>
 			</tr>

@@ -168,17 +168,8 @@ $router->get('/', function () use ($router) {
         
     $router->post('/level/{id}/editsave','LevelController@editsave');
 
-    //area  Page 
+    //Cell  Page 
+    $router->get('/cells', 'CellController@index');
+
+    //Area  Page 
     $router->get('/areas', 'AreaController@index');
-    
-    $router->get('/areas/{id}', 'LevelController@view');
-    
-    $router->get('/areas/insertpage','LevelController@insertpage');
-        
-    $router->post('/areas/save','LevelController@save');
-        
-    $router->get('/areas/{id}/delete','LevelController@delete');
-        
-    $router->get('/areas/{id}/editpage','LevelController@editpage');
-        
-    $router->post('/areas/{id}/editsave','LevelController@editsave');

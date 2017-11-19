@@ -1,0 +1,24 @@
+ทำ 5x3     -> 101 x 11
+     lw  0   4   mcand          //load reg1 with 5
+     lw  0   2   multiplier         //load reg2 with 3
+     lw  0   3   one           //use for checkbit
+     lw  0   1   zero          //sum
+     lw  0   5   zero          //zero for check
+     lw  0   6   one           //check 16bits
+     lw  0   7   sixt       // ค่า 16
+     lw  0   8   one           //int =1
+loop  nand   5   3   2          //check bit แต่ละตัว
+      nand   5   5   5          //ต่อ check bit แต่ละตัวว่าเป็น 0หรือ1
+      beq    5   0   nextb      //ถ้าบิทนั้นเป็น 0 ไปบิทถัดไป
+      add    1   1   4           //เพิ่มค่าในคำตอบ
+nextb beq    6   7   done
+      add    6   6   8           
+      add    4   4   4
+      add    3   3   3  
+      beq    0   0   loop   
+done halt
+mcand    .fill  5
+multiplier   .fill  3 
+one     .fill  1
+zero    .fill  0
+sixt    .fill  16

@@ -20,6 +20,7 @@ class CreatePrisonerbehavioralhistoryTable extends Migration
             $table->date('start_date');
             $table->date('end_date');
             $table->integer('id_prisoner')->unsigned();
+            $table->integer('id_officer')->unsigned();
             $table->primary('id_behav') ;
             $table->timestamps(); 
            

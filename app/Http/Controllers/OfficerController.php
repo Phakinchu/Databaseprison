@@ -34,7 +34,7 @@ class OfficerController extends Controller
         $officer->dob=$request->input('dob');
         $officer->position=$request->input('position');
         $officer->gender=$request->input('gender');
-        $officer->id_jail=$request->input('jail');
+        $officer->id_area=$request->input('area');
         $officer->save();
         
         echo "Add Success!!";
@@ -60,7 +60,7 @@ class OfficerController extends Controller
         $officer->dob=$request->input('dob');
         $officer->position=$request->input('position');
         $officer->gender=$request->input('gender');
-        $officer->id_jail=$request->input('jail');
+        $officer->id_area=$request->input('area');
         $officer->save();
         echo "Edit Success!!";
         echo"<form action=\"/officers\">
@@ -79,7 +79,7 @@ class OfficerController extends Controller
             'dob' => $post->dob,
             'position' => $post->position,
             'gender' => $post->gender,
-            'jail' => $post->id_jail
+            'area' => $post->id_area
         ]);
     }
     
@@ -94,7 +94,7 @@ class OfficerController extends Controller
             'dob' => $off->dob,
             'position' => $off->position,
             'gender' => $off->gender,
-            'jail' => $off->id_jail
+            'area' => $off->id_area
         ]);
     }
 

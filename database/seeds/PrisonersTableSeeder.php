@@ -36,5 +36,32 @@ class PrisonersTableSeeder extends Seeder
             'scorepri' => 25 
 
         ]);
+
+        DB::table('prisoners')->insert([
+            'id_prisoner' => '00003' ,
+            'fname' => 'aghgfdaa' ,
+            'lname' => 'bdfgfbb' ,
+            'address' => 'kuy' ,
+            'dob' => '1999-09-25' ,
+            'gender' => 'M' ,
+            'id_officer' => '00002' ,
+            'id_level' => '00002'  ,
+            'scorepri' => 25 
+
+        ]);
+
+        DB::table('prisoners')->insert([
+            'id_prisoner' => '00004' ,
+            'fname' => 'aghgfdaa' ,
+            'lname' => 'bdfgfbb' ,
+            'address' => 'kuy' ,
+            'dob' => '1999-09-25' ,
+            'gender' => 'M' ,
+            'id_officer' => '00002' ,
+            'id_level' => '00002'  ,
+            'scorepri' => 25 
+
+        ]);
+
     }
 }

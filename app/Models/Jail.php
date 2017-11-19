@@ -13,10 +13,5 @@ class Jail extends Model
         return $this->hasMany('App\Models\Area');
     }
 
-    public function officers()
-    {
-        return $this->hasMany('App\Models\Officer');
-    }
-
 
 }

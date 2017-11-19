@@ -17,6 +17,7 @@ class CreateCellsTable extends Migration
             $table->engine = 'InnoDB';
             $table->integer('id_cell')->unsigned();
             $table->integer('id_area')->unsigned();
+            $table->integer('id_prisoner')->unsigned();
             $table->primary('id_cell') ;
             $table->timestamps();
            

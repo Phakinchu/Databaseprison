@@ -9,6 +9,7 @@ class Prisoner extends Model
     
     public $incrementing = false;
     protected $primaryKey = 'id_prisoner';
+    public $table = "prisoners";
     
     public function officers()
     {

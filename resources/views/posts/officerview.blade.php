@@ -11,14 +11,14 @@
       <td><center>gender</center></td>
       <td><center>dob</center></td>
       <td><center>position</center></td>
-      <td><center>id_jail</center></td>
+      <td><center>id_area</center></td>
       </tr>
       <tr>
         <td><center>{{$name}}</center></td>
         <td><center>{{$gender}}</center></td>
         <td><center>{{$dob}}</center></td>
         <td><center>{{$position}}</center></td>
-        <td><center>{{$jail}}</center></td>
+        <td><center>{{$area}}</center></td>
         </tr>
       </table><br> 
   

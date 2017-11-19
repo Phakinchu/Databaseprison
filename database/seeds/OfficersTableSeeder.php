@@ -17,7 +17,7 @@ class OfficersTableSeeder extends Seeder
             'dob' => '1997-08-05' ,
             'position' => 'pro' ,
             'gender' => 'M' ,
-            'id_jail' => '00001'
+            'id_area' => '00001'
         ]);
 
         DB::table('officers')->insert([
@@ -26,7 +26,7 @@ class OfficersTableSeeder extends Seeder
             'dob' => '1997-08-04' ,
             'position' => 'pro2' ,
             'gender' => 'M' ,
-            'id_jail' => '00001'
+            'id_area' => '00001'
         ]); 
 
         DB::table('officers')->insert([
@@ -35,7 +35,7 @@ class OfficersTableSeeder extends Seeder
             'dob' => '1997-08-04' ,
             'position' => 'pro2' ,
             'gender' => 'M' ,
-            'id_jail' => '00001'
+            'id_area' => '00001'
         ]); 
 
         DB::table('officers')->insert([
@@ -44,7 +44,7 @@ class OfficersTableSeeder extends Seeder
             'dob' => '1997-08-04' ,
             'position' => 'pro2' ,
             'gender' => 'M' ,
-            'id_jail' => '00001'
+            'id_area' => '00001'
         ]); 
 
         DB::table('officers')->insert([
@@ -53,7 +53,7 @@ class OfficersTableSeeder extends Seeder
             'dob' => '1997-08-04' ,
             'position' => 'prjj' ,
             'gender' => 'M' ,
-            'id_jail' => '00002'
+            'id_area' => '00002'
         ]); 
 
         DB::table('officers')->insert([
@@ -62,7 +62,7 @@ class OfficersTableSeeder extends Seeder
             'dob' => '1997-08-04' ,
             'position' => 'prjj' ,
             'gender' => 'M' ,
-            'id_jail' => '00002' 
+            'id_area' => '00002' 
         ]); 
     }
 }

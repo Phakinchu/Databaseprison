@@ -28,8 +28,8 @@
 			<td><input type="text" name="gender"></td>
 		</tr>
 		<tr>
-			<td>jail : </td>
-			<td><input type="text" name="jail"></td>
+			<td>area : </td>
+			<td><input type="text" name="area"></td>
 		</tr>
 		<tr>
 			<td><input type="submit" name="submit" value="Add"></td>

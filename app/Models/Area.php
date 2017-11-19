@@ -20,9 +20,13 @@ class Area extends Model
 
     public function cells()
     {
-        return $this->hasMany('App\Models\Cell');
+        return $this->hasMany('App\Models\Cell','id_area');
     }
 
+    public function officers()
+    {
+        return $this->hasMany('App\Models\Officer','id_area');
+    }
 
 
 }

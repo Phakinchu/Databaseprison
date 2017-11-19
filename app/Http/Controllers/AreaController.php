@@ -6,21 +6,17 @@ use App\Models\Post;
 use App\Models\Area;
 use App\Models\Prisoner;
 use App\Models\Officer;
+use App\Models\Cell;
 use Illuminate\http\Request;
 use Illuminate\Database\Eloquent\Collection ;
 class AreaController extends Controller
 {
-    public function index()
-    {
-        $posts = Area::all();
-        $officers = Officer::where('id_area', '=', $posts->id_area) ;
-        $prisoners = Prisoner::where('id_area', '=', $posts->id_area) ;
-
+    public function index(){
+    
+        $areas = Area::all() ;
         return view('posts.areaindex', [
             'title' => 'area',
-            'prisoner' => $prisoners->id_prisoner,
-            'officer' => $officers->id_officer,
-            'posts' => $posts
+            'areas' => $areas
           ]);
 
     }

@@ -14,9 +14,9 @@ class Officer extends Model
         return $this->hasMany('App\Models\Prisoner');
     }
 
-    public function jails()
+    public function areas()
     {
-        return $this->belongsTo('App\Models\Jail');
+        return $this->belongsTo('App\Models\Area');
     }
 
     public function casedetails()

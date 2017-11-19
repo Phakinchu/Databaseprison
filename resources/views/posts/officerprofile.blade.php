@@ -40,8 +40,8 @@
                         <td>{{$position}}</td>
                       </tr>
                       <tr>
-                        <td>Jail</td>
-                        <td>{{$jail}}</td>
+                        <td>Area</td>
+                        <td>{{$area}}</td>
                       </tr>
                     </tbody>
                   </table>

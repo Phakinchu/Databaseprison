@@ -4,22 +4,27 @@
 <div class="blog-header">
   <h1 class="blog-title"> "Area"</h1>
   <p class="lead blog-description"> "Area page" </p>
+  @foreach ($areas as $area)
+      <?php $countprisonum = 0; ?>  
+      <?php $countofficernum = 0; ?> 
+      <h3><center>area {{$area->id_area}} </center></h3>
+      <h3>ID cell :
+      @foreach ($area->cells as $cell)
+        <font size="5">{{$cell->id_cell}} </font>
+        <?php $countprisonum++ ; ?>  
+      @endforeach
+      </h3>
+      @foreach ($area->officers as $officer)
+      <?php $countofficernum++ ; ?>  
+      @endforeach
 
-  @foreach ($posts as $post)
-    <h3>{{$id_area}}</h3>
-      <table border=2><tr> 
-      <td><center></center></td>
-      <td><center>officer</center></td>
-      <td><center>prisoner</center></td>
-      </tr>
-      <tr>
-        <td><center>{{$prisoner}}</center></td>
-        <td><center>{{$Officer}}</center></td>
-        </tr>
-      </table><br> 
-
+      <h3>number of prisoner in this area : {{$countprisonum}}</h3>
+      <h3>number of officer in this area : {{$countofficernum}}</h3>
+      <br>
   @endforeach
-      
+
+  <?php $countprisonum = $cell->countprisoner() ?>
+
 
 </div>
 @endsection
