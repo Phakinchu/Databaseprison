@@ -10,9 +10,11 @@ class OfficerController extends Controller
     public function index()
     {
         $posts = Officer::all();
+        $count = $posts->count();
         
         return view('posts.officerindex', [
           'title' => 'Officer',
+          'count' => $count ,
           'posts' => $posts
         ]);
     }

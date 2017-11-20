@@ -11,9 +11,11 @@ class PrisonerController extends Controller
     public function index()
     {
         $posts = Prisoner::all();
+        $count = $posts->count();
 
         return view('posts.prisonerindex', [
           'title' => 'Prisoner',
+          'count' => $count,
           'posts' => $posts
     
         ]);
@@ -95,4 +97,21 @@ class PrisonerController extends Controller
         ]);
     }
 
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        $prison = Prisoner::findOrFail($id);
+        return view('posts.prisonerview',[
+            'title' => 'Prisoner', 
+            'id' => $prison->id_prisoner,
+            'fname' => $prison->fname,
+            'lname' => $prison->lname,
+            'dob' => $prison->dob ,
+            'address' => $prison->address,
+            'scorepri' => $prison->scorepri,
+            'idoff' => $prison->id_officer,
+            'gender' => $prison->gender,
+            'idlevel' => $prison->id_level
+        ]);
+    }
 }

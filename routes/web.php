@@ -46,6 +46,8 @@ $router->get('/', function () use ($router) {
     
     $router->post('/prisoner/{id}/editsave','PrisonerController@editsave');
 
+    $router->post('/prisoner/search','PrisonerController@search');
+
     ///// Officer Page
     $router->get('/officers', 'OfficerController@index');
     

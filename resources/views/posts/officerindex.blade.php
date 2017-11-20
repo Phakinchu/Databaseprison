@@ -30,7 +30,7 @@
     </table><br> 
 
   @endforeach
-
+	<h3>Total Officers : {{$count}} person</h3>
 	<form action="/officers/insertpage"><input type="submit" value="Add Officer"></form>
 	<form action="/officer/search" method="post">SearchID<input type="text" name="id" value=""><input type="submit"  value="go"></form>
 
