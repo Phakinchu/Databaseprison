@@ -36,7 +36,6 @@ class CreateForeignKeys extends Migration
 
         Schema::table('relatives', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');  
         });
 
         Schema::table('freeprisonhistory', function (Blueprint $table) {
@@ -72,28 +71,22 @@ class CreateForeignKeys extends Migration
             $table->foreign('id_officer')->references('id_officer')->on('officers'); 
         });
 
-        // Schema::table('eventactivities', function (Blueprint $table) {
-        //     $table->engine = 'InnoDB';
-        //     $table->foreign('id_activity')->references('id_activity')->on('activities');
-        //     $table->foreign('id_area')->references('id_area')->on('areas');         
-        // });
-
-        // Schema::table('haverelative', function (Blueprint $table) {
-        //     $table->engine = 'InnoDB';
-        //     $table->foreign('id_relative')->references('id_relative')->on('relatives');
-        //     $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');          
-        // });
-
-        // Schema::table('crime', function (Blueprint $table) {
-        //     $table->engine = 'InnoDB';
-        //     $table->foreign('id_case')->references('id_case')->on('casedetails');
-        //     $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');        
-        // });
+        Schema::table('haverelative', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->foreign('id_relative')->references('id_relative')->on('relatives');
+            $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');          
+        });
 
         Schema::table('managecase', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->foreign('id_case')->references('id_case')->on('casedetails');
             $table->foreign('id_officer')->references('id_officer')->on('officers');
+        });
+
+        Schema::table('eventactivities', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->foreign('id_activity')->references('id_activity')->on('activities');
+            $table->foreign('id_area')->references('id_area')->on('areas');         
         });
 
         // Schema::table('plusscore', function (Blueprint $table) {

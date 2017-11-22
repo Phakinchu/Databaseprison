@@ -5,7 +5,7 @@
   <h1 class="blog-title">Visithistory List</h1>
 	<p class="lead blog-description">All visithistories</p>
   @foreach ($posts as $post)
-  <table border=2><tr> 
+  <table border=2><tr>
   	<td><center>Visit</center></td>
   	<td><center>relative_name</center></td>
   	<td><center>item</center></td>
@@ -21,9 +21,9 @@
 		<td><center>{{$post->name}}</center></td>
 		<td><center>{{$post->item}}</center></td>
 		<td><center>{{$post->contract_detail}}</center></td>
-        <td><center>{{$post->Datetime}}</center></td>
+    <td><center>{{$post->Datetime}}</center></td>
 		<td><center>{{$post->id_prisoner}}</center></td>
-        <td><center>{{$post->id_officer}}</center></td>
+    <td><center>{{$post->id_officer}}</center></td>
 		<td><center><a href="/visithistory/{{$post->id_visit}}/editpage">Click</a></center></td>
 		<td><center><a href="/visithistory/{{$post->id_visit}}/delete">Click</a></center></td>
 	</tr>

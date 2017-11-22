@@ -10,12 +10,12 @@ class Activity extends Model
     public $incrementing = false;
     public function areas()
     {
-        return $this->belongsToMany('App\Models\Area','eventactivities');
+        return $this->belongsToMany('App\Models\Area','eventactivities','id_activity','id_area');
     }
 
     public function prisoners()
     {
-        return $this->belongsToMany('App\Models\Prisoner','plusscore');
+        return $this->belongsToMany('App\Models\Prisoner','plusscore','id_activity','id_prisoner');
     }
 
 

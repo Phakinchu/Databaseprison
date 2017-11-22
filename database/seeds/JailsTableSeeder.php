@@ -16,9 +16,5 @@ class JailsTableSeeder extends Seeder
           
         ]);
 
-        DB::table('jails')->insert([
-            'id_jail' => '00002'
-          
-        ]);
     }
 }

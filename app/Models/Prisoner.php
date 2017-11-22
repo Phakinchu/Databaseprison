@@ -23,7 +23,7 @@ class Prisoner extends Model
 
     public function activities()
     {
-        return $this->belongsToMany('App\Models\Activity','plusscore');
+        return $this->belongsToMany('App\Models\Activity','plusscore','id_prisoner','id_activity');
     }
 
     public function cells()
@@ -33,7 +33,7 @@ class Prisoner extends Model
 
     public function relatives()
     {
-        return $this->belongsToMany('App\Models\Relative','haverelative');
+        return $this->belongsToMany('App\Models\Relative','haverelative','id_prisoner','id_relative');
     }
 
     public function freeprisonhistories()

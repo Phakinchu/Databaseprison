@@ -15,10 +15,8 @@ class CreateEventactivitiesTable extends Migration
     {
         Schema::create('eventactivities', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-           // $table->engine = 'InnoDB';
             $table->integer('id_activity')->unsigned();
-            $table->integer('id_area');
-           // $table->primary(['id_activity','id_area']) ;
+            $table->integer('id_area');->unsigned();
             $table->timestamps();
         });
     }

@@ -18,8 +18,7 @@ class PrisonersTableSeeder extends Seeder
             'address' => 'asd' ,
             'dob' => '1997-08-25' ,
             'gender' => 'M' ,
-            'id_officer' => '00001' ,
-            'id_level' => '00001'  ,
+            'id_level' => '5'  ,
             'scorepri' => 20 
 
         ]);
@@ -31,8 +30,7 @@ class PrisonersTableSeeder extends Seeder
             'address' => 'asddd' ,
             'dob' => '1997-08-25' ,
             'gender' => 'M' ,
-            'id_officer' => '00002' ,
-            'id_level' => '00002'  ,
+            'id_level' => '5'  ,
             'scorepri' => 25 
 
         ]);
@@ -44,8 +42,7 @@ class PrisonersTableSeeder extends Seeder
             'address' => 'kuy' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_officer' => '00002' ,
-            'id_level' => '00002'  ,
+            'id_level' => '5'  ,
             'scorepri' => 25 
 
         ]);
@@ -57,8 +54,7 @@ class PrisonersTableSeeder extends Seeder
             'address' => 'kuy' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_officer' => '00002' ,
-            'id_level' => '00002'  ,
+            'id_level' => '5'  ,
             'scorepri' => 25 
 
         ]);

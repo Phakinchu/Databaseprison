@@ -18,11 +18,8 @@ class CreateRelativesTable extends Migration
             $table->integer('id_relative')->unsigned();
             $table->string('name', 15);
             $table->string('contractdetail', 35);
-            $table->integer('id_prisoner')->unsigned();
             $table->primary('id_relative') ;
             $table->timestamps();
-            
-
         });
     }
 

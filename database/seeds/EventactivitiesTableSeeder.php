@@ -11,7 +11,7 @@ class EventactivitiesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('eventactivities')->insert([
+        /*DB::table('eventactivities')->insert([
             'id_activity' => '00001' ,
             'id_area' => '00001'
         ]);
@@ -19,6 +19,6 @@ class EventactivitiesTableSeeder extends Seeder
         DB::table('eventactivities')->insert([
             'id_activity' => '00002' ,
             'id_area' => '00002'
-        ]);
+        ]);*/
     }
 }

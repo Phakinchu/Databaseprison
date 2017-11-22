@@ -10,7 +10,7 @@ class Relative extends Model
     public $incrementing = false;
     public function prisoners()
     {
-        return $this->belongsToMany('App\Models\Prisoner','haverelative');
+        return $this->belongsToMany('App\Models\Prisoner','haverelative','id_relative','id_prisoner');
     }
 
 

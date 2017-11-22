@@ -16,7 +16,7 @@ class CasedetailsTableSeeder extends Seeder
             'case_section' => 'one' ,
             'punishment' => 'lock' ,
             'case_duration' => 15 ,
-            'id_officer' => '00001'
+            'id_prisoner' => '00002'
         ]);
 
         DB::table('casedetails')->insert([
@@ -24,7 +24,16 @@ class CasedetailsTableSeeder extends Seeder
             'case_section' => 'o2ne' ,
             'punishment' => 'locked' ,
             'case_duration' => 10 ,
-            'id_officer' => '00003'
+            'id_prisoner' => '00002'
         ]);
+
+        DB::table('casedetails')->insert([
+            'id_case' => '00003' ,
+            'case_section' => 'sdsd' ,
+            'punishment' => 'locked' ,
+            'case_duration' => 5 ,
+            'id_prisoner' => '00001'
+        ]);
+
     }
 }

@@ -10,7 +10,7 @@ class Area extends Model
     public $incrementing = false;
     public function activities()
     {
-        return $this->belongsToMany('App\Models\Activity','eventactivities');
+        return $this->belongsToMany('App\Models\Activity','eventactivities','id_area','id_activity');
     }
 
     public function jails()

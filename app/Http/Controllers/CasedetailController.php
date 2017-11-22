@@ -83,7 +83,7 @@ class CasedetailController extends Controller
 
     public function editsupervisepage($id)
     {
-        return view('officersuperviseditForm')->with('id', $id);
+        return view('casedetailsuperviseditForm')->with('id', $id);
     }
 
     public function editsupervisesaveadd(Request $request, $id)

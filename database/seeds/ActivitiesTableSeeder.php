@@ -11,7 +11,7 @@ class ActivitiesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('activities')->insert([
+        /*DB::table('activities')->insert([
             'id_activity' => '0001' ,
             'activity' => 'clean' ,
             'act_duration' => 1
@@ -21,6 +21,6 @@ class ActivitiesTableSeeder extends Seeder
             'id_activity' => '0002' ,
             'activity' => 'clean' ,
             'act_duration' => 2
-        ]);
+        ]);*/
     }
 }

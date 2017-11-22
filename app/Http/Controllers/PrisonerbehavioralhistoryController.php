@@ -36,6 +36,7 @@ class PrisonerbehavioralhistoryController extends Controller
         $prisonerbehavioralhistory->start_date=$request->input('start_date');
         $prisonerbehavioralhistory->end_date=$request->input('end_date');
         $prisonerbehavioralhistory->id_prisoner=$request->input('prisoner');
+        $prisonerbehavioralhistory->id_officer=$request->input('officer');
         $prisonerbehavioralhistory->save();
         
         echo "Add Success!!";
@@ -62,6 +63,7 @@ class PrisonerbehavioralhistoryController extends Controller
         $prisonerbehavioralhistory->start_date=$request->input('start_date');
         $prisonerbehavioralhistory->end_date=$request->input('end_date');
         $prisonerbehavioralhistory->id_prisoner=$request->input('prisoner');
+        $prisonerbehavioralhistory->id_officer=$request->input('officer');
         $prisonerbehavioralhistory->save();
         echo "Edit Success!!";
         echo"<form action=\"/prisonerbehavioralhistories\">
@@ -79,6 +81,7 @@ class PrisonerbehavioralhistoryController extends Controller
             'guilt' => $post->guilt,
             'start_date' => $post->start_date,
             'end_date' => $post->end_date,
+            'officer' => $post->id_officer,
             'prisoner' => $post->id_prisoner
 
         ]);

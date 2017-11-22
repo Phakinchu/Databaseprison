@@ -15,4 +15,5 @@
   <h3><a href="/casedetails">Casedetails</a></h3>
   <h3><a href="/cells">Cells</a></h3>
   <h3><a href="/areas">Areas</a></h3>
+  <h3><a href="/relatives">Relative</a></h3>
 @endsection

@@ -15,11 +15,11 @@
   	<td><center>Delete</center></td>
     </tr>
     <tr>
-			<td><center>{{$post->id_reducehis}}</center></td>
-			<td><center>{{$post->cause_reduce}}</center></td>
-			<td><center>{{$post->time_reducted}}</center></td>
-			<td><center>{{$post->start_datereduce}}</center></td>
-            <td><center>{{$post->id_prisoner}}</center></td>
+		<td><center>{{$post->id_reducehis}}</center></td>
+		<td><center>{{$post->cause_reduce}}</center></td>
+		<td><center>{{$post->time_reducted}}</center></td>
+		<td><center>{{$post->start_datereduce}}</center></td>
+    <td><center>{{$post->id_prisoner}}</center></td>
 			<td><center><a href="/prisonereducepunishmenthistory/{{$post->id_reducehis}}/editpage">Click</a></center></td>
 			<td><center><a href="/prisonereducepunishmenthistory/{{$post->id_reducehis}}/delete">Click</a></center></td>
 			</tr>

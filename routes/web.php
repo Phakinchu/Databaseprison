@@ -115,6 +115,18 @@ $router->get('/', function () use ($router) {
     $router->get('/activity/{id}/editpage','ActivityController@editpage');
         
     $router->post('/activity/{id}/editsave','ActivityController@editsave');
+
+    $router->get('/activity/{id}/edit_activity_prison_supervisepage','ActivityController@edit_activity_prison_supervisepage');
+    
+    $router->post('/activity/{id}/edit_activity_prison_supervisesaveadd','ActivityController@edit_activity_prison_supervisesaveadd');
+    
+    $router->post('/activity/{id}/edit_activity_prison_supervisesavedelete','ActivityController@edit_activity_prison_supervisesavedelete');
+
+    $router->get('/activity/{id}/edit_activity_area_supervisepage','ActivityController@edit_activity_area_supervisepage');
+    
+    $router->post('/activity/{id}/edit_activity_area_supervisesaveadd','ActivityController@edit_activity_area_supervisesaveadd');
+    
+    $router->post('/activity/{id}/edit_activity_area_supervisesavedelete','ActivityController@edit_activity_area_supervisesavedelete');
     
     //Prisonerbehavioralhistory Page
     $router->get('/prisonerbehavioralhistories', 'PrisonerbehavioralhistoryController@index');
@@ -192,5 +204,26 @@ $router->get('/', function () use ($router) {
 
     $router->post('/areas/save','AreaController@save');
 
-    //Jail page 
+    ///// Relative Page
+    $router->get('/relatives', 'RelativeController@index');
+    
+    $router->get('/relative/{id}', 'RelativeController@view');
+    
+    $router->get('/relatives/insertpage','RelativeController@insertpage');
+        
+    $router->post('/relatives/save','RelativeController@save');
+        
+    $router->get('/relative/{id}/delete','RelativeController@delete');
+        
+    $router->get('/relative/{id}/editpage','RelativeController@editpage');
+        
+    $router->post('/relative/{id}/editsave','RelativeController@editsave');
+    
+    $router->get('/relative/{id}/editsupervisepage','RelativeController@editsupervisepage');
+    
+    $router->post('/relative/{id}/editsupervisesaveadd','RelativeController@editsupervisesaveadd');
+    
+    $router->post('/relative/{id}/editsupervisesavedelete','RelativeController@editsupervisesavedelete');
+    
+    $router->post('/relative/search','RelativeController@search');
     

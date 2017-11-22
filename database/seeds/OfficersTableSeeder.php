@@ -17,7 +17,7 @@ class OfficersTableSeeder extends Seeder
             'dob' => '1997-08-05' ,
             'position' => 'pro' ,
             'gender' => 'M' ,
-            'id_area' => '00001'
+            'id_area' => '1'
         ]);
 
         DB::table('officers')->insert([
@@ -26,43 +26,8 @@ class OfficersTableSeeder extends Seeder
             'dob' => '1997-08-04' ,
             'position' => 'pro2' ,
             'gender' => 'M' ,
-            'id_area' => '00001'
+            'id_area' => '1'
         ]); 
 
-        DB::table('officers')->insert([
-            'id_officer' => '00003' ,
-            'name' => 'g' ,
-            'dob' => '1997-08-04' ,
-            'position' => 'pro2' ,
-            'gender' => 'M' ,
-            'id_area' => '00001'
-        ]); 
-
-        DB::table('officers')->insert([
-            'id_officer' => '00004' ,
-            'name' => 'g' ,
-            'dob' => '1997-08-04' ,
-            'position' => 'pro2' ,
-            'gender' => 'M' ,
-            'id_area' => '00001'
-        ]); 
-
-        DB::table('officers')->insert([
-            'id_officer' => '00005' ,
-            'name' => 'gaa' ,
-            'dob' => '1997-08-04' ,
-            'position' => 'prjj' ,
-            'gender' => 'M' ,
-            'id_area' => '00002'
-        ]); 
-
-        DB::table('officers')->insert([
-            'id_officer' => '00006' ,
-            'name' => 'aag' ,
-            'dob' => '1997-08-04' ,
-            'position' => 'prjj' ,
-            'gender' => 'M' ,
-            'id_area' => '00002' 
-        ]); 
     }
 }

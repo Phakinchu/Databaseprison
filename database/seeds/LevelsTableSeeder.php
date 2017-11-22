@@ -12,17 +12,11 @@ class LevelsTableSeeder extends Seeder
     public function run()
     {
         DB::table('levels')->insert([
-            'id_level' => '00001' ,
-            'score' => 80 ,
-            'lv' => 1
+            'id_level' => '5' ,
+            'score' => 30 ,
+            'lv' => 3
       
         ]);
 
-        DB::table('levels')->insert([
-            'id_level' => '00002' ,
-            'score' => 80 ,
-            'lv' => 2
-      
-        ]);
     }
 }
