@@ -146,6 +146,12 @@ $router->get('/', function () use ($router) {
         
     $router->post('/casedetail/{id}/editsave','CasedetailController@editsave');
 
+    $router->get('/casedetail/{id}/editsupervisepage','CasedetailController@editsupervisepage');
+    
+    $router->post('/casedetail/{id}/editsupervisesaveadd','CasedetailController@editsupervisesaveadd');
+    
+    $router->post('/casedetail/{id}/editsupervisesavedelete','CasedetailController@editsupervisesavedelete');
+
     //Prisonereducepunishmenthistory Page
     $router->get('/prisonereducepunishmenthistories', 'PrisonereducepunishmenthistoryController@index');
     

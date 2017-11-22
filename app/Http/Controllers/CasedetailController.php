@@ -81,4 +81,37 @@ class CasedetailController extends Controller
         ]);
     }
 
+    public function editsupervisepage($id)
+    {
+        return view('officersuperviseditForm')->with('id', $id);
+    }
+
+    public function editsupervisesaveadd(Request $request, $id)
+    {
+        $casedetail = Casedetail::findOrFail($id);
+        if($request->input('id_officer') != 0 && $request->input('id_officer') != NULL ){
+        $casedetail->officers()->attach($request->input('id_officer'));
+        echo "Edit Success!!";
+        echo"<form action=\"/casedetails\">
+        <input type=\"submit\" value=\"Go To Casedetail\">
+        </form>";
+        }
+        else {
+            echo "Edit UnSuccess!!";
+            echo"<form action=\"/casedetails\">
+            <input type=\"submit\" value=\"Go To Casedetail\">
+            </form>";
+        }
+    }
+
+    public function editsupervisesavedelete(Request $request, $id)
+    {
+        $casedetail = Casedetail::findOrFail($id);       
+        $casedetail->officers()->detach($request->input('id_officer'));
+        echo "Edit Success!!";
+        echo"<form action=\"/casedetails\">
+        <input type=\"submit\" value=\"Go To Casedetail\">
+        </form>";
+    }
+
 }

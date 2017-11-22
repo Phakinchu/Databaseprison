@@ -22,7 +22,7 @@ class Officer extends Model
 
     public function casedetails()
     {
-        return $this->belongsToMany('App\Models\Casedetail','managecase');
+        return $this->belongsToMany('App\Models\Casedetail','managecase','id_officer','id_case');
     }
 
     public function prisonerbehavioralhistories()

@@ -15,7 +15,7 @@ class Casedetail extends Model
 
     public function officers()
     {
-        return $this->belongsToMany('App\Models\Officer','managecase');
+        return $this->belongsToMany('App\Models\Officer','managecase','id_case','id_officer');
     }
 
 
