@@ -19,7 +19,7 @@
 			<td>LName : </td>
 			<td><input type="text" name="lname"></td>
 		</tr>
-		<tr>
+		<tr>	
 			<td>gender : </td>
 			<td><input type="text" name="gender"></td>
 		</tr>
@@ -30,10 +30,6 @@
 		<tr>
 			<td>Address : </td>
 			<td><input type="text" name="address"></td>
-		</tr>
-		<tr>
-			<td>officer : </td>
-			<td><input type="text" name="officer"></td>
 		</tr>
 		<tr>
 			<td>level : </td>

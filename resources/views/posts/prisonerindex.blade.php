@@ -13,8 +13,9 @@
     <td><center>dob</center></td>
   	<td><center>gender</center></td>
     <td><center>scorepri</center></td>
-    <td><center>id_officer</center></td>
     <td><center>id_level</center></td>
+    <td><center>ผู้คุมที่ดูแล</center></td>
+    <td><center>Edit supervise</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>
@@ -26,13 +27,15 @@
     <td><center>{{$post->dob}}</center></td>
 		<td><center>{{$post->gender}}</center></td>
     <td><center>{{$post->scorepri}}</center></td>
-    <td><center>{{$post->id_officer}}</center></td>
     <td><center>{{$post->id_level}}</center></td>
+    <td><center>@foreach ($post->officers as $officer)
+    ID :
+    {{$officer->id_officer}}<br>@endforeach</center></td>
+    <td><center><a href="/prisoner/{{$post->id_prisoner}}/editsupervisepage">Click</a></center></td>
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/editpage">Click</a></center></td>
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/delete">Click</a></center></td>
 	</tr>
     </table><br> 
-
   @endforeach
   <h3>Totla prisoner : {{$count}} person</h3>
   <form action="/prisoner/search" method="post">SearchID<input type="text" name="id" value=""><input type="submit"  value="go"></form>

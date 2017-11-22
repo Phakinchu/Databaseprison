@@ -13,7 +13,7 @@ class Prisoner extends Model
     
     public function officers()
     {
-        return $this->belongsTo('App\Models\Officer');
+        return $this->belongsToMany('App\Models\Officer','prisoner_officer','id_prisoner','id_officer');
     }
 
     public function levels()

@@ -12,7 +12,6 @@
       <td><center>dob</center></td>
       <td><center>gender</center></td>
       <td><center>scoreprisoner</center></td>
-      <td><center>id_officer</center></td>
       <td><center>id_level</center></td>
       </tr>
       <tr>
@@ -22,7 +21,6 @@
         <td><center>{{$dob}}</center></td>
         <td><center>{{$gender}}</center></td>
         <td><center>{{$scorepri}}</center></td>
-        <td><center>{{$idoff}}</center></td>
         <td><center>{{$idlevel}}</center></td>
         </tr>
       </table><br> 

@@ -21,28 +21,30 @@ class AreaController extends Controller
 
     }
 
-    /*public function insertpage()
+    public function insertpage()
     {
-        return view('ActivityInsertForm');
+        return view('areaInsertForm');
+    }
+
+    public function save(Request $request)
+    {
+        $area = new Area;
+        $area->id_area=$request->input('id');
+        $area->level_area=$request->input('level');
+        $area->id_jail=$request->input('idjail');
+        $area->save();
+        
+        echo "Add Success!!";
+        echo"<form action=\"/areas\">
+        <input type=\"submit\" value=\"Go To Areas\">
+        </form>";
     }
     
-    public function editpage($id)
+    /*public function editpage($id)
     {
         return view('ActivityEditForm')->with('id', $id);
     }
-    public function save(Request $request)
-    {
-        $activity = new Activity;
-        $activity->id_activity=$request->input('id');
-        $activity->activity=$request->input('activity');
-        $activity->act_duration=$request->input('duration');
-        $activity->save();
-        
-        echo "Add Success!!";
-        echo"<form action=\"/activities\">
-        <input type=\"submit\" value=\"Go To Activity\">
-        </form>";
-    }
+    
     
     public function delete($id)
     {

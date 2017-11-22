@@ -32,10 +32,6 @@
 			<td><input type="text" name="address"></td>
 		</tr>
 		<tr>
-			<td>Officer : </td>
-			<td><input type="text" name="officer"></td>
-		</tr>
-		<tr>
 			<td>level : </td>
 			<td><input type="text" name="level"></td>
 		</tr>

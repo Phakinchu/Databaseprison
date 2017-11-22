@@ -23,7 +23,6 @@ class CreatePrisonersTable extends Migration
             $table->date('dob');
             $table->char('gender', 1);
             $table->integer('scorepri');
-            $table->integer('id_officer')->unsigned();
             $table->integer('id_level')->unsigned();
             $table->primary('id_prisoner') ;
             $table->timestamps();

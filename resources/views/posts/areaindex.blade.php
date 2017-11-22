@@ -23,8 +23,7 @@
       <br>
   @endforeach
 
-  <?php $countprisonum = $cell->countprisoner() ?>
-
+  <form action="/areas/insertpage"><input type="submit" value="Add Area"></form>
 
 </div>
 @endsection

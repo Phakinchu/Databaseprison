@@ -46,6 +46,12 @@ $router->get('/', function () use ($router) {
     
     $router->post('/prisoner/{id}/editsave','PrisonerController@editsave');
 
+    $router->get('/prisoner/{id}/editsupervisepage','PrisonerController@editsupervisepage');
+
+    $router->post('/prisoner/{id}/editsupervisesaveadd','PrisonerController@editsupervisesaveadd');
+
+    $router->post('/prisoner/{id}/editsupervisesavedelete','PrisonerController@editsupervisesavedelete');
+
     $router->post('/prisoner/search','PrisonerController@search');
 
     ///// Officer Page
@@ -175,3 +181,10 @@ $router->get('/', function () use ($router) {
 
     //Area  Page 
     $router->get('/areas', 'AreaController@index');
+
+    $router->get('/areas/insertpage','AreaController@insertpage');
+
+    $router->post('/areas/save','AreaController@save');
+
+    //Jail page 
+    

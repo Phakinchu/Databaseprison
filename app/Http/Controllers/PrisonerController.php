@@ -39,12 +39,37 @@ class PrisonerController extends Controller
         $prisoner->gender=$request->input('gender');
         $prisoner->dob=$request->input('dob');
         $prisoner->address=$request->input('address');
-        $prisoner->id_officer=$request->input('officer');
         $prisoner->id_level=$request->input('level');
         $prisoner->scorepri=$request->input('score');
         $prisoner->save();
         
         echo "Add Success!!";
+        echo"<form action=\"/prisoners\">
+        <input type=\"submit\" value=\"Go To Prisoner\">
+        </form>";
+    }
+
+    public function editsupervisepage($id)
+    {
+        return view('prisonersuperviseditForm')->with('id', $id);
+    }
+
+    public function editsupervisesaveadd(Request $request, $id)
+    {
+        $prisoner = Prisoner::findOrFail($id);
+        
+        $prisoner->officers()->attach($request->input('id_officer'));
+        echo "Edit Success!!";
+        echo"<form action=\"/prisoners\">
+        <input type=\"submit\" value=\"Go To Prisoner\">
+        </form>";
+    }
+
+    public function editsupervisesavedelete(Request $request, $id)
+    {
+        $prisoner = Prisoner::findOrFail($id);       
+        $prisoner->officers()->detach($request->input('id_officer'));
+        echo "Edit Success!!";
         echo"<form action=\"/prisoners\">
         <input type=\"submit\" value=\"Go To Prisoner\">
         </form>";
@@ -69,7 +94,6 @@ class PrisonerController extends Controller
         $prisoner->gender=$request->input('gender');
         $prisoner->dob=$request->input('dob');
         $prisoner->address=$request->input('address');
-        $prisoner->id_officer=$request->input('officer');
         $prisoner->id_level=$request->input('level');
         $prisoner->scorepri=$request->input('score');
         $prisoner->save();
@@ -91,7 +115,6 @@ class PrisonerController extends Controller
             'address' => $post->address,
             'dob' => $post->dob,
             'gender' => $post->gender,
-            'officer' => $post->id_officer,
             'level' => $post->id_level,
             'score' => $post->scorepri
         ]);
@@ -109,7 +132,6 @@ class PrisonerController extends Controller
             'dob' => $prison->dob ,
             'address' => $prison->address,
             'scorepri' => $prison->scorepri,
-            'idoff' => $prison->id_officer,
             'gender' => $prison->gender,
             'idlevel' => $prison->id_level
         ]);

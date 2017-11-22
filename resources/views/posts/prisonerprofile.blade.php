@@ -46,10 +46,6 @@
                         <td>{{$gender}}</td>
                       </tr>
                       <tr>
-                        <td>Officer</td>
-                        <td>{{$officer}}</td>
-                      </tr>
-                      <tr>
                         <td>Level</td>
                         <td>{{$level}}</td>
                       </tr>
