@@ -46,7 +46,7 @@ class CreateForeignKeys extends Migration
 
         Schema::table('casedetails', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->foreign('id_officer')->references('id_officer')->on('officers'); 
+            $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners'); 
         });
 
         Schema::table('prisonereducepunishmenthistory', function (Blueprint $table) {

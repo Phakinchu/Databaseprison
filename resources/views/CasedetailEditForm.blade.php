@@ -20,8 +20,8 @@
        <td><input type="text" name="duration"></td>
    </tr>
    <tr>
-       <td>OfficerID</td>
-       <td><input type="text" name="officer"></td>
+       <td>prisonerID</td>
+       <td><input type="text" name="prisoner"></td>
    </tr>
         <tr>
             <td><input type="submit" name="submit" value="Edit"></td>

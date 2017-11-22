@@ -15,6 +15,7 @@
     <td><center>scorepri</center></td>
     <td><center>id_level</center></td>
     <td><center>ผู้คุมที่ดูแล</center></td>
+    <td><center>คดีที่ติด</center></td>
     <td><center>Edit supervise</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
@@ -31,6 +32,9 @@
     <td><center>@foreach ($post->officers as $officer)
     ID :
     {{$officer->id_officer}}<br>@endforeach</center></td>
+    <td><center>@foreach ($post->casedetails as $casedetail)
+    คดี :
+    {{$casedetail->case_section}}<br>@endforeach</center></td>
     <td><center><a href="/prisoner/{{$post->id_prisoner}}/editsupervisepage">Click</a></center></td>
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/editpage">Click</a></center></td>
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/delete">Click</a></center></td>

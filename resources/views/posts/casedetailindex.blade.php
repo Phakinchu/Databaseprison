@@ -10,7 +10,7 @@
   	<td><center>section</center></td>
   	<td><center>punishment</center></td>
   	<td><center>duration</center></td>
-  	<td><center>OfficerID</center></td>
+  	<td><center>PrisonerID</center></td>
 		<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>
@@ -19,7 +19,7 @@
 			<td><center>{{$post->case_section}}</center></td>
 			<td><center>{{$post->punishment}}</center></td>
       <td><center>{{$post->case_duration}}</center></td>
-      <td><center>{{$post->id_officer}}</center></td>
+      <td><center>{{$post->id_prisoner}}</center></td>
 			<td><center><a href="/casedetail/{{$post->id_case}}/editpage">Click</a></center></td>
 			<td><center><a href="/casedetail/{{$post->id_case}}/delete">Click</a></center></td>
 		</tr>

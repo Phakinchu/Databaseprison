@@ -10,7 +10,7 @@ class Casedetail extends Model
     public $incrementing = false;
     public function prisoners()
     {
-        return $this->belongsToMany('App\Models\Prisoner','crime');
+        return $this->belongsTo('App\Models\Prisoner','id_prisoner');
     }
 
     public function officers()

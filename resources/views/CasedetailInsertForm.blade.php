@@ -24,8 +24,8 @@
            <td><input type="text" name="duration"></td>
        </tr>
        <tr>
-           <td>OfficerID</td>
-           <td><input type="text" name="officer"></td>
+           <td>PrisonerID</td>
+           <td><input type="text" name="prisoner"></td>
        </tr>
 		
 		<tr>

@@ -34,7 +34,7 @@ class CasedetailController extends Controller
         $casedetail->case_section=$request->input('section');
         $casedetail->punishment=$request->input('punishment');
         $casedetail->case_duration=$request->input('duration');
-        $casedetail->id_officer=$request->input('officer');
+        $casedetail->id_prisoner=$request->input('prisoner');
         $casedetail->save();
         
         echo "Add Success!!";
@@ -59,7 +59,7 @@ class CasedetailController extends Controller
         $casedetail->case_section=$request->input('section');
         $casedetail->punishment=$request->input('punishment');
         $casedetail->case_duration=$request->input('duration');
-        $casedetail->id_officer=$request->input('officer');
+        $casedetail->id_prisoner=$request->input('prisoner');
         $casedetail->save();
         echo "Edit Success!!";
         echo"<form action=\"/casedetails\">
@@ -77,7 +77,7 @@ class CasedetailController extends Controller
             'section' => $post->case_section,
             'punishment' => $post->punishment,
             'duration' => $post->case_duration,
-            'officer' => $post->id_officer
+            'prisoner' => $post->id_prisoner
         ]);
     }
 

@@ -19,7 +19,7 @@ class CreateCasedetailsTable extends Migration
             $table->string('case_section', 15);
             $table->string('punishment', 15);
             $table->integer('case_duration');
-            $table->integer('id_officer')->unsigned();
+            $table->integer('id_prisoner')->unsigned();
             $table->primary('id_case') ;
             $table->timestamps();
           

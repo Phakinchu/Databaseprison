@@ -43,7 +43,7 @@ class Prisoner extends Model
 
     public function casedetails()
     {
-        return $this->belongsToMany('App\Models\Casedetail','crime');
+        return $this->hasMany('App\Models\Casedetail','id_prisoner');
     }
 
     public function prisonerbehavioralhistories()
