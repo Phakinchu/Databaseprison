@@ -89,11 +89,11 @@ class CreateForeignKeys extends Migration
             $table->foreign('id_area')->references('id_area')->on('areas');         
         });
 
-        // Schema::table('plusscore', function (Blueprint $table) {
-        //     $table->engine = 'InnoDB';
-        //     $table->foreign('id_activity')->references('id_activity')->on('activities');
-        //     $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
-        // });
+        Schema::table('plusscore', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->foreign('id_activity')->references('id_activity')->on('activities');
+            $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');
+        });
 
     }
 

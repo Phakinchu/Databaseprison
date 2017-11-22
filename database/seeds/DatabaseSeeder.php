@@ -27,7 +27,6 @@ class DatabaseSeeder extends Seeder
         $this->call('VisithistoryTableSeeder');
         $this->call('EventactivitiesTableSeeder');
         $this->call('HaverelativeTableSeeder');
-        $this->call('CrimeTableSeeder');
         $this->call('ManagecaseTableSeeder');
         $this->call('PlusscoreTableSeeder');
         schema::enableForeignKeyConstraints();
