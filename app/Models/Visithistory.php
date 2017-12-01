@@ -11,12 +11,12 @@ class Visithistory extends Model
     public $incrementing = false;
     public function prisoners()
     {
-        return $this->belongsTo('App\Models\Prisoner');
+        return $this->belongsTo('App\Models\Prisoner','id_prisoner');
     }
 
     public function officers()
     {
-        return $this->belongsTo('App\Models\Officer');
+        return $this->belongsTo('App\Models\Officer','id_officer');
     }
 
 }

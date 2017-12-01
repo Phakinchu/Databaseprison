@@ -17,7 +17,7 @@ class Officer extends Model
 
     public function areas()
     {
-        return $this->belongsTo('App\Models\Area');
+        return $this->belongsTo('App\Models\Area','id_area');
     }
 
     public function casedetails()
@@ -27,12 +27,12 @@ class Officer extends Model
 
     public function prisonerbehavioralhistories()
     {
-        return $this->hasMany('App\Models\Prisonerbehavioralhistory');
+        return $this->hasMany('App\Models\Prisonerbehavioralhistory','id_officer');
     }
 
     public function visithistories()
     {
-        return $this->hasMany('App\Models\Visithistory');
+        return $this->hasMany('App\Models\Visithistory','id_officer');
     }
 
 }

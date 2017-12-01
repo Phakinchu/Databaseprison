@@ -11,7 +11,7 @@ class Freeprisonhistory extends Model
     public $table = "freeprisonhistory";
     public function prisoners()
     {
-        return $this->belongsTo('App\Models\Prisoner');
+        return $this->belongsTo('App\Models\Prisoner','id_prisoner');
     }
 
 

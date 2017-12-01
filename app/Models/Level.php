@@ -10,7 +10,7 @@ class Level extends Model
     public $incrementing = false;
     public function prisoners()
     {
-        return $this->hasMany('App\Models\Prisoner');
+        return $this->hasMany('App\Models\Prisoner','id_level');
     }
 
 

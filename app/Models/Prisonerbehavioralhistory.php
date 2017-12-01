@@ -11,7 +11,7 @@ class Prisonerbehavioralhistory extends Model
     public $table = "prisonerbehavioralhistory";
     public function prisoners()
     {
-        return $this->belongsTo('App\Models\Prisoner');
+        return $this->belongsTo('App\Models\Prisoner','id_prisoner');
     }
 
     public function officers()

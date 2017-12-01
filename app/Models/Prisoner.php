@@ -18,7 +18,7 @@ class Prisoner extends Model
 
     public function levels()
     {
-        return $this->belongsTo('App\Models\Level');
+        return $this->belongsTo('App\Models\Level','id_level');
     }
 
     public function activities()
@@ -28,7 +28,7 @@ class Prisoner extends Model
 
     public function cells()
     {
-        return $this->hasOne('App\Models\Cell');
+        return $this->hasOne('App\Models\Cell','id_prisoner');
     }
 
     public function relatives()
@@ -38,7 +38,7 @@ class Prisoner extends Model
 
     public function freeprisonhistories()
     {
-        return $this->hasMany('App\Models\Freeprisonhistory');
+        return $this->hasMany('App\Models\Freeprisonhistory','id_prisoner');
     }
 
     public function casedetails()
@@ -48,17 +48,17 @@ class Prisoner extends Model
 
     public function prisonerbehavioralhistories()
     {
-        return $this->hasMany('App\Models\Prisonerbehavioralhistory');
+        return $this->hasMany('App\Models\Prisonerbehavioralhistory','id_prisoner');
     }
 
     public function prisonereducepunishmenthistories()
     {
-        return $this->hasMany('App\Models\prisonereducepunishmenthistory');
+        return $this->hasMany('App\Models\prisonereducepunishmenthistory','id_prisoner');
     }
 
     public function visithistories()
     {
-        return $this->hasMany('App\Models\visithistory');
+        return $this->hasMany('App\Models\visithistory','id_prisoner');
     }
 
     
