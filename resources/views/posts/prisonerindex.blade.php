@@ -14,6 +14,7 @@
   	<td><center>gender</center></td>
     <td><center>scorepri</center></td>
     <td><center>id_level</center></td>
+    <td><center>id_cell</center></td>
     <td><center>ผู้คุมที่ดูแล</center></td>
     <td><center>คดีที่ติด</center></td>
     <td><center>Edit supervise</center></td>
@@ -29,6 +30,7 @@
 		<td><center>{{$post->gender}}</center></td>
     <td><center>{{$post->scorepri}}</center></td>
     <td><center>{{$post->id_level}}</center></td>
+    <td><center>{{$post->id_cell}}</center></td>
     <td><center>@foreach ($post->officers as $officer)
     ID :
     {{$officer->id_officer}}<br>@endforeach</center></td>

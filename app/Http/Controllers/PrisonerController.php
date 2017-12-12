@@ -40,6 +40,7 @@ class PrisonerController extends Controller
         $prisoner->dob=$request->input('dob');
         $prisoner->address=$request->input('address');
         $prisoner->id_level=$request->input('level');
+        $prisoner->id_cell=$request->input('cell');
         $prisoner->scorepri=$request->input('score');
         $prisoner->save();
         
@@ -95,6 +96,7 @@ class PrisonerController extends Controller
         $prisoner->dob=$request->input('dob');
         $prisoner->address=$request->input('address');
         $prisoner->id_level=$request->input('level');
+        $prisoner->id_cell=$request->input('cell');
         $prisoner->scorepri=$request->input('score');
         $prisoner->save();
         echo "Edit Success!!";
@@ -133,7 +135,8 @@ class PrisonerController extends Controller
             'address' => $prison->address,
             'scorepri' => $prison->scorepri,
             'gender' => $prison->gender,
-            'idlevel' => $prison->id_level
+            'idlevel' => $prison->id_level,
+            'idcell' => $prison->id_cell
         ]);
     }
 }

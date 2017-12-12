@@ -36,6 +36,10 @@
 			<td><input type="text" name="level"></td>
 		</tr>
 		<tr>
+			<td>cell : </td>
+			<td><input type="text" name="cell"></td>
+		</tr>
+		<tr>
 			<td>score : </td>
 			<td><input type="text" name="score"></td>
 		</tr>

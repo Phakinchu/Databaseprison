@@ -13,6 +13,7 @@
       <td><center>gender</center></td>
       <td><center>scoreprisoner</center></td>
       <td><center>id_level</center></td>
+      <td><center>id_cell</center></td>
       </tr>
       <tr>
         <td><center>{{$fname}}</center></td>
@@ -22,6 +23,7 @@
         <td><center>{{$gender}}</center></td>
         <td><center>{{$scorepri}}</center></td>
         <td><center>{{$idlevel}}</center></td>
+        <td><center>{{$idcell}}</center></td>
         </tr>
       </table><br> 
 </div>

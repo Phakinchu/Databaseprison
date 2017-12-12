@@ -16,6 +16,7 @@ class CreateForeignKeys extends Migration
         Schema::table('prisoners', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->foreign('id_level')->references('id_level')->on('levels');
+            $table->foreign('id_cell')->references('id_cell')->on('cells');
         });
 
         Schema::table('officers', function (Blueprint $table) {
@@ -31,7 +32,6 @@ class CreateForeignKeys extends Migration
         Schema::table('cells', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->foreign('id_area')->references('id_area')->on('areas');
-            $table->foreign('id_prisoner')->references('id_prisoner')->on('prisoners');  
         });
 
         Schema::table('relatives', function (Blueprint $table) {

@@ -16,7 +16,7 @@ class Cell extends Model
 
     public function prisoners()
     {
-        return $this->belongsTo('App\Models\Prisoner','id_prisoner');
+        return $this->hasMany('App\Models\Prisoner','id_prisoner');
     }
 
     public function countprisoner()

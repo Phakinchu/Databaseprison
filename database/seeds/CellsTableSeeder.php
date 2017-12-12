@@ -14,7 +14,6 @@ class CellsTableSeeder extends Seeder
         DB::table('cells')->insert([
             'id_cell' => '00001' ,
             'id_area' => '00001',
-            'id_prisoner' => '2'
         ]);
         
     }

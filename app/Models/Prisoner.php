@@ -28,7 +28,7 @@ class Prisoner extends Model
 
     public function cells()
     {
-        return $this->hasOne('App\Models\Cell','id_prisoner');
+        return $this->belongsTo('App\Models\Cell','id_prisoner');
     }
 
     public function relatives()

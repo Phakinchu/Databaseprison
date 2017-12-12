@@ -14,7 +14,7 @@
         {{$officer->name}} 
       @endforeach
     </h3>
-    <h3> Prisoner name : {{$cell->prisoners->fname}}
+    <h3> Prisoner name : $cell->prisoners->fname
     </h3>
     <br>
     </div>

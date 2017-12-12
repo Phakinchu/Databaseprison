@@ -19,6 +19,7 @@ class PrisonersTableSeeder extends Seeder
             'dob' => '1997-08-25' ,
             'gender' => 'M' ,
             'id_level' => '5'  ,
+            'id_cell' => '1'  ,
             'scorepri' => 20 
         ]);
 
@@ -30,6 +31,7 @@ class PrisonersTableSeeder extends Seeder
             'dob' => '1997-08-25' ,
             'gender' => 'M' ,
             'id_level' => '5'  ,
+            'id_cell' => '1'  ,
             'scorepri' => 25 
 
         ]);
@@ -42,6 +44,7 @@ class PrisonersTableSeeder extends Seeder
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
             'id_level' => '5'  ,
+            'id_cell' => '1'  ,
             'scorepri' => 25 
 
         ]);
@@ -54,6 +57,7 @@ class PrisonersTableSeeder extends Seeder
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
             'id_level' => '5'  ,
+            'id_cell' => '1'  ,
             'scorepri' => 25 
 
         ]);
