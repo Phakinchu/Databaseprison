@@ -27,7 +27,7 @@
 		<tr>
 			<td><input type="submit" name="submit" value="Delete"></td>
 		</tr>
-	</table>
+	</table>	
 	</form>
         
 	<form action="/activitys">

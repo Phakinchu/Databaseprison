@@ -20,7 +20,6 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'scorepri' => 20 
-
         ]);
 
         DB::table('prisoners')->insert([

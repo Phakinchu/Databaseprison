@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Activity;
+use App\Models\Prisoner;
 use Illuminate\http\Request;
 class ActivityController extends Controller
 {
@@ -68,11 +69,14 @@ class ActivityController extends Controller
         return view('activityprisonsuperviseditForm')->with('id', $id);
     }
 
-    public function edit_activity_prison_supervisesaveadd(Request $request, $id)
+    public function edit_activity_prison_supervisesaveadd(Request $request, $id) //เพิ่มนักโทษไปในกิจกรรม
     {
         $activity = Activity::findOrFail($id);
-        if($request->input('id_prisoner') != 0 && $request->input('id_prisoner') != NULL ){
-        $activity->prisoners()->attach($request->input('id_prisoner'));
+        if($request->input('id_prisoner') != 0 && $request->input('id_prisoner') != NULL ){ //ไม่ให้ input เป็นช่องว่าง
+        $activity->prisoners()->attach($request->input('id_prisoner')); // เพิ่มไปใน table m-n
+        $prisoner = Prisoner::findOrFail($request->input('id_prisoner'));  // เพิ่มคะแนนนักโทษที่ร่วมกิจกรรม
+        $prisoner->scorepri += 1 ; // เพิ่มคะแนนนักโทษที่ร่วมกิจกรรม
+        $prisoner->save(); // เพิ่มคะแนนนักโทษที่ร่วมกิจกรรม
         echo "Edit Success!!";
         echo"<form action=\"/activities\">
         <input type=\"submit\" value=\"Go To activity\">
@@ -86,10 +90,10 @@ class ActivityController extends Controller
         }
     }
 
-    public function edit_activity_prison_supervisesavedelete(Request $request, $id)
+    public function edit_activity_prison_supervisesavedelete(Request $request, $id) // ลบนักโทษออกจากกิจกรรม
     {
         $activity = Activity::findOrFail($id);       
-        $activity->prisoners()->detach($request->input('id_prisoner'));
+        $activity->prisoners()->detach($request->input('id_prisoner')); // ลบจาก table m-n
         echo "Edit Success!!";
         echo"<form action=\"/activities\">
         <input type=\"submit\" value=\"Go To activity\">
@@ -101,7 +105,7 @@ class ActivityController extends Controller
         return view('activityareasuperviseditForm')->with('id', $id);
     }
 
-    public function edit_activity_area_supervisesaveadd(Request $request, $id)
+    public function edit_activity_area_supervisesaveadd(Request $request, $id) //เพิ่มผู้คุมไปในกิจกรรม
     {
         $activity = Activity::findOrFail($id);
         if($request->input('id_area') != 0 && $request->input('id_area') != NULL ){
@@ -119,7 +123,7 @@ class ActivityController extends Controller
         }
     }
 
-    public function edit_activity_area_supervisesavedelete(Request $request, $id)
+    public function edit_activity_area_supervisesavedelete(Request $request, $id) //ลบผู้คุมออกจากกิจกรรม
     {
         $activity = Activity::findOrFail($id);       
         $activity->areas()->detach($request->input('id_area'));
