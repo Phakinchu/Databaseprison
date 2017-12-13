@@ -17,6 +17,16 @@ class PrisonerOfficerTableSeeder extends Seeder
         ]);
 
         DB::table('prisoner_officer')->insert([
+            'id_prisoner' => '1' ,
+            'id_officer' => '2'
+        ]);
+
+        DB::table('prisoner_officer')->insert([
+            'id_prisoner' => '1' ,
+            'id_officer' => '3'
+        ]);
+
+        DB::table('prisoner_officer')->insert([
             'id_prisoner' => '2' ,
             'id_officer' => '1'
         ]);

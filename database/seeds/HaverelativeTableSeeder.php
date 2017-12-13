@@ -11,6 +11,16 @@ class HaverelativeTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('haverelative')->insert([
+            'id_relative' => '00001' ,
+            'id_prisoner' => '00001'
+        ]);
+
+        DB::table('haverelative')->insert([
+            'id_relative' => '00002' ,
+            'id_prisoner' => '00002'
+        ]);
+
         
     }
 }

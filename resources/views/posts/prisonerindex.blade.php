@@ -42,7 +42,7 @@
     {{$officer->id_officer}}<br>@endforeach</center></td>
     <td><center>@foreach ($post->casedetails as $casedetail)
     คดี :
-    {{$casedetail->case_section}}<br>@endforeach</center></td>
+    {{$casedetail->punishment}}<br>@endforeach</center></td>
     <td><center><a href="/prisoner/{{$post->id_prisoner}}/editsupervisepage">Click</a></center></td>
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/editpage">Click</a></center></td>
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/delete">Click</a></center></td>
