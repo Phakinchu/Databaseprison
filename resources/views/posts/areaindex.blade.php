@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="blog-header">
-  <h1 class="blog-title"> "Area"</h1>
-  <p class="lead blog-description"> "Area page" </p>
+  <h1 class="blog-title"> "Area"</h1><br>
+  <!-- <p class="lead blog-description"> "Area page" </p> -->
   @foreach ($areas as $area)
       <?php $countprisonum = 0; ?>  
       <?php $countofficernum = 0; ?> 

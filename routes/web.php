@@ -79,6 +79,8 @@ $router->get('/', function () use ($router) {
     $router->get('/visithistories/insertpage','VisithistoryController@insertpage');
         
     $router->post('/visithistories/save','VisithistoryController@save');
+
+    $router->post('/visithistory/search','VisithistoryController@search');
         
     $router->get('/visithistory/{id}/delete','VisithistoryController@delete');
         
@@ -115,6 +117,8 @@ $router->get('/', function () use ($router) {
     $router->get('/activity/{id}/editpage','ActivityController@editpage');
         
     $router->post('/activity/{id}/editsave','ActivityController@editsave');
+
+    $router->post('/activity/search','ActivityController@search');
 
     $router->get('/activity/{id}/edit_activity_prison_supervisepage','ActivityController@edit_activity_prison_supervisepage');
     

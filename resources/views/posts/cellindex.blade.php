@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="blog-header">
-  <h1 class="blog-title"> "Cell"</h1>
-  <p class="lead blog-description"> "cell page" </p>
+  <h1 class="blog-title"> "Cell"</h1><br>
+  <!-- <p class="lead blog-description"> "cell page" </p> -->
   @foreach ($cells as $cell)
     <br>
     <div style="border: 5px solid #000000;">

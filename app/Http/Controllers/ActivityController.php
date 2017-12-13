@@ -144,4 +144,15 @@ class ActivityController extends Controller
         ]);
     }
 
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        /*$prison = Prisoner::where('fname',$id)->get();*/
+        $activity = Activity::where('activity',$id)->get();
+        return view('posts.activityview',[
+            'title' => 'Prisoner', 
+            'posts' => $activity 
+        ]);
+    }
+
 }

@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="blog-header" align = "center">
-  <h1 class="blog-title">Casedetail List</h1>
-	<p class="lead blog-description">All casedetails</p>
+  <h1 class="blog-title">Case Detail</h1><br>
+	<!-- <p class="lead blog-description">All casedetails</p> -->
   <table class="table table-hover"><tr> 
   	<td><center>CasedetailID</center></td>
   	<td><center>section</center></td>
@@ -31,6 +31,6 @@
 		</tr>
   @endforeach
 	</table><br>
-  <center><form action="/casedetails/insertpage"><input type="submit" value="Add Casedetail"></form></center>
+  <center><form action="/casedetails/insertpage"><input type="submit" value="Add Case Detail"></form></center>
 </div>
 @endsection

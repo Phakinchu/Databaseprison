@@ -87,4 +87,15 @@ class VisithistoryController extends Controller
         ]);
     }
 
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        /*$prison = Prisoner::where('fname',$id)->get();*/
+        $visithistory = Visithistory::where('name',$id)->get();
+        return view('posts.visithistoryview',[
+            'title' => 'Prisoner', 
+            'posts' => $visithistory 
+        ]);
+    }
+
 }

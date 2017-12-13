@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+<div align = "right">
+<form action="/visithistory/search" method="post">Search By Relative Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
+</div>
 <div class="blog-header" align = "center">
-  <h1 class="blog-title">Visithistory List</h1>
-	<p class="lead blog-description">All visithistories</p>	
+  <h1 class="blog-title">Visit History List</h1><br>
+	<!-- <p class="lead blog-description">All visithistories</p>	 -->
   <table class="table table-hover"><tr>
   	<td><center>Visit</center></td>
   	<td><center>relative_name</center></td>
@@ -29,6 +32,6 @@
 	</tr>
   @endforeach
 	</table><br>
-  <center><form action="/visithistories/insertpage"><input type="submit" value="Add Visithistory"></form></center>
+  <center><form action="/visithistories/insertpage"><input type="submit" value="Add Visit History"></form></center>
 </div>
 @endsection

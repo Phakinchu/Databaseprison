@@ -2,8 +2,8 @@
 
 @section('content')
 </div>
+  @foreach ($posts as $post)
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-   
         <style>
         .panel-info>.panel-heading{
         color: #333;
@@ -25,29 +25,26 @@
                     <tbody>
                       <tr>
                         <td>FirstName :</td>
-                        <td>{{$name}}</td>
+                        <td>{{$post->name}}</td>
                       </tr>                   
                         <tr>
                         <td>Date Of Birth</td>
-                        <td>{{$dob}}</td>
+                        <td>{{$post->dob}}</td>
                       </tr>
                         <tr>
                         <td>Gender</td>
-                        <td>{{$gender}}</td>
+                        <td>{{$post->gender}}</td>
                       </tr>
                       <tr>
                         <td>Position</td>
-                        <td>{{$position}}</td>
+                        <td>{{$post->position}}</td>
                       </tr>
                       <tr>
                         <td>Area</td>
-                        <td>{{$area}}</td>
+                        <td>{{$post->id_area}}</td>
                       </tr>
                     </tbody>
                   </table>
-                  
-                  <a href="#" class="btn btn-primary">My Sales Performance</a>
-                  <a href="#" class="btn btn-primary">Team Sales Performance</a>
                 </div>
               </div>
             </div>
@@ -63,4 +60,5 @@
         </div>
       </div>
     </div>
+    @endforeach
 @endsection
