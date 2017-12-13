@@ -15,7 +15,7 @@
 
           <div class="panel panel-info">
             <div class="panel-heading">
-              <center><h3 class="panel-title">ACtivity</h3></center>
+              <center><h3 class="panel-title">Activity</h3></center>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -25,11 +25,11 @@
                     <tbody>
                       <tr>
                         <td>ACtivity :</td>
-                        <td>{{$post->activity}}</td>
+                        <td>{{$activity}}</td>
                       </tr>
                       <tr>
                         <td>Duration :</td>
-                        <td>{{$post->act_duration}}</td>
+                        <td>{{$duration}}</td>
                       </tr>
                       <tr>
                         <td>Prison joined :</td>
@@ -42,8 +42,7 @@
                   </table>
                 </div>
               </div>
-            </div>
-            
+            </div> 
           </div>
         </div>
       </div>

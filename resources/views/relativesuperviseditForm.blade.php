@@ -1,6 +1,15 @@
 <@extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("http://paper-backgrounds.com/textureimages/2012/06/sunset-dramatic-sky-clouds-background-hd.jpg");
+}
+h1{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Relative Supervise</h1><br>
 	<form action="/relative/{{$id}}/editsupervisesaveadd" method="post">
@@ -32,5 +41,4 @@
     <br>
     <input type="submit" value="Back">
 	</form>
-
 @endsection

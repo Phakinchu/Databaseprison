@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://orig00.deviantart.net/522c/f/2007/178/d/3/sunset_twilight_clouds_sky_05_by_fantasystock.jpg");
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "right">
 <form action="/activity/search" method="post">Search By Activity Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>

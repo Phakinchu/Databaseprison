@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("http://www.desktop-backgrounds.com/images/caribbean-sunset.jpg");
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Case Detail</h1><br>
 	<!-- <p class="lead blog-description">All casedetails</p> -->
