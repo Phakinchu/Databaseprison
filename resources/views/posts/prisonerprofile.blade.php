@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-</div>
+</div>@foreach ($posts as $post)
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-   
+        
         <style>
         .panel-info>.panel-heading{
         color: #333;
@@ -25,32 +25,32 @@
                     <tbody>
                       <tr>
                         <td>FirstName :</td>
-                        <td>{{$fname}}</td>
+                        <td>{{$post->fname}}</td>
                       </tr>
                       <tr>
                         <td>LastName :</td>
-                        <td>{{$lname}}</td>
+                        <td>{{$post->lname}}</td>
                       </tr>
                       <tr>
                         <td>Address</td>
-                        <td>{{$address}}</td>
+                        <td>{{$post->address}}</td>
                       </tr>
                          <tr>
                              <tr>
                         <td>Date Of Birth</td>
-                        <td>{{$dob}}</td>
+                        <td>{{$post->dob}}</td>
                       </tr>
                         <tr>
                         <td>Gender</td>
-                        <td>{{$gender}}</td>
+                        <td>{{$post->gender}}</td>
                       </tr>
                       <tr>
                         <td>Level</td>
-                        <td>{{$level}}</td>
+                        <td>{{$post->id_level}}</td>
                       </tr>
                       <tr>
                         <td>Score</td>
-                        <td>{{$score}}</td>
+                        <td>{{$post->scorepri}}</td>
                       </tr>
                      
                     </tbody>
@@ -69,4 +69,5 @@
         </div>
       </div>
     </div>
+    @endforeach
 @endsection

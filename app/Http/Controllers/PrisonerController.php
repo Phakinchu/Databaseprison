@@ -125,18 +125,11 @@ class PrisonerController extends Controller
     public function search(Request $request)
     {
         $id = $request->input('id');
-        $prison = Prisoner::findOrFail($id);
-        return view('posts.prisonerview',[
+        /*$prison = Prisoner::where('fname',$id)->get();*/
+        $prison = Prisoner::where('fname',$id)->get();
+        return view('posts.prisonerprofile',[
             'title' => 'Prisoner', 
-            'id' => $prison->id_prisoner,
-            'fname' => $prison->fname,
-            'lname' => $prison->lname,
-            'dob' => $prison->dob ,
-            'address' => $prison->address,
-            'scorepri' => $prison->scorepri,
-            'gender' => $prison->gender,
-            'idlevel' => $prison->id_level,
-            'idcell' => $prison->id_cell
+            'posts' => $prison 
         ]);
     }
 }
