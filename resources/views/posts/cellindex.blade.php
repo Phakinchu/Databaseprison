@@ -14,7 +14,7 @@ h3{
 }
 </style>
 <div class="blog-header">
-  <h1 class="blog-title"> <center>"Cell"</center></h1><br>
+  <h1 class="blog-title"> Cell List</h1><br>
   <!-- <p class="lead blog-description"> "cell page" </p> -->
   @foreach ($cells as $cell)
     <br>
