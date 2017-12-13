@@ -138,7 +138,7 @@ class ActivityController extends Controller
         $post = Activity::findOrFail($id);
 
         return view('posts.activityview', [
-
+            'title' => "Activity"
             'activity' => $post->id_activity,
             'duration' => $post->act_duration
         ]);

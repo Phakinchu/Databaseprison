@@ -73,7 +73,7 @@ class CasedetailController extends Controller
         $post = Casedetail::findOrFail($id);
 
         return view('posts.casedetailview', [
-
+            'title' => "CaseDetail"
             'section' => $post->case_section,
             'punishment' => $post->punishment,
             'duration' => $post->case_duration,

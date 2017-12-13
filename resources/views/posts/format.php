@@ -14,7 +14,7 @@
 
           <div class="panel panel-info">
             <div class="panel-heading">
-              <center><h3 class="panel-title">Behavior History</h3></center>
+              <center><h3 class="panel-title">CaseDetail</h3></center>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -24,29 +24,21 @@
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
-                        <td>Crime :</td>
-                        <td>{{$crime}}</td>
+                        <td>section :</td>
+                        <td>{{$case_section}}</td>
                       </tr>
                       <tr>
-                        <td>Gulit :</td>
-                        <td>{{$gulit}}</td>
+                        <td>Punishment :</td>
+                        <td>{{$punishment}}</td>
                       </tr>
                       <tr>
-                        <td>StartDate</td>
-                        <td>{{$start_date}}</td>
+                        <td>Duration :</td>
+                        <td>{{$case_duration}}</td>
                       </tr>
                       <tr>
-                        <td>EndDate</td>
-                        <td>{{$end_date}}</td>
-                      </tr>
-                      <tr>
-                        <td>Officer</td>
-                        <td>{{$officer}}</td>
-                      </tr>  
-                      <tr>
-                        <td>Prisoner</td>
-                        <td>{{$prisoner}}</td>
-                      </tr>               
+                        <td>officer :</td>
+                        <td>{{$id_officer}}</td>
+                      </tr>                 
                     </tbody>
                   </table>
                 </div>

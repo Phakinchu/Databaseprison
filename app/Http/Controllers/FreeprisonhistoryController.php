@@ -75,7 +75,7 @@ class FreeprisonhistoryController extends Controller
         $post = Freeprisonhistory::findOrFail($id);
 
         return view('posts.freeprisonhistoryview', [
-             //'title' => 'Gender',
+            'title' => 'Freedom',
             'freedate' => $post->freedate,
             'fname' => $post->fname,
             'lname' => $post->lname,
