@@ -1,33 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-<div align = "right">
-<form action="/prisoner/search" method="post">SearchID <input type="text" name="id" value=""><input type="submit"  value="go"></form>
-
-</div>
-<div class="blog-header" align = "center">
+<div class="blog-header">
   <h1 class="blog-title">Prisoner List</h1>
 	<p class="lead blog-description">All prisoners</p>
-  <table class="table table-hover">
-  <tr> 
-  	<td ><center>Prisoner ID</center></td>
-  	<td ><center> fname </center></td>
-  	<td ><center> lname </center></td>
-  	<td ><center> address </center></td>
-    <td width = "100"><center> DoB </center></td>
-  	<td ><center> gender </center></td>
-    <td ><center> scorepri </center></td>
-    <td ><center> id_level </center></td>
-    <td ><center> id_cell </center></td>
-    <td width = "100"><center> ผู้คุมที่ดูแล </center></td>
-    <td width = "100"><center> คดีที่ติด </center></td>
-    <td ><center> Edit supervise </center></td>
-  	<td ><center> Edit </center></td>
-  	<td><center> Delete </center></td>
-  </tr>
-  </thead>
-    @foreach ($posts as $post)
-
+  @foreach ($posts as $post)
+  <table border=2><tr> 
+  	<td><center>Prisoner ID</center></td>
+  	<td><center>fname</center></td>
+  	<td><center>lname</center></td>
+  	<td><center>address</center></td>
+    <td><center>dob</center></td>
+  	<td><center>gender</center></td>
+    <td><center>scorepri</center></td>
+    <td><center>id_level</center></td>
+    <td><center>id_cell</center></td>
+    <td><center>ผู้คุมที่ดูแล</center></td>
+    <td><center>คดีที่ติด</center></td>
+    <td><center>Edit supervise</center></td>
+  	<td><center>Edit</center></td>
+  	<td><center>Delete</center></td>
+    </tr>
     <tr>
 		<td><center>{{$post->id_prisoner}}</center></td>
 		<td><center>{{$post->fname}}</center></td>
@@ -48,12 +41,10 @@
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/editpage">Click</a></center></td>
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/delete">Click</a></center></td>
 	</tr>
-  <br> 
+    </table><br> 
   @endforeach
-  </table>
-  <br>
-  <center><h3>Totol prisoner : {{$count}} person</h3></center>
-  <br>
-  <center><form action="/prisoners/insertpage"><input type="submit" value="Add Prisoner"></form></center>
+  <h3>Totla prisoner : {{$count}} person</h3>
+  <form action="/prisoner/search" method="post">SearchID<input type="text" name="id" value=""><input type="submit"  value="go"></form>
+  <form action="/prisoners/insertpage"><input type="submit" value="Add Prisoner"></form>
 </div>
 @endsection

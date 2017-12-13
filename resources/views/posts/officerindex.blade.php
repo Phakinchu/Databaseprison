@@ -1,15 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div align = "right">
-<form action="/officer/search" method="post">SearchID <input type="text" name="id" value=""><input type="submit"  value="go"></form>
-</div>
-<div class="blog-header" align = "center">
+<div class="blog-header">
   <h1 class="blog-title">Officer</h1>
   <p class="lead blog-description">All officers</p>
-</div>	
-	<table class="table table-hover">
-  <tr> 
+	
+  @foreach ($posts as $post)
+
+    <table border=2><tr> 
   	<td><center>officer</center></td>
   	<td><center>officer_name</center></td>
   	<td><center>gender</center></td>
@@ -20,8 +18,7 @@
 		<td><center>ดูแลคดี</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
-  </tr>
-		@foreach ($posts as $post)
+    </tr>
     <tr>
 			<td><center>{{$post->id_officer}}</center></td>
 			<td><center>{{$post->name}}</center></td>
@@ -38,11 +35,12 @@
 			<td><center><a href="/officer/{{$post->id_officer}}/editpage">Click</a></center></td>
 			<td><center><a href="/officer/{{$post->id_officer}}/delete">Click</a></center></td>
 			</tr>
-    <br> 
+    </table><br> 
+
   @endforeach
-	</table>
-	<div align = "center"><br>
-	<h3>Total Officers : {{$count}} person</h3><br>
+	<h3>Total Officers : {{$count}} person</h3>
 	<form action="/officers/insertpage"><input type="submit" value="Add Officer"></form>
+	<form action="/officer/search" method="post">SearchID<input type="text" name="id" value=""><input type="submit"  value="go"></form>
+
 </div>
 @endsection
