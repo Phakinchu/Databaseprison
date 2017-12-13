@@ -78,4 +78,14 @@ class FreeprisonhistoryController extends Controller
         ]);
     }
 
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        $freeprison = Freeprisonhistory::where('id_prisoner',$id)->get();
+        return view('posts.freeprisonhistoryview',[
+            'title' => 'Prisoner', 
+            'posts' => $freeprison 
+        ]);
+    }
+
 }

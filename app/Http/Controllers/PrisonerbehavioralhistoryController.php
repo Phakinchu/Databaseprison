@@ -87,4 +87,15 @@ class PrisonerbehavioralhistoryController extends Controller
         ]);
     }
 
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        $behavioral = Prisonerbehavioralhistory::where('id_prisoner',$id)->get();
+        echo $behavioral->crime ;
+        return view('posts.prisonerbehavioralhistoryview',[
+            'title' => 'Prisoner', 
+            'posts' => $behavioral 
+        ]);
+    }
+
 }
