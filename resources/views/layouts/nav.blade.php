@@ -19,17 +19,14 @@
       <li class="active"><a href="/prisoners">Prisoner List<span class="sr-only">(current)</span></a></li>
       <li><a href="/officers">Officer List</a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Detail Pri <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Detail Prisoner <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="/prisonerbehavioralhistories">behavioralhistories</a></li>
           <li><a href="/prisonereducepunishmenthistories">reducepunishmenthistories</a></li>
           <li><a href="/freeprisonhistories">freeprisonhistories</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">One more separated link</a></li>
         </ul>
       </li>
+      <li><a href="/casedetails">Case Detail</a></li>
     </ul>
     <!-- <form class="navbar-form navbar-left">
       <div class="form-group">

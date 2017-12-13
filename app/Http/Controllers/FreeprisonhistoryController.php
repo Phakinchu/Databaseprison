@@ -32,8 +32,6 @@ class FreeprisonhistoryController extends Controller
         $freeprisonhistory = new Freeprisonhistory;
         $freeprisonhistory->id_freeprison=$request->input('id');
         $freeprisonhistory->freedate=$request->input('freedate');
-        $freeprisonhistory->fname=$request->input('fname');
-        $freeprisonhistory->lname=$request->input('lname');
         $freeprisonhistory->type_of_freedom=$request->input('typefreedom');
         $freeprisonhistory->id_prisoner=$request->input('prisoner');
         $freeprisonhistory->save();
@@ -58,8 +56,6 @@ class FreeprisonhistoryController extends Controller
     {
         $freeprisonhistory = Freeprisonhistory::findOrFail($id);
         $freeprisonhistory->freedate=$request->input('freedate');
-        $freeprisonhistory->fname=$request->input('fname');
-        $freeprisonhistory->lname=$request->input('lname');
         $freeprisonhistory->type_of_freedom=$request->input('typefreedom');
         $freeprisonhistory->id_prisoner=$request->input('prisoner');
         $freeprisonhistory->save();
@@ -77,8 +73,6 @@ class FreeprisonhistoryController extends Controller
         return view('posts.freeprisonhistoryview', [
             'title' => 'Freedom',
             'freedate' => $post->freedate,
-            'fname' => $post->fname,
-            'lname' => $post->lname,
             'typefreedom' => $post->type_of_freedom,
             'prisoner' => $post->id_prisoner
         ]);

@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div align = "right">
+<form action="/activity/search" method="post">Search By Activity Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
+</div>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Activity List</h1>
 	<p class="lead blog-description">All activities</p>

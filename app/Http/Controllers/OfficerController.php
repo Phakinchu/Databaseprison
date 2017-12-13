@@ -88,15 +88,10 @@ class OfficerController extends Controller
     public function search(Request $request)
     {
         $id = $request->input('id');
-        $off = officer::findOrFail($id);
-        return view('posts.officerview',[
-            'title' => 'Officer',
-            'id' => $off->id_officer,
-            'name' => $off->name,
-            'dob' => $off->dob,
-            'position' => $off->position,
-            'gender' => $off->gender,
-            'area' => $off->id_area
+        $officers = Officer::where('name','like','%'.$id.'%')->get();
+        return view('posts.officerprofile',[
+            'title' => 'Prisoner', 
+            'posts' => $officers 
         ]);
     }
 

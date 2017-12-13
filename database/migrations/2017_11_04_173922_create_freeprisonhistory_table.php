@@ -17,8 +17,6 @@ class CreateFreeprisonhistoryTable extends Migration
             $table->engine = 'InnoDB';
             $table->integer('id_freeprison')->unsigned();
             $table->date('freedate');
-            $table->string('fname', 15);
-            $table->string('lname', 15);
             $table->string('type_of_freedom', 20);
             $table->integer('id_prisoner')->unsigned();
             $table->primary('id_freeprison') ;

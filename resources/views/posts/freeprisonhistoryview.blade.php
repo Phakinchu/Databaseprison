@@ -27,14 +27,6 @@
                         <td>{{$freedate}}</td>
                       </tr>
                       <tr>
-                        <td>FirstName :</td>
-                        <td>{{$fname}}</td>
-                      </tr>
-                      <tr>
-                        <td>LastName :</td>
-                        <td>{{$lname}}</td>
-                      </tr>
-                      <tr>
                         <td>Type :</td>
                         <td>{{$typefreedom}}</td>
                       </tr>

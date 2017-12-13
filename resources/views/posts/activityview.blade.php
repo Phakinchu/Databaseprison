@@ -2,6 +2,7 @@
 
 @section('content')
 </div>
+@foreach ($posts as $post)
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
    
         <style>
@@ -24,11 +25,18 @@
                     <tbody>
                       <tr>
                         <td>ACtivity :</td>
-                        <td>{{$activity}}</td>
+                        <td>{{$post->activity}}</td>
                       </tr>
                       <tr>
                         <td>Duration :</td>
-                        <td>{{$duration}}</td>
+                        <td>{{$post->act_duration}}</td>
+                      </tr>
+                      <tr>
+                        <td>Prison joined :</td>
+                        <td>@foreach ($post->prisoners as $prisoner)
+                        {{$prisoner->fname}}<br><br>
+                        @endforeach 
+                          </td>
                       </tr>              
                     </tbody>
                   </table>
@@ -40,4 +48,5 @@
         </div>
       </div>
     </div>
+    @endforeach 
 @endsection

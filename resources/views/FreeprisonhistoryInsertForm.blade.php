@@ -16,14 +16,6 @@
             <td><input type="text" name="freedate"></td>
         </tr>
         <tr>
-           <td>fname </td>
-           <td><input type="text" name="fname"></td>
-        </tr>
-        <tr>
-           <td>lname : </td>
-           <td><input type="text" name="lname"></td>
-        </tr>
-        <tr>
            <td>type of freedom : </td>
            <td><input type="text" name="typefreedom"></td>
         </tr>

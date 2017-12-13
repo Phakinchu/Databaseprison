@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div align = "right">
+<form action="/visithistory/search" method="post">Search By Relative Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
+</div>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Visithistory List</h1>
 	<p class="lead blog-description">All visithistories</p>	

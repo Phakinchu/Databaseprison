@@ -14,18 +14,14 @@ class FreeprisonhistoryTableSeeder extends Seeder
         DB::table('freeprisonhistory')->insert([
             'id_freeprison' => '00010' ,
             'freedate' => '1997-08-25' ,
-            'fname' => 'aaaasss' ,
-            'lname' => 'sssss' ,
-            'type_of_freedom' => 'die' ,
+            'type_of_freedom' => 'died' ,
             'id_prisoner' => '00001'
         ]); 
 
         DB::table('freeprisonhistory')->insert([
             'id_freeprison' => '00011' ,
-            'freedate' => '1997-08-15' ,
-            'fname' => 'adsssss' ,
-            'lname' => 'ssssaas' ,
-            'type_of_freedom' => 'eiei' ,
+            'freedate' => '1997-09-09' ,
+            'type_of_freedom' => 'died' ,
             'id_prisoner' => '00002'
         ]);
     }
