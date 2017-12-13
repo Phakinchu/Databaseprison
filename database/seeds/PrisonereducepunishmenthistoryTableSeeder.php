@@ -13,7 +13,7 @@ class PrisonereducepunishmenthistoryTableSeeder extends Seeder
     {
         DB::table('prisonereducepunishmenthistory')->insert([
             'id_reducehis' => '00001' ,
-            'cause_reduce' => 'kondee' ,
+            'cause_reduce' => 'do good deeds' ,
             'time_reducted' => 5 ,
             'start_datereduce' => '1997-08-30' ,
             'id_prisoner' => '00001'
@@ -21,7 +21,7 @@ class PrisonereducepunishmenthistoryTableSeeder extends Seeder
 
         DB::table('prisonereducepunishmenthistory')->insert([
             'id_reducehis' => '00002' ,
-            'cause_reduce' => 'kondee22' ,
+            'cause_reduce' => 'do good deeds' ,
             'time_reducted' => 4 ,
             'start_datereduce' => '1997-08-29' ,
             'id_prisoner' => '00002' 

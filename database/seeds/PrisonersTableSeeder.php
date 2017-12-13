@@ -20,7 +20,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '1'  ,
             'id_cell' => '1'  ,
-            'scorepri' => 10
+            'scorepri' => 50
         ]);
  
         DB::table('prisoners')->insert([
@@ -32,7 +32,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '1'  ,
             'id_cell' => '1'  ,
-            'scorepri' => 10
+            'scorepri' => 42
         ]);
  
         DB::table('prisoners')->insert([
@@ -42,9 +42,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '432' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => 5  ,
+            'id_level' => 1  ,
             'id_cell' => '1'  ,
-            'scorepri' => 25
+            'scorepri' => 53
         ]);
  
         DB::table('prisoners')->insert([
@@ -54,9 +54,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '2'  ,
-            'scorepri' => 60
+            'scorepri' => 54
         ]);
  
         DB::table('prisoners')->insert([
@@ -66,9 +66,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '2'  ,
-            'scorepri' => 60
+            'scorepri' => 55
         ]);
  
         DB::table('prisoners')->insert([
@@ -78,9 +78,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '3'  ,
-            'scorepri' => 60
+            'scorepri' => 68
         ]);
  
         DB::table('prisoners')->insert([
@@ -90,9 +90,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '4'  ,
-            'scorepri' => 60
+            'scorepri' => 70
         ]);
  
         DB::table('prisoners')->insert([
@@ -102,9 +102,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '6'  ,
-            'scorepri' => 60
+            'scorepri' => 72
         ]);
  
         DB::table('prisoners')->insert([
@@ -114,9 +114,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '8'  ,
-            'scorepri' => 60
+            'scorepri' => 12
         ]);
  
         DB::table('prisoners')->insert([
@@ -126,9 +126,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '15'  ,
-            'scorepri' => 60
+            'scorepri' => 50
         ]);
  
         DB::table('prisoners')->insert([
@@ -138,7 +138,7 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '16'  ,
             'scorepri' => 60
         ]);
@@ -150,9 +150,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '9'  ,
-            'scorepri' => 60
+            'scorepri' => 70
         ]);
  
         DB::table('prisoners')->insert([
@@ -162,9 +162,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '20'  ,
-            'scorepri' => 60
+            'scorepri' => 50
         ]);
  
         DB::table('prisoners')->insert([
@@ -174,9 +174,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '22'  ,
-            'scorepri' => 60
+            'scorepri' => 50
         ]);
  
         DB::table('prisoners')->insert([
@@ -186,9 +186,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '14'  ,
-            'scorepri' => 60
+            'scorepri' => 40
         ]);
  
         DB::table('prisoners')->insert([
@@ -198,9 +198,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '25'  ,
-            'scorepri' => 60
+            'scorepri' => 105
         ]);
  
         DB::table('prisoners')->insert([
@@ -210,9 +210,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '25'  ,
-            'scorepri' => 60
+            'scorepri' => 110
         ]);
  
         DB::table('prisoners')->insert([
@@ -222,9 +222,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '26'  ,
-            'scorepri' => 60
+            'scorepri' => 144
         ]);
  
         DB::table('prisoners')->insert([
@@ -234,9 +234,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '27'  ,
-            'scorepri' => 60
+            'scorepri' => 133
         ]);
  
         DB::table('prisoners')->insert([
@@ -246,9 +246,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '28'  ,
-            'scorepri' => 60
+            'scorepri' => 105
         ]);
  
         DB::table('prisoners')->insert([
@@ -258,9 +258,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '28'  ,
-            'scorepri' => 60
+            'scorepri' => 110
         ]);
  
         DB::table('prisoners')->insert([
@@ -270,9 +270,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '30'  ,
-            'scorepri' => 60
+            'scorepri' => 115
         ]);
  
         DB::table('prisoners')->insert([
@@ -282,9 +282,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '30'  ,
-            'scorepri' => 60
+            'scorepri' => 120
         ]);
  
         DB::table('prisoners')->insert([
@@ -294,9 +294,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '31'  ,
-            'scorepri' => 60
+            'scorepri' => 170
         ]);
  
         DB::table('prisoners')->insert([
@@ -306,9 +306,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '2'  ,
-            'scorepri' => 60
+            'scorepri' => 150
         ]);
  
         DB::table('prisoners')->insert([
@@ -318,9 +318,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '33'  ,
-            'scorepri' => 60
+            'scorepri' => 140
         ]);
  
         DB::table('prisoners')->insert([
@@ -330,9 +330,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '35'  ,
-            'scorepri' => 60
+            'scorepri' => 130
         ]);
  
         DB::table('prisoners')->insert([
@@ -342,9 +342,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '35'  ,
-            'scorepri' => 60
+            'scorepri' => 105
         ]);
  
         DB::table('prisoners')->insert([
@@ -354,9 +354,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '37'  ,
-            'scorepri' => 60
+            'scorepri' => 107
         ]);
  
         DB::table('prisoners')->insert([
@@ -366,9 +366,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '37'  ,
-            'scorepri' => 60
+            'scorepri' => 120
         ]);
  
         DB::table('prisoners')->insert([
@@ -378,9 +378,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '38'  ,
-            'scorepri' => 60
+            'scorepri' => 150
         ]);
  
         DB::table('prisoners')->insert([
@@ -390,9 +390,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '38'  ,
-            'scorepri' => 60
+            'scorepri' => 160
         ]);
  
         DB::table('prisoners')->insert([
@@ -402,9 +402,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '15'  ,
-            'scorepri' => 60
+            'scorepri' => 50
         ]);
  
         DB::table('prisoners')->insert([
@@ -414,9 +414,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '5'  ,
-            'scorepri' => 60
+            'scorepri' => 50
         ]);
  
         DB::table('prisoners')->insert([
@@ -426,9 +426,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '40'  ,
-            'scorepri' => 60
+            'scorepri' => 160
         ]);
  
         DB::table('prisoners')->insert([
@@ -438,9 +438,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '41'  ,
-            'scorepri' => 60
+            'scorepri' => 222
         ]);
  
         DB::table('prisoners')->insert([
@@ -450,9 +450,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '41'  ,
-            'scorepri' => 60
+            'scorepri' => 225
         ]);
  
         DB::table('prisoners')->insert([
@@ -462,9 +462,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '42'  ,
-            'scorepri' => 60
+            'scorepri' => 230
         ]);
  
         DB::table('prisoners')->insert([
@@ -474,9 +474,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '35'  ,
-            'scorepri' => 60
+            'scorepri' => 140
         ]);
  
         DB::table('prisoners')->insert([
@@ -486,9 +486,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '37'  ,
-            'scorepri' => 60
+            'scorepri' => 114
         ]);
  
         DB::table('prisoners')->insert([
@@ -498,9 +498,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '37'  ,
-            'scorepri' => 60
+            'scorepri' => 115
         ]);
  
         DB::table('prisoners')->insert([
@@ -510,9 +510,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '38'  ,
-            'scorepri' => 60
+            'scorepri' => 150
         ]);
  
         DB::table('prisoners')->insert([
@@ -522,9 +522,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '38'  ,
-            'scorepri' => 60
+            'scorepri' => 140
         ]);
  
         DB::table('prisoners')->insert([
@@ -534,9 +534,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '2'  ,
             'id_cell' => '39'  ,
-            'scorepri' => 60
+            'scorepri' => 130
         ]);
  
         DB::table('prisoners')->insert([
@@ -546,9 +546,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '45'  ,
-            'scorepri' => 60
+            'scorepri' => 220
         ]);
  
         DB::table('prisoners')->insert([
@@ -558,9 +558,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '45'  ,
-            'scorepri' => 60
+            'scorepri' => 225
         ]);
  
         DB::table('prisoners')->insert([
@@ -570,9 +570,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '47'  ,
-            'scorepri' => 60
+            'scorepri' => 230
         ]);
  
         DB::table('prisoners')->insert([
@@ -582,9 +582,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '47'  ,
-            'scorepri' => 60
+            'scorepri' => 242
         ]);
  
         DB::table('prisoners')->insert([
@@ -594,9 +594,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '48'  ,
-            'scorepri' => 60
+            'scorepri' => 252
         ]);
  
         DB::table('prisoners')->insert([
@@ -606,9 +606,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '49'  ,
-            'scorepri' => 60
+            'scorepri' => 250
         ]);
  
         DB::table('prisoners')->insert([
@@ -618,9 +618,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '50'  ,
-            'scorepri' => 60
+            'scorepri' => 260
         ]);
  
         DB::table('prisoners')->insert([
@@ -630,9 +630,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '50'  ,
-            'scorepri' => 60
+            'scorepri' => 240
         ]);
  
         DB::table('prisoners')->insert([
@@ -642,9 +642,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '51'  ,
-            'scorepri' => 60
+            'scorepri' => 220
         ]);
  
         DB::table('prisoners')->insert([
@@ -654,9 +654,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '52'  ,
-            'scorepri' => 60
+            'scorepri' => 210
         ]);
  
         DB::table('prisoners')->insert([
@@ -666,9 +666,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '55'  ,
-            'scorepri' => 60
+            'scorepri' => 203
         ]);
  
         DB::table('prisoners')->insert([
@@ -678,9 +678,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '54'  ,
-            'scorepri' => 60
+            'scorepri' => 207
         ]);
  
         DB::table('prisoners')->insert([
@@ -690,9 +690,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '54'  ,
-            'scorepri' => 60
+            'scorepri' => 205
         ]);
  
         DB::table('prisoners')->insert([
@@ -702,9 +702,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '55'  ,
-            'scorepri' => 60
+            'scorepri' => 245
         ]);
  
         DB::table('prisoners')->insert([
@@ -714,9 +714,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '60'  ,
-            'scorepri' => 60
+            'scorepri' => 255
         ]);
  
         DB::table('prisoners')->insert([
@@ -726,9 +726,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '3'  ,
             'id_cell' => '60'  ,
-            'scorepri' => 60
+            'scorepri' => 265
         ]);
  
         DB::table('prisoners')->insert([
@@ -738,9 +738,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '61'  ,
-            'scorepri' => 60
+            'scorepri' => 335
         ]);
  
         DB::table('prisoners')->insert([
@@ -750,9 +750,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '62'  ,
-            'scorepri' => 60
+            'scorepri' => 350
         ]);
  
         DB::table('prisoners')->insert([
@@ -762,9 +762,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '64'  ,
-            'scorepri' => 60
+            'scorepri' => 320
         ]);
  
         DB::table('prisoners')->insert([
@@ -774,9 +774,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '65'  ,
-            'scorepri' => 60
+            'scorepri' => 330
         ]);
  
         DB::table('prisoners')->insert([
@@ -786,9 +786,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '68'  ,
-            'scorepri' => 60
+            'scorepri' => 350
         ]);
  
         DB::table('prisoners')->insert([
@@ -798,9 +798,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '70'  ,
-            'scorepri' => 60
+            'scorepri' => 340
         ]);
  
         DB::table('prisoners')->insert([
@@ -810,9 +810,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '70'  ,
-            'scorepri' => 60
+            'scorepri' => 320
         ]);
  
         DB::table('prisoners')->insert([
@@ -822,9 +822,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '69'  ,
-            'scorepri' => 60
+            'scorepri' => 330
         ]);
  
         DB::table('prisoners')->insert([
@@ -834,9 +834,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '69'  ,
-            'scorepri' => 60
+            'scorepri' => 332
         ]);
  
         DB::table('prisoners')->insert([
@@ -846,9 +846,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '72'  ,
-            'scorepri' => 60
+            'scorepri' => 320
         ]);
  
         DB::table('prisoners')->insert([
@@ -858,9 +858,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '73'  ,
-            'scorepri' => 60
+            'scorepri' => 370
         ]);
  
         DB::table('prisoners')->insert([
@@ -870,9 +870,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '73'  ,
-            'scorepri' => 60
+            'scorepri' => 350
         ]);
  
         DB::table('prisoners')->insert([
@@ -882,9 +882,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '74'  ,
-            'scorepri' => 60
+            'scorepri' => 340
         ]);
  
         DB::table('prisoners')->insert([
@@ -894,9 +894,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '76'  ,
-            'scorepri' => 60
+            'scorepri' => 320
         ]);
  
         DB::table('prisoners')->insert([
@@ -906,9 +906,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '75'  ,
-            'scorepri' => 60
+            'scorepri' => 310
         ]);
  
         DB::table('prisoners')->insert([
@@ -918,9 +918,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '74'  ,
-            'scorepri' => 60
+            'scorepri' => 320
         ]);
  
         DB::table('prisoners')->insert([
@@ -930,9 +930,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '77'  ,
-            'scorepri' => 60
+            'scorepri' => 350
         ]);
  
         DB::table('prisoners')->insert([
@@ -942,9 +942,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '78'  ,
-            'scorepri' => 60
+            'scorepri' => 340
         ]);
  
         DB::table('prisoners')->insert([
@@ -954,9 +954,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '78'  ,
-            'scorepri' => 60
+            'scorepri' => 330
         ]);
  
         DB::table('prisoners')->insert([
@@ -966,9 +966,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '4'  ,
             'id_cell' => '79'  ,
-            'scorepri' => 60
+            'scorepri' => 315
         ]);
  
         DB::table('prisoners')->insert([
@@ -980,7 +980,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '81'  ,
-            'scorepri' => 60
+            'scorepri' => 402
         ]);
  
         DB::table('prisoners')->insert([
@@ -992,7 +992,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '81'  ,
-            'scorepri' => 60
+            'scorepri' => 405
         ]);
  
         DB::table('prisoners')->insert([
@@ -1004,7 +1004,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '83'  ,
-            'scorepri' => 60
+            'scorepri' => 410
         ]);
  
         DB::table('prisoners')->insert([
@@ -1016,7 +1016,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '83'  ,
-            'scorepri' => 60
+            'scorepri' => 420
         ]);
  
         DB::table('prisoners')->insert([
@@ -1028,7 +1028,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '84'  ,
-            'scorepri' => 60
+            'scorepri' => 450
         ]);
  
         DB::table('prisoners')->insert([
@@ -1040,7 +1040,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '85'  ,
-            'scorepri' => 60
+            'scorepri' => 430
         ]);
  
         DB::table('prisoners')->insert([
@@ -1052,7 +1052,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '88'  ,
-            'scorepri' => 60
+            'scorepri' => 440
         ]);
  
         DB::table('prisoners')->insert([
@@ -1064,7 +1064,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '89'  ,
-            'scorepri' => 60
+            'scorepri' => 450
         ]);
  
         DB::table('prisoners')->insert([
@@ -1076,7 +1076,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '91'  ,
-            'scorepri' => 60
+            'scorepri' => 454
         ]);
  
         DB::table('prisoners')->insert([
@@ -1088,7 +1088,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '91'  ,
-            'scorepri' => 60
+            'scorepri' => 433
         ]);
  
         DB::table('prisoners')->insert([
@@ -1100,7 +1100,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '100'  ,
-            'scorepri' => 60
+            'scorepri' => 420
         ]);
  
         DB::table('prisoners')->insert([
@@ -1112,7 +1112,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '93'  ,
-            'scorepri' => 60
+            'scorepri' => 405
         ]);
  
         DB::table('prisoners')->insert([
@@ -1124,7 +1124,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '95'  ,
-            'scorepri' => 60
+            'scorepri' => 410
         ]);
  
         DB::table('prisoners')->insert([
@@ -1136,7 +1136,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '100'  ,
-            'scorepri' => 60
+            'scorepri' => 423
         ]);
  
         DB::table('prisoners')->insert([
@@ -1148,7 +1148,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '99'  ,
-            'scorepri' => 60
+            'scorepri' => 420
         ]);
  
         DB::table('prisoners')->insert([
@@ -1160,7 +1160,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '99'  ,
-            'scorepri' => 60
+            'scorepri' => 450
         ]);
  
         DB::table('prisoners')->insert([
@@ -1172,7 +1172,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '99'  ,
-            'scorepri' => 60
+            'scorepri' => 440
         ]);
  
         DB::table('prisoners')->insert([
@@ -1184,7 +1184,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '98'  ,
-            'scorepri' => 60
+            'scorepri' => 430
         ]);
  
         DB::table('prisoners')->insert([
@@ -1196,7 +1196,7 @@ class PrisonersTableSeeder extends Seeder
             'gender' => 'M' ,
             'id_level' => '5'  ,
             'id_cell' => '100'  ,
-            'scorepri' => 60
+            'scorepri' => 420
         ]);
  
         DB::table('prisoners')->insert([
@@ -1206,9 +1206,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '101'  ,
-            'scorepri' => 60
+            'scorepri' => 505
         ]);
  
         DB::table('prisoners')->insert([
@@ -1218,9 +1218,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '102'  ,
-            'scorepri' => 60
+            'scorepri' => 555
         ]);
  
         DB::table('prisoners')->insert([
@@ -1230,9 +1230,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '119'  ,
-            'scorepri' => 60
+            'scorepri' => 520
         ]);
  
         DB::table('prisoners')->insert([
@@ -1242,9 +1242,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '108'  ,
-            'scorepri' => 60
+            'scorepri' => 515
         ]);
  
         DB::table('prisoners')->insert([
@@ -1254,9 +1254,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '105'  ,
-            'scorepri' => 60
+            'scorepri' => 526
         ]);
  
         DB::table('prisoners')->insert([
@@ -1266,9 +1266,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '104'  ,
-            'scorepri' => 60
+            'scorepri' => 520
         ]);
  
         DB::table('prisoners')->insert([
@@ -1278,9 +1278,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '105'  ,
-            'scorepri' => 60
+            'scorepri' => 525
         ]);
  
         DB::table('prisoners')->insert([
@@ -1290,9 +1290,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '106'  ,
-            'scorepri' => 60
+            'scorepri' => 510
         ]);
  
         DB::table('prisoners')->insert([
@@ -1302,9 +1302,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
-            'id_cell' => '110'  ,
-            'scorepri' => 60
+            'id_level' => '6'  ,
+            'id_cell' => '110' ,
+            'scorepri' => 530
         ]);
  
         DB::table('prisoners')->insert([
@@ -1314,9 +1314,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '109'  ,
-            'scorepri' => 60
+            'scorepri' => 514
         ]);
  
         DB::table('prisoners')->insert([
@@ -1326,9 +1326,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '108'  ,
-            'scorepri' => 60
+            'scorepri' => 520
         ]);
  
         DB::table('prisoners')->insert([
@@ -1338,9 +1338,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '108'  ,
-            'scorepri' => 60
+            'scorepri' => 540
         ]);
  
         DB::table('prisoners')->insert([
@@ -1350,9 +1350,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '115'  ,
-            'scorepri' => 60
+            'scorepri' => 550
         ]);
  
         DB::table('prisoners')->insert([
@@ -1362,9 +1362,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '111'  ,
-            'scorepri' => 60
+            'scorepri' => 560
         ]);
  
         DB::table('prisoners')->insert([
@@ -1374,9 +1374,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '102'  ,
-            'scorepri' => 60
+            'scorepri' => 525
         ]);
  
         DB::table('prisoners')->insert([
@@ -1386,7 +1386,7 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '5'  ,
             'scorepri' => 60
         ]);
@@ -1398,9 +1398,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '118'  ,
-            'scorepri' => 60
+            'scorepri' => 540
         ]);
  
         DB::table('prisoners')->insert([
@@ -1410,9 +1410,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '119'  ,
-            'scorepri' => 60
+            'scorepri' => 520
         ]);
  
         DB::table('prisoners')->insert([
@@ -1422,9 +1422,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '120'  ,
-            'scorepri' => 60
+            'scorepri' => 525
         ]);
  
         DB::table('prisoners')->insert([
@@ -1434,9 +1434,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '6'  ,
             'id_cell' => '120'  ,
-            'scorepri' => 60
+            'scorepri' => 530
         ]);
  
         DB::table('prisoners')->insert([
@@ -1446,9 +1446,9 @@ class PrisonersTableSeeder extends Seeder
             'address' => '888' ,
             'dob' => '1999-09-25' ,
             'gender' => 'M' ,
-            'id_level' => '5'  ,
+            'id_level' => '1'  ,
             'id_cell' => '5'  ,
-            'scorepri' => 60
+            'scorepri' => 50
         ]);
 
     }

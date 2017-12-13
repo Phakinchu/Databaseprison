@@ -13,16 +13,10 @@ class LoginsTableSeeder extends Seeder
     {
         DB::table('logins')->insert([
             'id_login' => '00001' ,
-            'name' => 'Yasda',
-            'pass' => 'Somchit' ,
+            'name' => 'Admin',
+            'pass' => 'Password' ,
             'status' => 'admin' 
         ]);
 
-        DB::table('logins')->insert([
-            'id_login' => '00002' ,
-            'name' => 'asd',
-            'pass' => 'aaa' ,
-            'status' => 'visitor' 
-        ]);
     }
 }

@@ -14,13 +14,13 @@ class RelativesTableSeeder extends Seeder
         DB::table('relatives')->insert([
             'id_relative' => '00001' ,
             'name' => 'inwark' ,
-            'contractdetail' => 'greafafv' ,
+            'contractdetail' => '08211111' ,
         ]);
 
         DB::table('relatives')->insert([
             'id_relative' => '00002' ,
-            'name' => 'inwrk' ,
-            'contractdetail' => 'greafafav' ,
+            'name' => 'inwark2' ,
+            'contractdetail' => '082525251' ,
         ]); 
     }
 }
