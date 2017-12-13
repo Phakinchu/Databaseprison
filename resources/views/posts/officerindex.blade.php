@@ -5,8 +5,8 @@
 <form action="/officer/search" method="post">SearchID <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>
 <div class="blog-header" align = "center">
-  <h1 class="blog-title">Officer</h1>
-  <p class="lead blog-description">All officers</p>
+  <h1 class="blog-title">Officer</h1><br>
+  <!-- <p class="lead blog-description">All officers</p> -->
 </div>	
 	<table class="table table-hover">
   <tr> 

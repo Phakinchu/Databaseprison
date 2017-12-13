@@ -27,6 +27,7 @@
         </ul>
       </li>
       <li><a href="/casedetails">Case Detail</a></li>
+      <li><a href="/activities">Activity</a></li>
     </ul>
     <!-- <form class="navbar-form navbar-left">
       <div class="form-group">

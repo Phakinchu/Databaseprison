@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="blog-header" align = "center">
-  <h1 class="blog-title">Freeprisonhistory List</h1>
-	<p class="lead blog-description">All freeprisonhistories</p>
+  <h1 class="blog-title">Freeprison History List</h1><br>
+	<!-- <p class="lead blog-description">All freeprisonhistories</p> -->
 </div>	
   <table class="table table-hover"><tr> 
   	<td><center>IDfreeprison</center></td>
@@ -24,6 +24,6 @@
 	</tr>
   @endforeach
 	</table><br>
-  <center><form action="/freeprisonhistories/insertpage"><input type="submit" value="Add Freeprisonhistory"></form></center>
+  <center><form action="/freeprisonhistories/insertpage"><input type="submit" value="Add Free Prison History"></form></center>
 </div>
 @endsection

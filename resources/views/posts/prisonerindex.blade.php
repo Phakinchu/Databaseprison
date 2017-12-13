@@ -5,8 +5,9 @@
 <form action="/prisoner/search" method="post">Search By Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>
 <div class="blog-header" align = "center">
-  <h1 class="blog-title">Prisoner List</h1>
-	<p class="lead blog-description">All prisoners</p>
+  <h1 class="blog-title">Prisoner List</h1><br>
+  <br>
+	<!-- <p class="lead blog-description">All prisoners</p> -->
   <table class="table table-hover">
   <tr> 
   	<td ><center>Prisoner ID</center></td>

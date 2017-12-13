@@ -5,8 +5,8 @@
 <form action="/relative/search" method="post">SearchID <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>
 <div class="blog-header" align = "center">
-  <h1 class="blog-title">Relative List</h1>
-	<p class="lead blog-description">All relative</p>
+  <h1 class="blog-title">Relative List</h1><br>
+	<!-- <p class="lead blog-description">All relative</p> -->
 <div>  
   <table class="table table-hover">
   <tr> 
