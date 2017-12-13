@@ -26,5 +26,6 @@
         <td><center>{{$idcell}}</center></td>
         </tr>
       </table><br> 
+
 </div>
 @endsection

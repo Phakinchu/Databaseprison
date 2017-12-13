@@ -29,7 +29,6 @@
 		<td><center><a href="/prisonerbehavioralhistory/{{$post->id_behav}}/editpage">Click</a></center></td>
 		<td><center><a href="/prisonerbehavioralhistory/{{$post->id_behav}}/delete">Click</a></center></td>
 	</tr>
-	<br> 
   @endforeach
 	</table>
 	<br>

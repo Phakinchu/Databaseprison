@@ -37,7 +37,6 @@
 		<td><center><a href="/activity/{{$post->id_activity}}/editpage">Click</a></center></td>
 		<td><center><a href="/activity/{{$post->id_activity}}/delete">Click</a></center></td>
 	</tr>
-  <br> 
   @endforeach
 	</table><br>
   <center><form action="/activities/insertpage"><input type="submit" value="Add Activity"></form></center>

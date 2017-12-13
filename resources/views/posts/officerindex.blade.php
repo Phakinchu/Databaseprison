@@ -38,7 +38,6 @@
 			<td><center><a href="/officer/{{$post->id_officer}}/editpage">Click</a></center></td>
 			<td><center><a href="/officer/{{$post->id_officer}}/delete">Click</a></center></td>
 			</tr>
-    <br> 
   @endforeach
 	</table>
 	<div align = "center"><br>

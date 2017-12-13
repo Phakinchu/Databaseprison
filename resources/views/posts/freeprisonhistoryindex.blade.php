@@ -26,7 +26,6 @@
 		<td><center><a href="/freeprisonhistory/{{$post->id_freeprison}}/editpage">Click</a></center></td>
 		<td><center><a href="/freeprisonhistory/{{$post->id_freeprison}}/delete">Click</a></center></td>
 	</tr>
-  <br> 
   @endforeach
 	</table><br>
   <center><form action="/freeprisonhistories/insertpage"><input type="submit" value="Add Freeprisonhistory"></form></center>

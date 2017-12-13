@@ -29,7 +29,6 @@
 			<td><center><a href="/casedetail/{{$post->id_case}}/editpage">Click</a></center></td>
 			<td><center><a href="/casedetail/{{$post->id_case}}/delete">Click</a></center></td>
 		</tr>
-  <br> 
   @endforeach
 	</table><br>
   <center><form action="/casedetails/insertpage"><input type="submit" value="Add Casedetail"></form></center>

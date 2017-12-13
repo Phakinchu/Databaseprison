@@ -24,8 +24,6 @@
 			<td><center><a href="/prisonereducepunishmenthistory/{{$post->id_reducehis}}/editpage">Click</a></center></td>
 			<td><center><a href="/prisonereducepunishmenthistory/{{$post->id_reducehis}}/delete">Click</a></center></td>
 			</tr>
-<br> 
-
   @endforeach
 
 </table><br>

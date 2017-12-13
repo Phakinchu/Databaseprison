@@ -77,7 +77,7 @@ class VisithistoryController extends Controller
         $post = Visithistory::findOrFail($id);
 
         return view('posts.visithistoryview', [
-             //'title' => 'Gender',
+            'title' => 'Visit History',
             'name' => $post->name,
             'item' => $post->item,
             'contract' => $post->contract_detail,

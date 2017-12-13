@@ -21,8 +21,6 @@
 			<td><center><a href="/level/{{$post->id_level}}/editpage">Click</a></center></td>
 			<td><center><a href="/level/{{$post->id_level}}/delete">Click</a></center></td>
 			</tr>
-    <br> 
-
   @endforeach
 	</table><br>
 	<center><form action="/levels/insertpage"><input type="submit" value="Add Level"></form></center>

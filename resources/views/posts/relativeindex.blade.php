@@ -32,7 +32,6 @@
   	<td><center><a href="/relative/{{$post->id_relative}}/editpage">Click</a></center></td>
   	<td><center><a href="/relative/{{$post->id_relative}}/delete">Click</a></center></td>
 	</tr>
-  <br> 
   @endforeach
   </table><br>
   <div align = "center">

@@ -27,7 +27,6 @@
 		<td><center><a href="/visithistory/{{$post->id_visit}}/editpage">Click</a></center></td>
 		<td><center><a href="/visithistory/{{$post->id_visit}}/delete">Click</a></center></td>
 	</tr>
-  <br> 
   @endforeach
 	</table><br>
   <center><form action="/visithistories/insertpage"><input type="submit" value="Add Visithistory"></form></center>

@@ -4,7 +4,6 @@
 <div align = "right">
 <form action="/prisoner/search" method="post">SearchID <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 
-</div>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Prisoner List</h1>
 	<p class="lead blog-description">All prisoners</p>
@@ -27,7 +26,6 @@
   </tr>
   </thead>
     @foreach ($posts as $post)
-
     <tr>
 		<td><center>{{$post->id_prisoner}}</center></td>
 		<td><center>{{$post->fname}}</center></td>
@@ -48,7 +46,6 @@
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/editpage">Click</a></center></td>
 		<td><center><a href="/prisoner/{{$post->id_prisoner}}/delete">Click</a></center></td>
 	</tr>
-  <br> 
   @endforeach
   </table>
   <br>
