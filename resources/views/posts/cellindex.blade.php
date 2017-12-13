@@ -11,11 +11,13 @@
     <h3>Area : {{$cell->id_area}}</h3>
     <h3>officer name :
       @foreach ($cell->areas->officers as $officer)
-        {{$officer->name}} 
+        {{$officer->name}}  
       @endforeach
     </h3>
-    <h3> Prisoner name : $cell->prisoners->fname
-    </h3>
+    <h3> Prisoner name : 
+    @foreach ($cell->prisoners as $prisoner)
+        {{$prisoner->fname}} 
+      @endforeach
     <br>
     </div>
   @endforeach

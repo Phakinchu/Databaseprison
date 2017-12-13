@@ -2,7 +2,7 @@
 
 @section('content')
 <div align = "right">
-<form action="/officer/search" method="post">SearchID <input type="text" name="id" value=""><input type="submit"  value="go"></form>
+<form action="/officer/search" method="post">Search by name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Officer</h1><br>
