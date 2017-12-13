@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="blog-header">
+<div class="blog-header" align = "center">
   <h1 class="blog-title">Activity List</h1>
 	<p class="lead blog-description">All activities</p>
-  @foreach ($posts as $post)
-  <table border=2><tr> 
+</div>	
+  <table class="table table-hover">
+	<tr> 
   	<td><center>ActivityID</center></td>
   	<td><center>activity</center></td>
   	<td><center>duration(hrs)</center></td>
@@ -16,6 +17,7 @@
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>
+		@foreach ($posts as $post)
     <tr>
 		<td><center>{{$post->id_activity}}</center></td>
 		<td><center>{{$post->activity}}</center></td>
@@ -35,10 +37,9 @@
 		<td><center><a href="/activity/{{$post->id_activity}}/editpage">Click</a></center></td>
 		<td><center><a href="/activity/{{$post->id_activity}}/delete">Click</a></center></td>
 	</tr>
-    </table><br> 
-
+  <br> 
   @endforeach
-
-  <form action="/activities/insertpage"><input type="submit" value="Add Activity"></form>
+	</table><br>
+  <center><form action="/activities/insertpage"><input type="submit" value="Add Activity"></form></center>
 </div>
 @endsection

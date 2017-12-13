@@ -1,11 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="blog-header">
+<div class="blog-header" align = "center">
   <h1 class="blog-title">Casedetail List</h1>
 	<p class="lead blog-description">All casedetails</p>
-  @foreach ($posts as $post)
-  <table border=2><tr> 
+  <table class="table table-hover"><tr> 
   	<td><center>CasedetailID</center></td>
   	<td><center>section</center></td>
   	<td><center>punishment</center></td>
@@ -16,6 +15,7 @@
 		<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>
+		@foreach ($posts as $post)
     <tr>
 			<td><center>{{$post->id_case}}</center></td>
 			<td><center>{{$post->case_section}}</center></td>
@@ -29,10 +29,9 @@
 			<td><center><a href="/casedetail/{{$post->id_case}}/editpage">Click</a></center></td>
 			<td><center><a href="/casedetail/{{$post->id_case}}/delete">Click</a></center></td>
 		</tr>
-    </table><br> 
-
+  <br> 
   @endforeach
-
-  <form action="/casedetails/insertpage"><input type="submit" value="Add Casedetail"></form>
+	</table><br>
+  <center><form action="/casedetails/insertpage"><input type="submit" value="Add Casedetail"></form></center>
 </div>
 @endsection
