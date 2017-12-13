@@ -11,7 +11,8 @@ class CellController extends Controller
 {
     public function index()
     {
-        $cells = Cell::all() ;  
+        $cells = Cell::with('prisoners')->get() ;
+
         return view('posts.cellindex', [
             'title' => 'cell',
             'cells' => $cells          

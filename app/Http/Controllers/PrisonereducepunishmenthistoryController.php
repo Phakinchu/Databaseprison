@@ -81,4 +81,15 @@ class PrisonereducepunishmenthistoryController extends Controller
         ]);
     }
 
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        /*$prison = Prisoner::where('fname',$id)->get();*/
+        $reduc = Prisonereducepunishmenthistory::where('id_prisoner',$id)->get();
+        return view('posts.prisonereducepunishmenthistoryview',[
+            'title' => 'Prisoner', 
+            'posts' => $reduc 
+        ]);
+    }
+
 }

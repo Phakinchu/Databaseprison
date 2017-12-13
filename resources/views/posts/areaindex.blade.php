@@ -22,10 +22,16 @@ h3{
       <h3><center>area {{$area->id_area}} </center></h3>
       <h3>ID cell :
       @foreach ($area->cells as $cell)
-        <font size="5">{{$cell->id_cell}} </font>
-        <?php $countprisonum++ ; ?>  
+        <font size="5">{{$cell->id_cell}} </font>  
       @endforeach
       </h3>
+
+      @foreach ($area->cells as $cell)
+         @foreach ($cell->prisoners as $prisoner)
+          <?php $countprisonum++ ; ?>  
+         @endforeach
+      @endforeach
+ 
       @foreach ($area->officers as $officer)
       <?php $countofficernum++ ; ?>  
       @endforeach
