@@ -37,20 +37,28 @@ h3{
                     <tbody>
                       <tr>
                         <td>section :</td>
-                        <td>{{$section}}</td>
+                        <td>{{$post->case_section}}</td>
                       </tr>
                       <tr>
                         <td>Punishment :</td>
-                        <td>{{$punishment}}</td>
+                        <td>{{$post->punishment}}</td>
                       </tr>
                       <tr>
                         <td>Duration :</td>
-                        <td>{{$duration}}</td>
+                        <td>{{$post->case_duration}}</td>
                       </tr>
                       <tr>
                         <td>prisoner :</td>
-                        <td>{{$prisoner}}</td>
-                      </tr>                 
+                        <td>{{$post->id_prisoner}}</td>
+                      </tr>
+                      <tr>
+                        <td>officer :</td>
+                        <td>@foreach ($post->officers as $officer)
+                         {{$officer->name}}
+                          <br>
+                         @endforeach
+                         </td>
+                      </tr>                     
                     </tbody>
                   </table>
                 </div>

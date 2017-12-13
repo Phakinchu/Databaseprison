@@ -118,10 +118,10 @@ class CasedetailController extends Controller
     public function search(Request $request)
     {
         $id = $request->input('id');
-        $Casedetail = Casedetail::where('id_prisoner',$id)->get();
-        return view('posts.relativeview',[
+        $case = Casedetail::where('id_prisoner',$id)->get();
+        return view('posts.casedetailview',[
             'title' => 'Prisoner', 
-            'posts' => $Casedetail 
+            'posts' => $case
         ]);
     }
 
