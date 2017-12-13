@@ -73,7 +73,7 @@ class PrisonereducepunishmenthistoryController extends Controller
         $post = Prisonereducepunishmenthistory::findOrFail($id);
 
         return view('posts.prisonereducepunishmenthistoryview', [
-            'title' => "Reduce"
+            'title' => "Reduce",
             'cause' => $post->cause_reduce,
             'time' => $post->time_reducted,
             'date' => $post->start_datereduce,

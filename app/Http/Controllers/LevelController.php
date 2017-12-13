@@ -69,7 +69,7 @@ class LevelController extends Controller
         $post = Level::findOrFail($id);
 
         return view('posts.levelview', [
-            'title' => "Level Prisoner"
+            'title' => "Level Prisoner",
             'score' => $post->score,
             'lv' => $post->lv,
         ]);
