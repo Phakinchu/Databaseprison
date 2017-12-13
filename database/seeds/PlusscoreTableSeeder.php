@@ -11,7 +11,7 @@ class PlusscoreTableSeeder extends Seeder
      */
     public function run()
     {
-        /*DB::table('plusscore')->insert([
+        DB::table('plusscore')->insert([
             'id_activity' => '00001' ,
             'id_prisoner' => '00001'
         ]);
@@ -19,6 +19,6 @@ class PlusscoreTableSeeder extends Seeder
         DB::table('plusscore')->insert([
             'id_activity' => '00002' ,
             'id_prisoner' => '00002'
-        ]);*/
+        ]);
     }
 }
