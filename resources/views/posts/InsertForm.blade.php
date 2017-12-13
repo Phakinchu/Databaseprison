@@ -1,57 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Insert Form</title>
-</head>
-<body>
+@extends('layouts.app')
 
+@section('content')
+<div align = "center">
+<h1 class="blog-title">Insert Prisoner</h1><br>
 	<form action='/prisoners/save' method="post">
 	<table>
 		<tr>
-			<td>PrisonerID : </td>
+			<td height = "30">PrisonerID : </td>
 			<td><input type="text" name="id"></td>
 		</tr>
 		<tr>
-			<td>Fname : </td>
+			<td height = "30">Fname : </td>
 			<td><input type="text" name="fname"></td>
 		</tr>
 		<tr>
-			<td>LName : </td>
+			<td height = "30">LName : </td>
 			<td><input type="text" name="lname"></td>
 		</tr>
 		<tr>	
-			<td>gender : </td>
+			<td height = "30">gender : </td>
 			<td><input type="text" name="gender"></td>
 		</tr>
 		<tr>
-			<td>DOB </td>
+			<td height = "30">DOB </td>
 			<td><input type="text" name="dob"></td>
 		</tr>
 		<tr>
-			<td>Address : </td>
+			<td height = "30">Address : </td>
 			<td><input type="text" name="address"></td>
 		</tr>
 		<tr>
-			<td>level : </td>
+			<td height = "30">level : </td>
 			<td><input type="text" name="level"></td>
 		</tr>
 		<tr>
-			<td>cell : </td>
+			<td height = "30">cell : </td>
 			<td><input type="text" name="cell"></td>
 		</tr>
 		<tr>
-			<td>score : </td>
+			<td height = "30">score : </td>
 			<td><input type="text" name="score"></td>
 		</tr>
+		</table><br>
 		
-		<tr>
-			<td><input type="submit" name="submit" value="Add"></td>
-		</tr>
-	</table>
+			<input type="submit" name="submit" value="Add">
+		
+		<br><br>
 	</form>
 	<form action="/prisoners">
     <input type="submit" value="Back">
 	</form>
-
-</body>
-</html>
+</div>
+@endsection

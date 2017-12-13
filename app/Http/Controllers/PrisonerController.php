@@ -23,7 +23,9 @@ class PrisonerController extends Controller
 
     public function insertpage()
     {
-        return view('insertForm');
+        return view('posts.insertForm', [
+            'title' => 'Prisoner'
+        ]);
     }
     
     public function editpage($id)

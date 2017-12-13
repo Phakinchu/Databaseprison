@@ -20,12 +20,12 @@ class CasedetailController extends Controller
 
     public function insertpage()
     {
-        return view('CasedetailInsertForm');
+        return view('CasedetailInsertForm',['title' => 'Insert']);
     }
     
     public function editpage($id)
     {
-        return view('CasedetailEditForm')->with('id', $id);
+        return view('CasedetailEditForm',['title' => "Edit"])->with('id', $id);
     }
     public function save(Request $request)
     {
@@ -83,7 +83,7 @@ class CasedetailController extends Controller
 
     public function editsupervisepage($id)
     {
-        return view('casedetailsuperviseditForm')->with('id', $id);
+        return view('casedetailsuperviseditForm',['title' => "Edit"])->with('id', $id);
     }
 
     public function editsupervisesaveadd(Request $request, $id)
