@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://i0.wp.com/thechurchofstjude.org/wp-content/uploads/2017/01/Sunrise-Wallpapers.jpg");
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div class="blog-header">
   <h1 class="blog-title"> "Area"</h1><br>
   <!-- <p class="lead blog-description"> "Area page" </p> -->

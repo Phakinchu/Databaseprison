@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("http://www.desktop-backgrounds.com/images/caribbean-sunset.jpg");
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
+
 <div align = "right">
 <form action="/casedetails/search" method="post">Search By --- Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>

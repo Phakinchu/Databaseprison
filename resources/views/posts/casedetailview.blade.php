@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://upic.me/i/op/free-grunge-watercolor-stock-background-images.jpg");
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 </div>
 @foreach ($posts as $post)
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
@@ -25,7 +37,7 @@
                     <tbody>
                       <tr>
                         <td>section :</td>
-                        <td>{{$case_section}}</td>
+                        <td>{{$section}}</td>
                       </tr>
                       <tr>
                         <td>Punishment :</td>
