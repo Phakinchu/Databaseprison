@@ -25,8 +25,8 @@ h3{
   	<td><center>Relative ID</center></td>
   	<td><center>name</center></td>
   	<td><center>Contract detail</center></td>
-    <td><center>รายชื่อญาติ</center></td>
-    <td><center>เพิ่มญาติ</center></td>
+    <td><center>ชื่อนักโทษ</center></td>
+    <td><center>เพิ่มนักโทษ</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>
