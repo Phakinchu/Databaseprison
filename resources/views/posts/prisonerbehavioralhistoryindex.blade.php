@@ -13,7 +13,9 @@
   	<td><center>start_date</center></td>
     <td><center>end_date</center></td>
   	<td><center>prisonerID</center></td>
+		<td><center>prisoner Name</center></td>
 		<td><center>officerID</center></td>
+		<td><center>officer Name</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>
@@ -25,6 +27,7 @@
 		<td><center>{{$post->start_date}}</center></td>
     <td><center>{{$post->end_date}}</center></td>
 		<td><center>{{$post->id_prisoner}}</center></td>
+		<td><center>{{$post->prisoners->fname}} {{$post->prisoners->lname}}</center></td>
 		<td><center>{{$post->id_officer}}</center></td>
 		<td><center><a href="/prisonerbehavioralhistory/{{$post->id_behav}}/editpage">Click</a></center></td>
 		<td><center><a href="/prisonerbehavioralhistory/{{$post->id_behav}}/delete">Click</a></center></td>

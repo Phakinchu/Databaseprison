@@ -96,6 +96,8 @@ $router->get('/', function () use ($router) {
     $router->get('/freeprisonhistories/insertpage','FreeprisonhistoryController@insertpage');
         
     $router->post('/freeprisonhistories/save','FreeprisonhistoryController@save');
+
+    $router->post('/freeprisonhistory/search','FreeprisonhistoryController@search');
         
     $router->get('/freeprisonhistory/{id}/delete','FreeprisonhistoryController@delete');
         
@@ -140,6 +142,8 @@ $router->get('/', function () use ($router) {
     $router->get('/prisonerbehavioralhistories/insertpage','PrisonerbehavioralhistoryController@insertpage');
         
     $router->post('/prisonerbehavioralhistories/save','PrisonerbehavioralhistoryController@save');
+
+    $router->post('/prisonerbehavioralhistory/search','PrisonerbehavioralhistoryController@search');
         
     $router->get('/prisonerbehavioralhistory/{id}/delete','PrisonerbehavioralhistoryController@delete');
         

@@ -2,8 +2,8 @@
 
 @section('content')
 </div>
+@foreach ($posts as $post)
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-   
         <style>
         .panel-info>.panel-heading{
         color: #333;
@@ -18,33 +18,33 @@
             </div>
             <div class="panel-body">
               <div class="row">
-      
+              
                 <div class=" col-md-9 col-lg-9 "> 
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
                         <td>Crime :</td>
-                        <td>{{$crime}}</td>
+                        <td>{{$post->crime}}</td>
                       </tr>
                       <tr>
                         <td>Gulit :</td>
-                        <td>{{$gulit}}</td>
+                        <td>{{$post->guilt}}</td>
                       </tr>
                       <tr>
                         <td>StartDate</td>
-                        <td>{{$start_date}}</td>
+                        <td>{{$post->start_date}}</td>
                       </tr>
                       <tr>
                         <td>EndDate</td>
-                        <td>{{$end_date}}</td>
+                        <td>{{$post->end_date}}</td>
                       </tr>
                       <tr>
                         <td>Officer</td>
-                        <td>{{$officer}}</td>
+                        <td>{{$post->id_officer}}</td>
                       </tr>  
                       <tr>
                         <td>Prisoner</td>
-                        <td>{{$prisoner}}</td>
+                        <td>{{$post->id_prisoner}}</td>
                       </tr>               
                     </tbody>
                   </table>
@@ -55,4 +55,5 @@
         </div>
       </div>
     </div>
+    @endforeach 
 @endsection

@@ -22,5 +22,6 @@ class ActivitiesTableSeeder extends Seeder
             'activity' => 'outreach' ,
             'act_duration' => 2
         ]);
+
     }
 }

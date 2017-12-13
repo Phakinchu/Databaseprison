@@ -35,5 +35,10 @@ class LevelsTableSeeder extends Seeder
             'id_level' => '5' ,
             'lv' => 5
         ]);
+
+        DB::table('levels')->insert([
+            'id_level' => '6' ,
+            'lv' => 6
+        ]);
     }
 }
