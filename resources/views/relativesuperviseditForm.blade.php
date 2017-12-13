@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<form action="/relative/{{$id}}/edit_activity_supervisesaveadd" method="post">
+	<form action="/relative/{{$id}}/editsupervisesaveadd" method="post">
 	<table>
 		<tr>
 			<td>Add Id prisoner : </td>
@@ -18,7 +18,7 @@
 	</form>
 
 
-    <form action="/relative/{{$id}}/edit_activity_supervisesavedelete" method="post">
+    <form action="/relative/{{$id}}/editsupervisesavedelete" method="post">
 	<table>
         <tr>
 			<td>Delete Id prisoner : </td>

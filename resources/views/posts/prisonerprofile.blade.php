@@ -35,7 +35,6 @@
                         <td>Address</td>
                         <td>{{$address}}</td>
                       </tr>
-                   
                          <tr>
                              <tr>
                         <td>Date Of Birth</td>
