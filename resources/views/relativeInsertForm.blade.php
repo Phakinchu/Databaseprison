@@ -1,22 +1,20 @@
+<@extends('layouts.app')
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Insert Form</title>
-</head>
-<body>
-
+@section('content')
+<div align = "center">
+<h1 class="blog-title">Relative Insert</h1><br>
 	<form action='/relatives/save' method="post">
 	<table>
          <tr>
-			<td>Relative ID : </td>
+			<td height = "30">Relative ID : </td>
 			<td><input type="text" name="id_relative"></td>
 		</tr>
 		<tr>
-			<td>Name : </td>
+			<td height = "30">Name : </td>
 			<td><input type="text" name="name"></td>
 		</tr>
 		<tr>
-			<td>Contractdetail : </td>
+			<td height = "30">Contractdetail : </td>
 			<td><input type="text" name="contractdetail"></td>
 		</tr>
 		<tr>
@@ -28,5 +26,4 @@
     <input type="submit" value="Back">
 	</form>
 
-</body>
-</html>
+@endsection

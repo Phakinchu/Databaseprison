@@ -20,12 +20,12 @@ class LevelController extends Controller
 
     public function insertpage()
     {
-        return view('LevelInsertForm');
+        return view('LevelInsertForm',['title' => 'Insert']);
     }
     
     public function editpage($id)
     {
-        return view('LevelEditForm')->with('id', $id);
+        return view('LevelEditForm',['title' => 'Edit'])->with('id', $id);
     }
     public function save(Request $request)
     {

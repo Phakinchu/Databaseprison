@@ -20,12 +20,12 @@ class VisithistoryController extends Controller
 
     public function insertpage()
     {
-        return view('VisithistoryInsertForm');
+        return view('VisithistoryInsertForm',['title' => 'insert']);
     }
     
     public function editpage($id)
     {
-        return view('VisithistoryEditForm')->with('id', $id);
+        return view('VisithistoryEditForm',['title' => 'edit'])->with('id', $id);
     }
     public function save(Request $request)
     {

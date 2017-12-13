@@ -30,7 +30,7 @@ class PrisonerController extends Controller
     
     public function editpage($id)
     {
-        return view('editForm')->with('id', $id);
+        return view('editForm',['title' => 'Edit'])->with('id', $id);
     }
     public function save(Request $request)
     {
@@ -54,7 +54,7 @@ class PrisonerController extends Controller
 
     public function editsupervisepage($id)
     {
-        return view('prisonersuperviseditForm')->with('id', $id);
+        return view('prisonersuperviseditForm',['title' => 'Edit'])->with('id', $id);
     }
 
     public function editsupervisesaveadd(Request $request, $id)
