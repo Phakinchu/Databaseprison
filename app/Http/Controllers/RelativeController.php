@@ -97,4 +97,14 @@ class RelativeController extends Controller
         </form>";
     }
 
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        $relative = relative::where('name',$id)->get();
+        return view('posts.relativeview',[
+            'title' => 'Prisoner', 
+            'posts' => $relative 
+        ]);
+    }
+
 }

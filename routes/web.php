@@ -230,6 +230,8 @@ $router->get('/', function () use ($router) {
     $router->get('/relative/{id}/editpage','RelativeController@editpage');
         
     $router->post('/relative/{id}/editsave','RelativeController@editsave');
+
+    $router->post('/relative/search','RelativeController@search');
     
     $router->get('/relative/{id}/editsupervisepage','RelativeController@editsupervisepage');
     

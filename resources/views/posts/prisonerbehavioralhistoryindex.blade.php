@@ -29,7 +29,6 @@ h3{
   	<td><center>prisonerID</center></td>
 		<td><center>prisoner Name</center></td>
 		<td><center>officerID</center></td>
-		<td><center>officer Name</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>

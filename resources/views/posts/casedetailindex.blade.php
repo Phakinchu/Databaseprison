@@ -15,7 +15,7 @@ h3{
 </style>
 
 <div align = "right">
-<form action="/casedetails/search" method="post">Search By --- Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
+<form action="/casedetails/search" method="post">Search By ID prisoner <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Case Detail</h1><br>

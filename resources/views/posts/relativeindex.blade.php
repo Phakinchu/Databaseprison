@@ -14,7 +14,7 @@ h3{
 }
 </style>
 <div align = "right">
-<form action="/relative/search" method="post">SearchID <input type="text" name="id" value=""><input type="submit"  value="go"></form>
+<form action="/relative/search" method="post">Search by Relative name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Relative List</h1><br>
@@ -25,8 +25,8 @@ h3{
   	<td><center>Relative ID</center></td>
   	<td><center>name</center></td>
   	<td><center>Contract detail</center></td>
-    <td><center>รายชื่อญาติ</center></td>
-    <td><center>เพิ่มญาติ</center></td>
+    <td><center>ชื่อนักโทษ</center></td>
+    <td><center>เพิ่มนักโทษ</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
     </tr>
