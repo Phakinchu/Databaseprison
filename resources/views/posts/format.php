@@ -14,7 +14,7 @@
 
           <div class="panel panel-info">
             <div class="panel-heading">
-              <center><h3 class="panel-title">Visit History</h3></center>
+              <center><h3 class="panel-title">Behavior History</h3></center>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -24,30 +24,29 @@
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
-                        <td>Name :</td>
-                        <td>{{$name}}</td>
+                        <td>Crime :</td>
+                        <td>{{$crime}}</td>
                       </tr>
                       <tr>
-                        <td>Item :</td>
-                        <td>{{$item}}</td>
+                        <td>Gulit :</td>
+                        <td>{{$gulit}}</td>
                       </tr>
                       <tr>
-                        <td>Contract</td>
-                        <td>{{$contract_detail}}</td>
+                        <td>StartDate</td>
+                        <td>{{$start_date}}</td>
                       </tr>
-                         <tr>
-                             <tr>
-                        <td>DateTime</td>
-                        <td>{{$Datetime}}</td>
-                      </tr>
-                        <tr>
-                        <td>Prisoner</td>
-                        <td>{{$id_prisoner}}</td>
+                      <tr>
+                        <td>EndDate</td>
+                        <td>{{$end_date}}</td>
                       </tr>
                       <tr>
                         <td>Officer</td>
-                        <td>{{$id_officer}}</td>
-                      </tr>              
+                        <td>{{$officer}}</td>
+                      </tr>  
+                      <tr>
+                        <td>Prisoner</td>
+                        <td>{{$prisoner}}</td>
+                      </tr>               
                     </tbody>
                   </table>
                 </div>
