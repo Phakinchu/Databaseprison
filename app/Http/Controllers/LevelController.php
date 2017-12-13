@@ -31,7 +31,6 @@ class LevelController extends Controller
     {
         $level = new Level;
         $level->id_level=$request->input('id');
-        $level->score=$request->input('score');
         $level->lv=$request->input('lv');
         $level->save();
         
@@ -54,7 +53,6 @@ class LevelController extends Controller
     public function editsave(Request $request, $id)
     {
         $level = Level::findOrFail($id);
-        $level->score=$request->input('score');
         $level->lv=$request->input('lv');
         $level->save();
         echo "Edit Success!!";
@@ -70,7 +68,6 @@ class LevelController extends Controller
 
         return view('posts.levelview', [
             'title' => "Level Prisoner",
-            'score' => $post->score,
             'lv' => $post->lv,
         ]);
     }

@@ -8,10 +8,6 @@
 	<form action='/level/{{$id}}/editsave' method="post">
 	<table>
 		<tr>
-			<td>score : </td>
-			<td><input type="text" name="score"></td>
-		</tr>
-		<tr>
 			<td>lv </td>
 			<td><input type="text" name="lv"></td>
 		</tr>

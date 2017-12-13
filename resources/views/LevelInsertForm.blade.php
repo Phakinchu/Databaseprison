@@ -12,10 +12,6 @@
 			<td><input type="text" name="id"></td>
 		</tr>
 		<tr>
-			<td>score : </td>
-			<td><input type="text" name="score"></td>
-		</tr>
-		<tr>
 			<td>lv </td>
 			<td><input type="text" name="lv"></td>
 		</tr>

@@ -24,10 +24,6 @@
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
-                        <td>Score :</td>
-                        <td>{{$score}}</td>
-                      </tr>
-                      <tr>
                         <td>Level :</td>
                         <td>{{$lv}}</td>
                       </tr>        

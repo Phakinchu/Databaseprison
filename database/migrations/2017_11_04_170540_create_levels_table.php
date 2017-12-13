@@ -16,7 +16,6 @@ class CreateLevelsTable extends Migration
         Schema::create('levels', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->integer('id_level')->unsigned();
-            $table->integer('score');
             $table->integer('lv');
             $table->primary('id_level') ;
             $table->timestamps();

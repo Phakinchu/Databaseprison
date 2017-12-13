@@ -8,7 +8,6 @@
 	<table class="table table-hover">
 		<tr> 
   	<td><center>id_level</center></td>
-  	<td><center>score</center></td>
   	<td><center>lv</center></td>
   	<td><center>Edit</center></td>
   	<td><center>Delete</center></td>
@@ -16,7 +15,6 @@
 		@foreach ($posts as $post)
     <tr>
 			<td><center>{{$post->id_level}}</center></td>
-			<td><center>{{$post->score}}</center></td>
 			<td><center>{{$post->lv}}</center></td>
 			<td><center><a href="/level/{{$post->id_level}}/editpage">Click</a></center></td>
 			<td><center><a href="/level/{{$post->id_level}}/delete">Click</a></center></td>
