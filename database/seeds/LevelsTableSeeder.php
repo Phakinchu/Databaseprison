@@ -15,7 +15,6 @@ class LevelsTableSeeder extends Seeder
             'id_level' => '5' ,
             'score' => 30 ,
             'lv' => 3
-      
         ]);
 
     }
