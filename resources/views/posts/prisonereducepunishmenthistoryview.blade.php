@@ -2,6 +2,7 @@
 
 @section('content')
 </div>
+@foreach ($posts as $post)
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
    
         <style>
@@ -25,21 +26,24 @@
                     <tbody>
                       <tr>
                         <td>Cause :</td>
-                        <td>{{$cause}}</td>
+                        <td>{{$post->cause_reduce}}</td>
                       </tr>
                       <tr>
                         <td>Time :</td>
-                        <td>{{$time}}</td>
+                        <td>{{$post->time_reducted}}</td>
                       </tr>
                       <tr>
                         <td>Date</td>
-                        <td>{{$date}}</td>
+                        <td>{{$post->start_datereduce}}</td>
                       </tr>
                          <tr>
-                             <tr>
-                        <td>prisoner</td>
-                        <td>{{$prisoner}}</td>
-                      </tr>             
+                        <td>prisoner id</td>
+                        <td>{{$post->id_prisoner}}</td>
+                      </tr> 
+                      <tr>
+                        <td>prisoner name</td>
+                        <td>{{$post->prisoners->fname}}</td>
+                      </tr>            
                     </tbody>
                   </table>
                 </div>
@@ -49,4 +53,5 @@
         </div>
       </div>
     </div>
+    @endforeach 
 @endsection

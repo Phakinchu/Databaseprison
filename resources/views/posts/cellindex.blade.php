@@ -7,16 +7,23 @@
   @foreach ($cells as $cell)
     <br>
     <div style="border: 5px solid #000000;">
-    <font size="6"><center> Cell number {{$cell->id_cell}}</center></font>
-    <h3>Area : {{$cell->id_area}}</h3>
-    <h3>officer name :
-      @foreach ($cell->areas->officers as $officer)
-        {{$officer->name}} 
+      <font size="6"><center> Cell number {{$cell->id_cell}}</center></font>
+      <h3>Area : {{$cell->id_area}}</h3>
+      <h3>officer name :
+        @foreach ($cell->areas->officers as $officer)
+          {{$officer->name}} 
+          <br>
+        @endforeach
+      </h3>
+      <h3> 
+      Prisoner name :
+      @foreach ($cell->prisoners as $prisoner)
+       {{$prisoner->fname}}  
+       <br>
       @endforeach
-    </h3>
-    <h3> Prisoner name : $cell->prisoners->fname
-    </h3>
-    <br>
+        </h3>
+      
+      <br>
     </div>
   @endforeach
   

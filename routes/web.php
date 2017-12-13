@@ -159,6 +159,8 @@ $router->get('/', function () use ($router) {
     $router->get('/casedetails/insertpage','CasedetailController@insertpage');
         
     $router->post('/casedetails/save','CasedetailController@save');
+
+    $router->post('/casedetails/search','CasedetailController@search');
         
     $router->get('/casedetail/{id}/delete','CasedetailController@delete');
         
@@ -178,6 +180,8 @@ $router->get('/', function () use ($router) {
     $router->get('/prisonereducepunishmenthistory/{id}', 'PrisonereducepunishmenthistoryController@view');
     
     $router->get('/prisonereducepunishmenthistories/insertpage','PrisonereducepunishmenthistoryController@insertpage');
+
+    $router->post('/prisonereducepunishmenthistory/search','PrisonereducepunishmenthistoryController@search');
         
     $router->post('/prisonereducepunishmenthistories/save','PrisonereducepunishmenthistoryController@save');
         
