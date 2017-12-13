@@ -20,12 +20,12 @@ class FreeprisonhistoryController extends Controller
 
     public function insertpage()
     {
-        return view('FreeprisonhistoryInsertForm');
+        return view('FreeprisonhistoryInsertForm',['title' => "Insert"]);
     }
     
     public function editpage($id)
     {
-        return view('FreeprisonhistoryEditForm')->with('id', $id);
+        return view('FreeprisonhistoryEditForm',['title' => "Edit"])->with('id', $id);
     }
     public function save(Request $request)
     {

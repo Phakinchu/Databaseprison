@@ -1,14 +1,12 @@
+<<@extends('layouts.app')
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Edit Form</title>
-</head>
-<body>
-
+@section('content')
+<div align = "center">
+<h1 class="blog-title">Prisoner Supervise</h1><br>
 	<form action="/prisoner/{{$id}}/editsupervisesaveadd" method="post">
 	<table>
 		<tr>
-			<td>Add Id officer : </td>
+			<td height = "30">Add Id officer : </td>
 			<td><input type="text" name="id_officer" ></td>
 		</tr>
         <tr>
@@ -21,7 +19,7 @@
     <form action="/prisoner/{{$id}}/editsupervisesavedelete" method="post">
 	<table>
         <tr>
-			<td>Delete Id officer : </td>
+			<td height = "30">Delete Id officer : </td>
 			<td><input type="text" name="id_officer" ></td>
 		</tr>
 		<tr>
@@ -35,5 +33,4 @@
     <input type="submit" value="Back">
 	</form>
 
-</body>
-</html>
+@endsection

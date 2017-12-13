@@ -24,7 +24,7 @@ class CellController extends Controller
         $post = Cell::findOrFail($id);
 
         return view('posts.casedetailview', [
-
+            'title' => 'cell',
             'section' => $post->case_section,
             'punishment' => $post->punishment,
             'duration' => $post->case_duration,

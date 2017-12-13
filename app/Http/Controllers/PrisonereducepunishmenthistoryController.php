@@ -20,12 +20,12 @@ class PrisonereducepunishmenthistoryController extends Controller
 
     public function insertpage()
     {
-        return view('PrisonereducepunishmenthistoryInsertForm');
+        return view('PrisonereducepunishmenthistoryInsertForm',['title' => 'Insert']);
     }
     
     public function editpage($id)
     {
-        return view('PrisonereducepunishmenthistoryEditForm')->with('id', $id);
+        return view('PrisonereducepunishmenthistoryEditForm',['title' => 'Edit'])->with('id', $id);
     }
     public function save(Request $request)
     {

@@ -1,10 +1,8 @@
+<@extends('layouts.app')
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Edit Form</title>
-</head>
-<body>
-
+@section('content')
+<div align = "center">
+<h1 class="blog-title">Prisoner Edit</h1><br>
 	<form action="/prisoner/{{$id}}/editsave" method="post">
 	<table>
 		<!-- <tr>
@@ -12,35 +10,35 @@
 			<td><input type="text" name="id"></td>
 		</tr> -->
 		<tr>
-			<td>Fname : </td>
+			<td height = "30">Fname : </td>
 			<td><input type="text" name="fname" ></td>
 		</tr>
 		<tr>
-			<td>LName : </td>
+			<td height = "30">LName : </td>
 			<td><input type="text" name="lname"></td>
 		</tr>
 		<tr>
-			<td>Gender : </td>
+			<td height = "30">Gender : </td>
 			<td><input type="text" name="gender"></td>
 		</tr>
 		<tr>
-			<td>DOB : </td>
+			<td height = "30">DOB : </td>
 			<td><input type="text" name="dob"></td>
 		</tr>
 		<tr>
-			<td>Address : </td>
+			<td height = "30">Address : </td>
 			<td><input type="text" name="address"></td>
 		</tr>
 		<tr>
-			<td>level : </td>
+			<td height = "30">level : </td>
 			<td><input type="text" name="level"></td>
 		</tr>
 		<tr>
-			<td>cell : </td>
+			<td height = "30">cell : </td>
 			<td><input type="text" name="cell"></td>
 		</tr>
 		<tr>
-			<td>score : </td>
+			<td height = "30">score : </td>
 			<td><input type="text" name="score"></td>
 		</tr>
 		<tr>
@@ -52,5 +50,4 @@
     <input type="submit" value="Back">
 	</form>
 
-</body>
-</html>
+@endsection

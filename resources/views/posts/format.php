@@ -14,7 +14,7 @@
 
           <div class="panel panel-info">
             <div class="panel-heading">
-              <center><h3 class="panel-title">CaseDetail</h3></center>
+              <center><h3 class="panel-title">ACtivity</h3></center>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -24,21 +24,13 @@
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
-                        <td>section :</td>
-                        <td>{{$case_section}}</td>
-                      </tr>
-                      <tr>
-                        <td>Punishment :</td>
-                        <td>{{$punishment}}</td>
+                        <td>ACtivity :</td>
+                        <td>{{$activity}}</td>
                       </tr>
                       <tr>
                         <td>Duration :</td>
-                        <td>{{$case_duration}}</td>
-                      </tr>
-                      <tr>
-                        <td>officer :</td>
-                        <td>{{$id_officer}}</td>
-                      </tr>                 
+                        <td>{{$duration}}</td>
+                      </tr>              
                     </tbody>
                   </table>
                 </div>
