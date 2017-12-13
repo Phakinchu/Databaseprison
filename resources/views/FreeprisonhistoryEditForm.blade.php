@@ -4,7 +4,7 @@
 <style>
 body{
 	color: black;
-	background-image: url("https://cdn.pixabay.com/photo/2017/06/15/23/56/paint-2407291_960_720.jpg");
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ40-UBOK9TUievMIqEgqzxsgZa7lyo3GRgpDBcsnGY8bHcNlIV");
 	background-repeat: repeat;
     background-size: 120% 120%;
 }
