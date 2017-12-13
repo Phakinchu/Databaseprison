@@ -1,6 +1,20 @@
 <@extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://st.depositphotos.com/1350793/1377/i/950/depositphotos_13773490-stock-photo-abtract-ligths-background-glowing-pale.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Level Insert</h1><br>
 	<form action='/levels/save' method="post">

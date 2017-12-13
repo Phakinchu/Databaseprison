@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi1V4UQC2Lb6cuhD_vxVVXh-UXbfPSDOAyV7ROwreQM1yTS4pT");
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "right">
 <form action="/freeprisonhistory/search" method="post">Search By ID prisoner <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>

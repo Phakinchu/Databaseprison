@@ -1,6 +1,20 @@
 @extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://st.depositphotos.com/1813957/4505/i/950/depositphotos_45057915-stock-photo-pastel-purple-distressed-background.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Area Insert</h1><br>
 	<form action='/areas/save' method="post">

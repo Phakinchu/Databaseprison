@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0YIAFTlVfuBRMFh88G1rgHl1CxsS4Ff9od13RPGXWFoDbddU");
+	background-repeat: no-repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Insert Prisoner</h1><br>
 	<form action='/prisoners/save' method="post">

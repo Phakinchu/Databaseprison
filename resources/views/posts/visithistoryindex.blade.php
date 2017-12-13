@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("http://www.publicdomainpictures.net/pictures/120000/nahled/watercolor-bokeh-pastel-background.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "right">
 <form action="/visithistory/search" method="post">Search By Relative Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>

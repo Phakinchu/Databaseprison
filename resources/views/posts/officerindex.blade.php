@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://i1.wp.com/www.dzzyn.com/wp-content/uploads/2015/11/30-Free-Beautiful-Watercolor-Wallpapers-That-Should-Be-on-Your-Desktop-24.jpg");
+	background-repeat: no-repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "right">
 <form action="/officer/search" method="post">Search by name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>

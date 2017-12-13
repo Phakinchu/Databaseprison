@@ -1,6 +1,20 @@
 <@extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://cdn.pixabay.com/photo/2015/07/24/11/11/watercolor-858172_640.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Freedom Insert</h1><br>
 	<form action='/freeprisonhistories/save' method="post">

@@ -1,6 +1,20 @@
 <@extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("http://www.publicdomainpictures.net/pictures/120000/nahled/watercolor-bokeh-pastel-background.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Visit History Edit</h1><br>
 	<form action="/visithistory/{{$id}}/editsave" method="post">

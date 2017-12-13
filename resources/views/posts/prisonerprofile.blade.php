@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://st.depositphotos.com/1813957/4505/i/950/depositphotos_45055461-stock-photo-pastel-blue-distressed-background.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 </div>@foreach ($posts as $post)
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
 

@@ -1,6 +1,20 @@
 <@extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://data.whicdn.com/images/270037514/large.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Behavior Insert</h1><br>
 	<form action='/prisonerbehavioralhistories/save' method="post">

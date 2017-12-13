@@ -1,6 +1,20 @@
 <@extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://cdn.pixabay.com/photo/2017/08/12/10/13/background-2633962_960_720.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Officer Edit</h1><br>
 	<form action="/officer/{{$id}}/editsave" method="post">

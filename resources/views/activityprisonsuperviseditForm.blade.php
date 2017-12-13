@@ -1,6 +1,20 @@
 @extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5sFZYlnnRRlVsAFqJBvz7ZXTUHhQygCuMre--mFDqs2qArLcr");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Activity Prisoner Edit</h1><br>
 	<form action="/activity/{{$id}}/edit_activity_prison_supervisesaveadd" method="post">

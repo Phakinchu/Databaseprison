@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVgn81vUKKZ62409-yri3E2G0z3uNL0D8J1XV6EP7oWKYOAmk");
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div class="blog-header">
   <h1 class="blog-title"> <center>"Cell"</center></h1><br>
   <!-- <p class="lead blog-description"> "cell page" </p> -->

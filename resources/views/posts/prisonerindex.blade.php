@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://static.vecteezy.com/system/resources/previews/000/113/015/non_2x/light-blue-free-vector-watercolor-texture.jpg");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "right">
 <form action="/prisoner/search" method="post">Search By Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
 </div>

@@ -1,6 +1,20 @@
 @extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSARmmbnzF857MNUCqUU_2n_m0r2ok1IeRNwGtrdM6heRztDB78");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
 <h1 class="blog-title">Case Detail Insert</h1><br>
 	<form action='/casedetails/save' method="post">

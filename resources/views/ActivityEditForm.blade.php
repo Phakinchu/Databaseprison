@@ -1,6 +1,20 @@
 @extends('layouts.app')
 <!DOCTYPE html>
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaNEWrNB8MfBkH5jn3qJVOqdI1c3IgLyKI3ChlDEnvcpgsyiX1");
+	background-repeat: repeat;
+    background-size: 120% 120%;
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div align = "center">
     <h1 class="blog-title">Activity Edit</h1><br>
 	<form action="/activity/{{$id}}/editsave" method="post">
