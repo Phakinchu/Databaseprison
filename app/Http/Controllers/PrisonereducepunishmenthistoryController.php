@@ -20,12 +20,12 @@ class PrisonereducepunishmenthistoryController extends Controller
 
     public function insertpage()
     {
-        return view('PrisonereducepunishmenthistoryInsertForm');
+        return view('PrisonereducepunishmenthistoryInsertForm',['title' => 'Insert']);
     }
     
     public function editpage($id)
     {
-        return view('PrisonereducepunishmenthistoryEditForm')->with('id', $id);
+        return view('PrisonereducepunishmenthistoryEditForm',['title' => 'Edit'])->with('id', $id);
     }
     public function save(Request $request)
     {
@@ -78,6 +78,17 @@ class PrisonereducepunishmenthistoryController extends Controller
             'time' => $post->time_reducted,
             'date' => $post->start_datereduce,
             'prisoner' => $post->id_prisoner
+        ]);
+    }
+
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+        /*$prison = Prisoner::where('fname',$id)->get();*/
+        $reduc = Prisonereducepunishmenthistory::where('id_prisoner',$id)->get();
+        return view('posts.prisonereducepunishmenthistoryview',[
+            'title' => 'Prisoner', 
+            'posts' => $reduc 
         ]);
     }
 

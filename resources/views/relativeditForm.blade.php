@@ -1,18 +1,16 @@
+<@extends('layouts.app')
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Edit Form</title>
-</head>
-<body>
-
+@section('content')
+<div align = "center">
+<h1 class="blog-title">Relative Edit</h1><br>
 	<form action="/relative/{{$id}}/editsave" method="post">
 	<table>
 		<tr>
-			<td>name : </td>
+			<td height = "30">name : </td>
 			<td><input type="text" name="name" ></td>
 		</tr>
 		<tr>
-			<td>contractdetail : </td>
+			<td height = "30">contractdetail : </td>
 			<td><input type="text" name="contractdetail"></td>
 		</tr>
 		<tr>
@@ -24,5 +22,4 @@
     <input type="submit" value="Back">
 	</form>
 
-</body>
-</html>
+@endsection

@@ -20,12 +20,12 @@ class PrisonerbehavioralhistoryController extends Controller
 
     public function insertpage()
     {
-        return view('PrisonerbehavioralhistoryInsertForm');
+        return view('PrisonerbehavioralhistoryInsertForm',['title' => 'insert']);
     }
     
     public function editpage($id)
     {
-        return view('PrisonerbehavioralhistoryEditForm')->with('id', $id);
+        return view('PrisonerbehavioralhistoryEditForm',['title' => 'Edit'])->with('id', $id);
     }
     public function save(Request $request)
     {

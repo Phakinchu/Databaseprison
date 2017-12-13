@@ -21,12 +21,12 @@ class OfficerController extends Controller
 
     public function insertpage()
     {
-        return view('officerInsertForm');
+        return view('officerInsertForm',['title' => 'insert']);
     }
     
     public function editpage($id)
     {
-        return view('officerEditForm')->with('id', $id);
+        return view('officerEditForm',['title' => 'Edit'])->with('id', $id);
     }
     public function save(Request $request)
     {

@@ -21,12 +21,12 @@ class RelativeController extends Controller
 
     public function insertpage()
     {
-        return view('relativeInsertForm');
+        return view('relativeInsertForm',['title' => 'Insert']);
     }
     
     public function editpage($id)
     {
-        return view('relativEditForm')->with('id', $id);
+        return view('relativEditForm',['title' => 'Edit'])->with('id', $id);
     }
     public function save(Request $request)
     {
@@ -66,7 +66,7 @@ class RelativeController extends Controller
     
     public function editsupervisepage($id)
     {
-        return view('relativesuperviseditForm')->with('id', $id);
+        return view('relativesuperviseditForm',['title' => 'supervise'])->with('id', $id);
     }
 
     public function editsupervisesaveadd(Request $request, $id)

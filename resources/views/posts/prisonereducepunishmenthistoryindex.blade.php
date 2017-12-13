@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div align = "right">
+<form action="/prisonereducepunishmenthistory/search" method="post">Search By ID prisoner <input type="text" name="id" value=""><input type="submit"  value="go"></form>
+</div>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Prisone Reduce Punishment List</h1><br>
   <!-- <p class="lead blog-description">All Prisonereducepunishmenthistory</p> -->

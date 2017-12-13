@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Casedetail;
+use App\Models\Prisoner;
 use Illuminate\http\Request;
 class CasedetailController extends Controller
 {
@@ -112,6 +113,20 @@ class CasedetailController extends Controller
         echo"<form action=\"/casedetails\">
         <input type=\"submit\" value=\"Go To Casedetail\">
         </form>";
+    }
+
+    public function search(Request $request)
+    {
+        $id = $request->input('id');
+
+        $case = Casedetail::join('prisoners', 'prisoners.id_prisoner', '=', 'case.id_prisoner')
+        ->where('prisoners.id_prisoner', '=', $id)
+        ->get();
+
+        return view('posts.activityview',[
+            'title' => 'Prisoner', 
+            'posts' => $case 
+        ]);
     }
 
 }

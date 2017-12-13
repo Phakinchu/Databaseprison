@@ -1,14 +1,12 @@
+<@extends('layouts.app')
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Edit Form</title>
-</head>
-<body>
-
+@section('content')
+<div align = "center">
+<h1 class="blog-title">Relative Supervise</h1><br>
 	<form action="/relative/{{$id}}/editsupervisesaveadd" method="post">
 	<table>
 		<tr>
-			<td>Add Id prisoner : </td>
+			<td  height = "30">Add Id prisoner : </td>
 			<td><input type="text" name="id_prisoner" ></td>
 		</tr>
         <tr>
@@ -21,7 +19,7 @@
     <form action="/relative/{{$id}}/editsupervisesavedelete" method="post">
 	<table>
         <tr>
-			<td>Delete Id prisoner : </td>
+			<td  height = "30">Delete Id prisoner : </td>
 			<td><input type="text" name="id_prisoner" ></td>
 		</tr>
 		<tr>
@@ -35,5 +33,4 @@
     <input type="submit" value="Back">
 	</form>
 
-</body>
-</html>
+@endsection
