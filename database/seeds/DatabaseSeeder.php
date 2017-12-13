@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
         $this->call('HaverelativeTableSeeder');
         $this->call('ManagecaseTableSeeder');
         $this->call('PlusscoreTableSeeder');
+        $this->call('LoginsTableSeeder');
         schema::enableForeignKeyConstraints();
     }   
 }
