@@ -1,18 +1,16 @@
+@extends('layouts.app')
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Edit Form</title>
-</head>
-<body>
-
+@section('content')
+<div align = "center">
+<h1 class="blog-title">Edit Area</h1><br>
 	<form action="/activity/{{$id}}/edit_activity_area_supervisesaveadd" method="post">
 	<table>
 		<tr>
-			<td>Add Id area : </td>
+			<td  height = "30">Add Id area : </td><br>
 			<td><input type="text" name="id_area" ></td>
 		</tr>
         <tr>
-			<td><input type="submit" name="submit" value="Add"></td>
+			<center><td><input type="submit" name="submit" value="Add"></td></center>
 		</tr>
 	</table>
 	</form>
@@ -21,11 +19,11 @@
     <form action="/activity/{{$id}}/edit_activity_area_supervisesavedelete" method="post">
 	<table>
         <tr>
-			<td>Delete Id area : </td>
+			<td  height = "30">Delete Id area : </td><br>
 			<td><input type="text" name="id_area" ></td>
 		</tr>
 		<tr>
-			<td><input type="submit" name="submit" value="Delete"></td>
+			<center><td><input type="submit" name="submit" value="Delete"></td></center>
 		</tr>
 	</table>
 	</form>
@@ -35,5 +33,6 @@
     <input type="submit" value="Back">
 	</form>
 
-</body>
-</html>
+</div>
+
+@endsection

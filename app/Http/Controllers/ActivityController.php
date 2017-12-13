@@ -21,12 +21,12 @@ class ActivityController extends Controller
 
     public function insertpage()
     {
-        return view('ActivityInsertForm');
+        return view('ActivityInsertForm',['title' => 'Insert']);
     }
     
     public function editpage($id)
     {
-        return view('ActivityEditForm')->with('id', $id);
+        return view('ActivityEditForm',['title' => 'Edit'])->with('id', $id);
     }
     public function save(Request $request)
     {
@@ -66,7 +66,7 @@ class ActivityController extends Controller
 
     public function edit_activity_prison_supervisepage($id)
     {
-        return view('activityprisonsuperviseditForm')->with('id', $id);
+        return view('activityprisonsuperviseditForm',['title' => 'Insert'])->with('id', $id);
     }
 
     public function edit_activity_prison_supervisesaveadd(Request $request, $id) //เพิ่มนักโทษไปในกิจกรรม
@@ -102,7 +102,7 @@ class ActivityController extends Controller
     
     public function edit_activity_area_supervisepage($id)
     {
-        return view('activityareasuperviseditForm')->with('id', $id);
+        return view('activityareasuperviseditForm',['title' => 'Edit'])->with('id', $id);
     }
 
     public function edit_activity_area_supervisesaveadd(Request $request, $id) //เพิ่มผู้คุมไปในกิจกรรม

@@ -23,7 +23,7 @@ class AreaController extends Controller
 
     public function insertpage()
     {
-        return view('areaInsertForm');
+        return view('areaInsertForm',['title' => 'Insert']);
     }
 
     public function save(Request $request)

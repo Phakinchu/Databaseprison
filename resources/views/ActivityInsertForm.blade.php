@@ -1,22 +1,21 @@
+@extends('layouts.app')
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Insert Form</title>
-</head>
-<body>
+@section('content')
 
+<div align = "center">
+<h1 class="blog-title">Insert Activity</h1><br>
 	<form action='/activities/save' method="post">
 	<table>
 		<tr>
-			<td>ActivityID : </td>
+			<td height = "30">ActivityID : </td>
 			<td><input type="text" name="id"></td>
 		</tr>
         <tr>
-        <td>activity : </td>
+        <td height = "30">Activity : </td>
         <td><input type="text" name="activity"></td>
        </tr>
        <tr>
-           <td>duration (hrs) </td>
+           <td height = "30">Duration (hrs) </td>
            <td><input type="text" name="duration"></td>
        </tr>
 		
@@ -28,6 +27,6 @@
 	<form action="/activities">
     <input type="submit" value="Back">
 	</form>
+</div>
 
-</body>
-</html>
+@endsection
