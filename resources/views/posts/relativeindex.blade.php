@@ -47,7 +47,7 @@ h3{
   @endforeach
   </table><br>
   <div align = "center">
-  <h3>Totla Relative : {{$count}} person</h3><br>
+  <h3>Total Relative : {{$count}} person</h3><br>
   <form action="/relatives/insertpage"><input type="submit" value="Add Relative"></form>
 </div>
 @endsection

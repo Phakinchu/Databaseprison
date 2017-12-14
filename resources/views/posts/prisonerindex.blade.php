@@ -64,7 +64,7 @@ h3{
   @endforeach
   </table>
   <br>
-  <center><h3>Totol prisoner : {{$count}} person</h3></center>
+  <center><h3>Total prisoner : {{$count}} person</h3></center>
   <br>
   <center><form action="/prisoners/insertpage"><input type="submit" value="Add Prisoner"></form></center>
 </div>

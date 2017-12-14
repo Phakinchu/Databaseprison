@@ -42,7 +42,7 @@ h3{
       </div><br>
   @endforeach
 
-  <form action="/areas/insertpage"><input type="submit" value="Add Area"></form>
+  <!-- <form action="/areas/insertpage"><input type="submit" value="Add Area"></form> -->
 
 </div>
 @endsection
