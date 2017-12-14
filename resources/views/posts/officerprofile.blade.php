@@ -32,7 +32,7 @@ h3{
             </div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-3 col-lg-3 " align="center"> <img alt="PrisonerPic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="officer" src="https://dl2.olozmp3.net/artwork/225788490.jpg" class="img-circle img-responsive"> </div>
 
                 <div class=" col-md-9 col-lg-9 "> 
                   <table class="table table-user-information">
