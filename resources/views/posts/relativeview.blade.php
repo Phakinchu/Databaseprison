@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body{
+	color: black;
+	background-image: url("http://m.rgbimg.com/cache1nYI1t/users/x/xy/xymonau/600/mmLc2Qs.jpg");
+}
+h1{
+	color: black;
+}
+h3{
+	color: black;
+}
+</style>
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Relative List</h1><br>
 	<!-- <p class="lead blog-description">All relative</p> -->
