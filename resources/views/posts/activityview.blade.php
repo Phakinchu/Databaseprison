@@ -25,11 +25,11 @@
                     <tbody>
                       <tr>
                         <td>ACtivity :</td>
-                        <td>{{$activity}}</td>
+                        <td>{{$post->activity}}</td>
                       </tr>
                       <tr>
                         <td>Duration :</td>
-                        <td>{{$duration}}</td>
+                        <td>{{$post->act_duration}}</td>
                       </tr>
                       <tr>
                         <td>Prison joined :</td>
