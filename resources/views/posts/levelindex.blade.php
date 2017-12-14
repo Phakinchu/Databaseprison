@@ -36,6 +36,6 @@ h3{
   @endforeach
 	</table><br>
 	<center><form action="/levels/insertpage"><input type="submit" value="Add Level"></form></center>
-
+	<div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 </div>
 @endsection

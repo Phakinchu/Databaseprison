@@ -40,7 +40,7 @@ h3{
       <br>
     </div><br>
   @endforeach
-  
+  <div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 
 
 </div>

@@ -21,6 +21,19 @@ class PrisonerController extends Controller
         ]);
     }
 
+    public function indexnormal()
+    {
+        $posts = Prisoner::all();
+        $count = $posts->count();
+
+        return view('posts.prisonerindexnormal', [
+          'title' => 'Prisoner',
+          'count' => $count,
+          'posts' => $posts
+    
+        ]);
+    }
+
     public function insertpage()
     {
         return view('posts.insertForm', [

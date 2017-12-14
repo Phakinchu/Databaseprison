@@ -74,14 +74,18 @@ h3{
             </div>
                  <div class="panel-footer">
                         <span class="pull-right">
+                        
                             <a href="/prisoner/{{$post->id_prisoner}}/editpage" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
                             <a href="/prisoner/{{$post->id_prisoner}}/delete" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                        <br><br><div align = "right"><form action="/prisoners"><input type="submit" value="back"></form></div>
                         </span>
                     </div>
-            
+              
           </div>
         </div>
       </div>
     </div>
+    
     @endforeach
+    
 @endsection

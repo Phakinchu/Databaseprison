@@ -41,7 +41,7 @@ h3{
       <h3>number of officer in this area : {{$countofficernum}}</h3>
       </div><br>
   @endforeach
-
+  <div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
   <!-- <form action="/areas/insertpage"><input type="submit" value="Add Area"></form> -->
 
 </div>

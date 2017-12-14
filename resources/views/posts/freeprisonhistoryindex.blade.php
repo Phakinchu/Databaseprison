@@ -42,5 +42,6 @@ h3{
   @endforeach
 	</table><br>
   <center><form action="/freeprisonhistories/insertpage"><input type="submit" value="Add Free Prison History"></form></center>
+	<div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 </div>
 @endsection

@@ -4,9 +4,11 @@
 <style>
 body{
 	color: black;
-	background-image: url("https://data.whicdn.com/images/69593093/large.jpg");
-	background-repeat: repeat;
-    background-size: 120% 120%;
+    background: url("https://data.whicdn.com/images/69593093/large.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h1{
 	color: black;

@@ -47,5 +47,6 @@ h3{
   @endforeach
 	</table><br>
   <center><form action="/visithistories/insertpage"><input type="submit" value="Add Visit History"></form></center>
+	<div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 </div>
 @endsection

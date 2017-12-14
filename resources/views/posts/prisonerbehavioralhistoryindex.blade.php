@@ -49,5 +49,6 @@ h3{
 	</table>
 	<br>
   <center><form action="/prisonerbehavioralhistories/insertpage"><input type="submit" value="Add Prisoner Behavioral History"></form></center><br>
+	<div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 </div>
 @endsection

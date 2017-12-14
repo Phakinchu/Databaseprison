@@ -153,6 +153,7 @@ class ActivityController extends Controller
             'title' => 'Prisoner', 
             'posts' => $activity 
         ]);
+        
     }
 
 }

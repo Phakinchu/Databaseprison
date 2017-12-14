@@ -30,6 +30,12 @@ $router->get('/', function () use ($router) {
 });
     
     $router->get('/', 'IndexController@index');
+    $router->get('/prisonersss', 'PrisonerController@indexnormal');
+    $router->get('/admin', 'IndexController@indexadmin');
+    
+    $router->get('/login', 'LoginController@setlogin');
+
+    $router->post('/login/save','LoginController@loginresult');
     
     ///// Prisoner Page
     $router->get('/prisoners', 'PrisonerController@index');

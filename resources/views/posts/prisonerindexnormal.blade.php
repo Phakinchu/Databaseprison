@@ -15,9 +15,7 @@ h3{
 	color: black;
 }
 </style>
-<div align = "right">
-<form action="/prisoner/search" method="post">Search By Name <input type="text" name="id" value=""><input type="submit"  value="go"></form>
-</div>
+
 <div class="blog-header" align = "center">
   <h1 class="blog-title">Prisoner List</h1><br>
   <br>
@@ -35,9 +33,7 @@ h3{
     <td ><center> id_cell </center></td>
     <td width = "100"><center> ผู้คุมที่ดูแล </center></td>
     <td width = "100"><center> คดีที่ติด </center></td>
-    <td ><center> Edit supervise </center></td>
-  	<td ><center> Edit </center></td>
-  	<td><center> Delete </center></td>
+
   </tr>
   </thead>
     @foreach ($posts as $post)
@@ -57,16 +53,13 @@ h3{
     <td><center>@foreach ($post->casedetails as $casedetail)
     คดี :
     {{$casedetail->punishment}}<br>@endforeach</center></td>
-    <td><center><a href="/prisoner/{{$post->id_prisoner}}/editsupervisepage">Click</a></center></td>
-		<td><center><a href="/prisoner/{{$post->id_prisoner}}/editpage">Click</a></center></td>
-		<td><center><a href="/prisoner/{{$post->id_prisoner}}/delete">Click</a></center></td>
+    
 	</tr>
   @endforeach
   </table>
   <br>
   <center><h3>Total prisoner : {{$count}} person</h3></center>
   <br>
-  <center><form action="/prisoners/insertpage"><input type="submit" value="Add Prisoner"></form></center>
-  <div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
+  
 </div>
 @endsection

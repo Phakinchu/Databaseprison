@@ -50,4 +50,5 @@ h3{
   <h3>Total Relative : {{$count}} person</h3><br>
   <form action="/relatives/insertpage"><input type="submit" value="Add Relative"></form>
 </div>
+<div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 @endsection

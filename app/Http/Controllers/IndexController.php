@@ -10,4 +10,12 @@ class IndexController extends Controller
             'title' => 'Home'
         ]);
     }
+
+    public function indexadmin()
+    {
+        return view('posts.adminindex', [
+            'title' => 'Home'
+        ]);
+    }
+
 }

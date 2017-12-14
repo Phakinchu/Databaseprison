@@ -45,5 +45,6 @@ h3{
 
 </table><br>
   <center><form action="/prisonereducepunishmenthistories/insertpage"><input type="submit" value="Add Prisoner Reduce Punishment"></form></center>
+	<div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 </div>
 @endsection

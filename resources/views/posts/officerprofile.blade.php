@@ -67,6 +67,7 @@ h3{
                         <span class="pull-right">
                             <a href="/officer/{{$post->id_officer}}/editpage" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
                             <a href="/officer/{{$post->id_officer}}/delete" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                            <br><br><div align = "right"><form action="/officers"><input type="submit" value="back"></form></div>
                         </span>
                     </div>
             

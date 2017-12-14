@@ -57,5 +57,6 @@ h3{
 	<div align = "center"><br>
 	<h3>Total Officers : {{$count}} person</h3><br>
 	<form action="/officers/insertpage"><input type="submit" value="Add Officer"></form>
+	<div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 </div>
 @endsection

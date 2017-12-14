@@ -48,5 +48,6 @@ h3{
   @endforeach
 	</table><br>
   <center><form action="/casedetails/insertpage"><input type="submit" value="Add Case Detail"></form></center>
+	<div align = "right"><form action="/admin"><input type="submit" value="back"></form></div>
 </div>
 @endsection
